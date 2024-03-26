@@ -1,5 +1,6 @@
 "use client";
 import React, {useState} from 'react';
+import {usePathname} from 'next/navigation';
 import {HiOutlineMenuAlt2, HiUserCircle} from "react-icons/hi";
 import Link from "next/link";
 import Image from "next/image";
@@ -35,6 +36,8 @@ const Header = () => {
 
     const currentYear: number = new Date().getFullYear()
 
+    // For menu active
+    const pathname = usePathname();
     return (
         <>
             {/* Top Bar */}
@@ -133,7 +136,7 @@ const Header = () => {
 
                         <hr/>
                         <li>
-                            <Link href='/'
+                            <Link href='#'
                                   className="flex items-center p-2 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineHome size={25}
                                                className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
@@ -142,7 +145,7 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <Link href='/'
+                            <Link href='#'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineIdentification size={25}
                                                          className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
@@ -151,29 +154,31 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <Link href='/'
+                            <Link href='/security'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineShieldCheck size={25}
                                                       className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
-                                <span className="ms-3 font-semibold">Security</span>
+                                <span
+                                    className={`ms-3 ${pathname === '/security' ? 'font-semibold' : ''}`}>Security</span>
                             </Link>
                         </li>
 
                         <li>
-                            <Link href='/'
+                            <Link href='/billing'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineCreditCard size={20}
                                                      className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
-                                <span className="ms-3">Billing</span>
+                                <span
+                                    className={`ms-3 ${pathname === '/billing' ? 'font-semibold' : ''}`}>Billing</span>
                             </Link>
                         </li>
 
                         <li>
-                            <Link href='/'
+                            <Link href='/notification'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineBell size={20}
                                                className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
-                                <span className="ms-3">Notification</span>
+                                <span className={`ms-3 ${pathname === '/notification' ? 'font-semibold' : ''}`}>Notification</span>
                             </Link>
                         </li>
 

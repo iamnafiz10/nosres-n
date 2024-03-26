@@ -12,8 +12,8 @@ import {MdOutlineLaptopMac} from "react-icons/md";
 import Header from "@/app/(SITE B)/Header";
 
 const Page = () => {
-    // Name change popup
-    const [openNameModal, setOpenPasswordModal] = useState<boolean>(false);
+    // Email change popup
+    const [openPasswordModal, setOpenPasswordModal] = useState<boolean>(false);
 
     return (
         <>
@@ -30,8 +30,7 @@ const Page = () => {
                     <hr/>
                     {/* Security */}
                     <div className="grid grid-cols-1 mb-4 info-wrapper">
-                        <div
-                            className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                        <div className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
                             <div className="head mb-2">
                                 <h6>Password</h6>
                             </div>
@@ -53,7 +52,7 @@ const Page = () => {
                                 </div>
                             </div>
                             {/* Password change Pop-Up Start */}
-                            <Modal size="lg" dismissible show={openNameModal}
+                            <Modal size="lg" dismissible show={openPasswordModal}
                                    onClose={() => setOpenPasswordModal(false)}>
                                 <Modal.Header>
                                     <h4 className="text-[16px]">
@@ -114,7 +113,7 @@ const Page = () => {
                     {/* Two-Factor Authentication */}
                     <div className="grid grid-cols-1 mb-4 info-wrapper">
                         <div
-                            className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                            className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
                             <div className="head mb-2">
                                 <h6>Two-Factor Authentication</h6>
                             </div>
@@ -147,10 +146,10 @@ const Page = () => {
                         </div>
                     </div>
 
-                    {/* TConnected Devices */}
+                    {/* Connected Devices */}
                     <div className="grid grid-cols-1 mb-4 info-wrapper">
                         <div
-                            className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                            className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
                             <div className="head mb-2">
                                 <h6>Connected Devices</h6>
                             </div>
