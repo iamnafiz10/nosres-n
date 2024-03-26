@@ -148,7 +148,7 @@ const Header = () => {
                             <Link href='#'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineIdentification size={25}
-                                                         className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
+                                                         className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
                                 <span className="ms-3">Personal Information</span>
                             </Link>
                         </li>
@@ -157,7 +157,7 @@ const Header = () => {
                             <Link href='/security'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineShieldCheck size={25}
-                                                      className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
+                                                      className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/security' ? 'text-primary' : ''}`}/>
                                 <span
                                     className={`ms-3 ${pathname === '/security' ? 'font-semibold' : ''}`}>Security</span>
                             </Link>
@@ -167,7 +167,7 @@ const Header = () => {
                             <Link href='/billing'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineCreditCard size={20}
-                                                     className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
+                                                     className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/billing' ? 'text-primary' : ''}`}/>
                                 <span
                                     className={`ms-3 ${pathname === '/billing' ? 'font-semibold' : ''}`}>Billing</span>
                             </Link>
@@ -177,17 +177,18 @@ const Header = () => {
                             <Link href='/notification'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineBell size={20}
-                                               className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
-                                <span className={`ms-3 ${pathname === '/notification' ? 'font-semibold' : ''}`}>Notification</span>
+                                               className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/notification' ? 'text-primary' : ''}`}/>
+                                <span
+                                    className={`ms-3 ${pathname === '/notification' ? 'font-semibold' : ''}`}>Notification</span>
                             </Link>
                         </li>
 
                         <li>
-                            <Link href='/'
+                            <Link href='/data-privacy'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineCircleStack size={20}
-                                                      className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
-                                <span className="ms-3">Data & Privacy</span>
+                                                      className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/data-privacy' ? 'text-primary' : ''}`}/>
+                                <span className={`ms-3 ${pathname === '/data-privacy' ? 'font-semibold' : ''}`}>Data & Privacy</span>
                             </Link>
                         </li>
                     </ul>

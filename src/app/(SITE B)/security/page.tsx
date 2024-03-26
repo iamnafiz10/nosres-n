@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Modal} from 'flowbite-react';
 import {
     HiOutlineShieldCheck,
@@ -10,11 +10,22 @@ import {
 import {LuDot} from "react-icons/lu";
 import {MdOutlineLaptopMac} from "react-icons/md";
 import Header from "@/app/(SITE B)/Header";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Page = () => {
     // Email change popup
     const [openPasswordModal, setOpenPasswordModal] = useState<boolean>(false);
+    // For Page Loading
+    const [loading, setLoading] = useState(true); // Set loading state
+    useEffect(() => {
+        // Simulate loading
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 500);
 
+        return () => clearTimeout(timer);
+    }, []);
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB]">
@@ -31,125 +42,141 @@ const Page = () => {
                     {/* Security */}
                     <div className="grid grid-cols-1 mb-4 info-wrapper">
                         <div className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
-                            <div className="head mb-2">
-                                <h6>Password</h6>
-                            </div>
-                            <hr/>
-                            <div className="mt-4 box">
-                                <p>
-                                    Manage your password.
-                                </p>
-                            </div>
-
-                            <div
-                                className="box mt-6 rounded flex items-start justify-between bg-white">
-                                <div className="left">
-                                    <h6 className="text-[14px]">Last Changed</h6>
-                                    <p className="mt-0">January 22, 2024</p>
-                                </div>
-                                <div onClick={() => setOpenPasswordModal(true)} className="right">
-                                    <button className="text-primary text-[14px]">Change Password</button>
-                                </div>
-                            </div>
-                            {/* Password change Pop-Up Start */}
-                            <Modal size="lg" dismissible show={openPasswordModal}
-                                   onClose={() => setOpenPasswordModal(false)}>
-                                <Modal.Header>
-                                    <h4 className="text-[16px]">
-                                        Change Password
-                                    </h4>
-                                </Modal.Header>
-                                <Modal.Body>
-                                    <div className="modal_body box">
-                                        <p className="pb-4">
-                                            Your password must be at least eight characters long, including
-                                            both upper and lowercase letters, as well as numbers. Please
-                                            choose a strong password that you haven’t used on other websites
-                                            and is not easily guessable by others.
+                            {loading ? (
+                                <>
+                                    <Skeleton height={30} count={1}/>
+                                    <Skeleton height={80} count={1}/>
+                                </>
+                            ) : (
+                                <>
+                                    <div className="head mb-2">
+                                        <h6>Password</h6>
+                                    </div>
+                                    <hr/>
+                                    <div className="mt-4 box">
+                                        <p>
+                                            Manage your password.
                                         </p>
-                                        <h4 className="text-[14px]">
-                                            Current Password
-                                        </h4>
-                                        <input
-                                            className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                            type="text"
-                                            placeholder="******"
-                                        />
-
-                                        <h4 className="text-[14px] mt-6">
-                                            New Passord
-                                        </h4>
-                                        <input
-                                            className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                            type="text"
-                                            placeholder="******"
-                                        />
-
-                                        <h4 className="text-[14px] mt-6">
-                                            Confirm New Password
-                                        </h4>
-                                        <input
-                                            className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                            type="text"
-                                            placeholder="******"
-                                        />
                                     </div>
-                                </Modal.Body>
-                                <Modal.Footer>
-                                    <div className="flex w-full items-center justify-between">
-                                        <button onClick={() => setOpenPasswordModal(false)}
-                                                className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
-                                        </button>
-                                        <button onClick={() => setOpenPasswordModal(false)}
-                                                className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
-                                        </button>
+
+                                    <div
+                                        className="box mt-6 rounded flex items-start justify-between bg-white">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Last Changed</h6>
+                                            <p className="mt-0">January 22, 2024</p>
+                                        </div>
+                                        <div onClick={() => setOpenPasswordModal(true)} className="right">
+                                            <button className="text-primary text-[14px]">Change Password</button>
+                                        </div>
                                     </div>
-                                </Modal.Footer>
-                            </Modal>
-                            {/* Password change Pop-Up End */}
+                                    {/* Password change Pop-Up Start */}
+                                    <Modal size="lg" dismissible show={openPasswordModal}
+                                           onClose={() => setOpenPasswordModal(false)}>
+                                        <Modal.Header>
+                                            <h4 className="text-[16px]">
+                                                Change Password
+                                            </h4>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            <div className="modal_body box">
+                                                <p className="pb-4">
+                                                    Your password must be at least eight characters long, including
+                                                    both upper and lowercase letters, as well as numbers. Please
+                                                    choose a strong password that you haven’t used on other websites
+                                                    and is not easily guessable by others.
+                                                </p>
+                                                <h4 className="text-[14px]">
+                                                    Current Password
+                                                </h4>
+                                                <input
+                                                    className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                                    type="text"
+                                                    placeholder="******"
+                                                />
+
+                                                <h4 className="text-[14px] mt-6">
+                                                    New Passord
+                                                </h4>
+                                                <input
+                                                    className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                                    type="text"
+                                                    placeholder="******"
+                                                />
+
+                                                <h4 className="text-[14px] mt-6">
+                                                    Confirm New Password
+                                                </h4>
+                                                <input
+                                                    className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                                    type="text"
+                                                    placeholder="******"
+                                                />
+                                            </div>
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <div className="flex w-full items-center justify-between">
+                                                <button onClick={() => setOpenPasswordModal(false)}
+                                                        className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
+                                                </button>
+                                                <button onClick={() => setOpenPasswordModal(false)}
+                                                        className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
+                                                </button>
+                                            </div>
+                                        </Modal.Footer>
+                                    </Modal>
+                                    {/* Password change Pop-Up End */}
+                                </>
+                            )}
                         </div>
                     </div>
 
                     {/* Two-Factor Authentication */}
                     <div className="grid grid-cols-1 mb-4 info-wrapper">
-                        <div
-                            className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
-                            <div className="head mb-2">
-                                <h6>Two-Factor Authentication</h6>
-                            </div>
-                            <hr/>
-                            <div className="mt-4 box">
-                                <p>
-                                    Manage two-factor authentication to keep your account secure.
-                                </p>
-                            </div>
+                        <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                            {loading ? (
+                                <>
+                                    <Skeleton height={30} count={1}/>
+                                    <Skeleton height={80} count={1}/>
+                                </>
+                            ) : (
+                                <>
+                                    <div className="head mb-2">
+                                        <h6>Two-Factor Authentication</h6>
+                                    </div>
+                                    <hr/>
+                                    <div className="mt-4 box">
+                                        <p>
+                                            Manage two-factor authentication to keep your account secure.
+                                        </p>
+                                    </div>
 
-                            <div
-                                className="box mt-6 rounded flex items-start justify-between bg-white">
-                                <div className="left">
-                                    <h6 className="text-[14px]">
-                                        Manage Two-Factor Authentication.
-                                    </h6>
-                                </div>
-                                <div className="right">
-                                    <label className="inline-flex items-center me-5 cursor-pointer">
+                                    <div
+                                        className="box mt-6 rounded flex items-start justify-between bg-white">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">
+                                                Manage Two-Factor Authentication.
+                                            </h6>
+                                        </div>
+                                        <div className="right">
+                                            <label className="inline-flex items-center me-5 cursor-pointer">
                                          <span
                                              className="me-3 text-[14px] text-[#828D9E]">OFF</span>
-                                        <input type="checkbox" value="" className="sr-only peer"/>
-                                        <div
-                                            className="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-teal-300 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-teal-600"></div>
-                                        <span
-                                            className="ms-3 text-[14px] text-[#828D9E]">ON</span>
-                                    </label>
-                                </div>
-                            </div>
+                                                <input type="checkbox" value="" className="sr-only peer"/>
+                                                <div
+                                                    className="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-teal-300 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-teal-600"></div>
+                                                <span
+                                                    className="ms-3 text-[14px] text-[#828D9E]">ON</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </>
+                            )}
                         </div>
                     </div>
 
                     {/* Connected Devices */}
                     <div className="grid grid-cols-1 mb-4 info-wrapper">
-                        <div
-                            className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                        <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
                             <div className="head mb-2">
                                 <h6>Connected Devices</h6>
                             </div>
@@ -160,75 +187,96 @@ const Page = () => {
                                 </p>
                             </div>
 
-                            <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
-                                <div className="left">
-                                    <h6 className="text-[14px] flex items-center gap-2">
-                                        <HiComputerDesktop size={25}/>
-                                        PC, Windows, Chrome
-                                    </h6>
-                                    <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
-                                        <h4>
-                                            Just now
-                                        </h4>
-                                        <h4 className="flex items-center gap-0">
-                                            <LuDot size={20}/>
-                                            United States
-                                        </h4>
+                            {loading ? (
+                                <>
+                                    <Skeleton height={60} count={1}/>
+                                    <Skeleton height={10} count={1}/>
+                                </>
+                            ) : (
+                                <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
+                                    <div className="left">
+                                        <h6 className="text-[14px] flex items-center gap-2">
+                                            <HiComputerDesktop size={25}/>
+                                            PC, Windows, Chrome
+                                        </h6>
+                                        <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
+                                            <h4>
+                                                Just now
+                                            </h4>
+                                            <h4 className="flex items-center gap-0">
+                                                <LuDot size={20}/>
+                                                United States
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div className="right">
+                                        <div className="flex items-center gap-1 text-green-400 ">
+                                            <HiOutlineCheckCircle size={15}/>
+                                            <h4 className="text-[14px]">This device</h4>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="right">
-                                    <div className="flex items-center gap-1 text-green-400 ">
-                                        <HiOutlineCheckCircle size={15}/>
-                                        <h4 className="text-[14px]">This device</h4>
-                                    </div>
-                                </div>
-                            </div>
+                            )}
 
-                            <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
-                                <div className="left">
-                                    <h6 className="text-[14px] flex items-center gap-2">
-                                        <MdOutlineLaptopMac size={25}/>
-                                        Mac, MacOS, Safari
-                                    </h6>
-                                    <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
-                                        <h4>
-                                            11 days ago
-                                        </h4>
-                                        <h4 className="flex items-center gap-0">
-                                            <LuDot size={20}/>
-                                            United States
-                                        </h4>
+                            {loading ? (
+                                <>
+                                    <Skeleton height={60} count={1}/>
+                                    <Skeleton height={10} count={1}/>
+                                </>
+                            ) : (
+                                <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
+                                    <div className="left">
+                                        <h6 className="text-[14px] flex items-center gap-2">
+                                            <MdOutlineLaptopMac size={25}/>
+                                            Mac, MacOS, Safari
+                                        </h6>
+                                        <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
+                                            <h4>
+                                                11 days ago
+                                            </h4>
+                                            <h4 className="flex items-center gap-0">
+                                                <LuDot size={20}/>
+                                                United States
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div className="right">
+                                        <button type="button" className="text-[14px] text-primary">
+                                            Sign Out
+                                        </button>
                                     </div>
                                 </div>
-                                <div className="right">
-                                    <button type="button" className="text-[14px] text-primary">
-                                        Sign Out
-                                    </button>
-                                </div>
-                            </div>
+                            )}
 
-                            <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
-                                <div className="left">
-                                    <h6 className="text-[14px] flex items-center gap-2">
-                                        <HiDeviceTablet size={25}/>
-                                        Samsung, Android App
-                                    </h6>
-                                    <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
-                                        <h4>
-                                            1 minute ago
-                                        </h4>
-                                        <h4 className="flex items-center gap-0">
-                                            <LuDot size={20}/>
-                                            United States
-                                        </h4>
+                            {loading ? (
+                                <>
+                                    <Skeleton height={60} count={1}/>
+                                    <Skeleton height={10} count={1}/>
+                                </>
+                            ) : (
+                                <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
+                                    <div className="left">
+                                        <h6 className="text-[14px] flex items-center gap-2">
+                                            <HiDeviceTablet size={25}/>
+                                            Samsung, Android App
+                                        </h6>
+                                        <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
+                                            <h4>
+                                                1 minute ago
+                                            </h4>
+                                            <h4 className="flex items-center gap-0">
+                                                <LuDot size={20}/>
+                                                United States
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div className="right">
+                                        <button type="button" className="text-[14px] text-primary">
+                                            Sign Out
+                                        </button>
                                     </div>
                                 </div>
-                                <div className="right">
-                                    <button type="button" className="text-[14px] text-primary">
-                                        Sign Out
-                                    </button>
-                                </div>
-                            </div>
+                            )}
                         </div>
                     </div>
                 </div>
