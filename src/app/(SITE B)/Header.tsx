@@ -1,8 +1,8 @@
 "use client";
 import React, {useState} from 'react';
 import {usePathname} from 'next/navigation';
-import {HiOutlineMenuAlt2, HiUserCircle} from "react-icons/hi";
 import Link from "next/link";
+import {HiOutlineMenuAlt2, HiUserCircle} from "react-icons/hi";
 import Image from "next/image";
 import LogoImg from "../../../public/assets/images/logo.svg";
 import {GoQuestion} from "react-icons/go";
@@ -136,8 +136,7 @@ const Header = () => {
 
                         <hr/>
                         <li>
-                            <Link href='#'
-                                  className="flex items-center p-2 rounded-lg hover:bg-gray-100 group">
+                            <Link href='#' className="flex items-center p-2 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineHome size={25}
                                                className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
                                 <span className="ms-3">Home</span>
