@@ -14,7 +14,7 @@ import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
 const Page = () => {
-    // Email change popup
+    // Password change popup
     const [openPasswordModal, setOpenPasswordModal] = useState<boolean>(false);
     // For Page Loading
     const [loading, setLoading] = useState(true); // Set loading state
@@ -24,8 +24,14 @@ const Page = () => {
             setLoading(false);
         }, 500);
 
-        return () => clearTimeout(timer);
+        return () => {
+            clearTimeout(timer);
+        };
     }, []);
+
+    useEffect(() => {
+    }, [loading]);
+
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB]">
