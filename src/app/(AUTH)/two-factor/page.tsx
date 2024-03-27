@@ -157,6 +157,7 @@ const Page = () => {
 
                                 <div className="mt-4 text-center">
                                     <span className="text-[#828D9E] text-[12px]">
+                                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                                         Don't have an account? <Link href='#' className="text-primary">Sign up</Link>
                                     </span>
                                 </div>
