@@ -153,7 +153,7 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <Link href='/security'
+                            <Link href='security'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineShieldCheck size={25}
                                                       className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/security' ? 'text-primary' : ''}`}/>
@@ -163,7 +163,7 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <Link href='/billing'
+                            <Link href='billing'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineCreditCard size={20}
                                                      className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/billing' ? 'text-primary' : ''}`}/>
@@ -173,7 +173,7 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <Link href='/notification'
+                            <Link href='notification'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineBell size={20}
                                                className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/notification' ? 'text-primary' : ''}`}/>
@@ -183,7 +183,7 @@ const Header = () => {
                         </li>
 
                         <li>
-                            <Link href='/data-privacy'
+                            <Link href='data-privacy'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineCircleStack size={20}
                                                       className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/data-privacy' ? 'text-primary' : ''}`}/>
