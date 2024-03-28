@@ -123,7 +123,7 @@ const Page = () => {
 
     const [otherReasonDlt, setOtherReasonDlt] = useState<string>('');
     const handleReasonChangeDlt = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-        setOtherReason(event.target.value);
+        setOtherReasonDlt(event.target.value);
     };
 
     // Deactivate confirm modal
