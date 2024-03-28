@@ -32,6 +32,29 @@ const Page = () => {
     useEffect(() => {
     }, [loading]);
 
+    // ON / OFF Modal
+    const FIRST_MODAL = "first";
+    const SECOND_MODAL = "second";
+
+    const [isChecked, setIsChecked] = useState(false);
+    const [modalType, setModalType] = useState(null);
+
+    const handleToggleChange = () => {
+        setIsChecked(prev => !prev); // Toggle the input state
+
+        if (!isChecked) {
+            // @ts-ignore
+            setModalType(FIRST_MODAL); // Show the first modal when the input is checked
+        } else {
+            // @ts-ignore
+            setModalType(SECOND_MODAL); // Show the second modal when the input is unchecked
+        }
+    };
+
+    const handleCloseModal = () => {
+        setModalType(null); // Close the current modal
+    };
+
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB]">
@@ -165,13 +188,15 @@ const Page = () => {
                                         </div>
                                         <div className="right">
                                             <label className="inline-flex items-center me-5 cursor-pointer">
-                                         <span
-                                             className="me-3 text-[14px] text-[#828D9E]">OFF</span>
-                                                <input type="checkbox" value="" className="sr-only peer"/>
+                                                <span className="me-3 text-[14px] text-[#828D9E]">OFF</span>
+                                                <input
+                                                    type="checkbox"
+                                                    onChange={handleToggleChange}
+                                                    checked={isChecked}
+                                                    className="sr-only peer"/>
                                                 <div
                                                     className="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-teal-300 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-teal-600"></div>
-                                                <span
-                                                    className="ms-3 text-[14px] text-[#828D9E]">ON</span>
+                                                <span className="ms-3 text-[14px] text-[#828D9E]">ON</span>
                                             </label>
                                         </div>
                                     </div>
@@ -179,6 +204,128 @@ const Page = () => {
                             )}
                         </div>
                     </div>
+
+                    {/* Modal Area Start */}
+                    {/* Turn On Enter Password Pop-Up Start */}
+                    {modalType === FIRST_MODAL && (
+                        <Modal size="lg" dismissible
+                               show={isChecked}
+                               onClose={handleCloseModal}
+                        >
+                            <Modal.Header>
+                                <h4 className="text-[16px]">
+                                    Enter Password
+                                </h4>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <div className="modal_body box">
+                                    <p className="pb-4">
+                                        To ensure security, please enter your password to verify that this
+                                        request is authorized by you.
+                                    </p>
+                                    <h4 className="text-[14px]">
+                                        Enter Password
+                                    </h4>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        placeholder="******"
+                                    />
+
+                                    <h4 className="text-[14px] mt-6">
+                                        New Passord
+                                    </h4>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        placeholder="******"
+                                    />
+
+                                    <h4 className="text-[14px] mt-6">
+                                        Confirm New Password
+                                    </h4>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        placeholder="******"
+                                    />
+                                </div>
+                            </Modal.Body>
+                            <Modal.Footer>
+                                <div className="flex w-full items-center justify-between">
+                                    <button
+                                        className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
+                                    </button>
+                                    <button
+                                        className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
+                                    </button>
+                                </div>
+                            </Modal.Footer>
+                        </Modal>
+                    )}
+                    {/* Turn On Enter Password Pop-Up End */}
+
+
+                    {/* Turn Off Enter Password Pop-Up Start */}
+                    {modalType === SECOND_MODAL && (
+                        <Modal size="lg" dismissible
+                               show={!isChecked}
+                               onClose={handleCloseModal}
+                        >
+                            <Modal.Header>
+                                <h4 className="text-[16px]">
+                                    Second Modal Off
+                                </h4>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <div className="modal_body box">
+                                    <p className="pb-4">
+                                        To ensure security, please enter your password to verify that this
+                                        request is authorized by you.
+                                    </p>
+                                    <h4 className="text-[14px]">
+                                        Enter Password
+                                    </h4>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        placeholder="******"
+                                    />
+
+                                    <h4 className="text-[14px] mt-6">
+                                        New Passord
+                                    </h4>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        placeholder="******"
+                                    />
+
+                                    <h4 className="text-[14px] mt-6">
+                                        Confirm New Password
+                                    </h4>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        placeholder="******"
+                                    />
+                                </div>
+                            </Modal.Body>
+                            <Modal.Footer>
+                                <div className="flex w-full items-center justify-between">
+                                    <button
+                                        className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
+                                    </button>
+                                    <button
+                                        className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
+                                    </button>
+                                </div>
+                            </Modal.Footer>
+                        </Modal>
+                    )}
+                    {/* Turn Off Enter Password Pop-Up End */}
+                    {/* Modal Area End */}
+
 
                     {/* Connected Devices */}
                     <div className="grid grid-cols-1 mb-4 info-wrapper">

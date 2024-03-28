@@ -160,17 +160,29 @@ const Page = () => {
                                             <input
                                                 className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
                                                 type="text"
-                                                placeholder="jondoe@mail.com or jondoe"
+                                                placeholder="johndoe@mail.com or johndoe"
                                             />
 
                                             <h4 className="text-[14px] mt-6">
                                                 Enter Password
                                             </h4>
-                                            <input
-                                                className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                                type="text"
-                                                placeholder="******"
-                                            />
+                                            <div className="relative">
+                                                <input
+                                                    id="password"
+                                                    className="mt-1 rounded w-full py-1 px-3 text-[#ABABAB] text-[12px] focus:outline-none focus:border-primary focus:ring focus:ring-transparent"
+                                                    type={showPassword ? 'text' : 'password'}
+                                                    placeholder={showPassword ? '12345' : '********'}
+                                                />
+                                                <div
+                                                    className="absolute inset-y-0 right-0 top-1 text-primary flex items-center pr-3">
+                                                    <div
+                                                        className="text-[12px] cursor-pointer"
+                                                        onClick={() => setShowPassword(!showPassword)}
+                                                    >
+                                                        {showPassword ? 'Hide' : 'Show'}
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </Modal.Body>
                                     <Modal.Footer>
