@@ -1,6 +1,8 @@
 "use client";
 import React, {useEffect, useState} from 'react';
-import {Modal} from 'flowbite-react';
+import {Label, Modal, Radio} from 'flowbite-react';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
     HiOutlineShieldCheck,
     HiOutlineCheckCircle,
@@ -12,6 +14,9 @@ import {MdOutlineLaptopMac} from "react-icons/md";
 import Header from "@/app/(SITE B)/Header";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import {PiEnvelopeLight} from "react-icons/pi";
+import {HiOutlineDevicePhoneMobile} from "react-icons/hi2";
+import Link from "next/link";
 
 const Page = () => {
     // Password change popup
@@ -33,8 +38,8 @@ const Page = () => {
     }, [loading]);
 
     // ON / OFF Modal
-    const FIRST_MODAL = "first";
-    const SECOND_MODAL = "second";
+    const ON_MODAL = "first";
+    const OFF_MODAL = "second";
 
     const [isChecked, setIsChecked] = useState(false);
     const [modalType, setModalType] = useState(null);
@@ -44,10 +49,10 @@ const Page = () => {
 
         if (!isChecked) {
             // @ts-ignore
-            setModalType(FIRST_MODAL); // Show the first modal when the input is checked
+            setModalType(ON_MODAL); // Show the on modal when the input is checked
         } else {
             // @ts-ignore
-            setModalType(SECOND_MODAL); // Show the second modal when the input is unchecked
+            setModalType(OFF_MODAL); // Show the off modal when the input is unchecked
         }
     };
 
@@ -55,6 +60,68 @@ const Page = () => {
         setModalType(null); // Close the current modal
     };
 
+
+    // SelectEmailPhone popup
+    const [openSelectEmailPhone, setOpenSelectEmailPhone] = useState<boolean>(false);
+
+    const [selectedOption, setSelectedOption] = useState('email');
+
+    const handleEmailClick = () => {
+        // @ts-ignore
+        setSelectedOption('email');
+    };
+
+    const handlePhoneClick = () => {
+        // @ts-ignore
+        setSelectedOption('phone');
+    };
+
+    // Two factor phone popup
+    const [openTwoFactorPhoneModal, setOpenTwoFactorPhoneModal] = useState<boolean>(false);
+
+    const handleClosePopups = () => {
+        // @ts-ignore
+        setSelectedOption(null);
+        setModalType(null);
+        setOpenSelectEmailPhone(false);
+        setOpenTwoFactorPhoneModal(false);
+        setOpenPasswordModal(false);
+    };
+
+    const notify = () => {
+        toast.info('✅ Two-factor authentication has been successfully activated', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+
+    const handleverifyButtonClick = () => {
+        notify();
+        handleClosePopups();
+    };
+
+    const notifyOff = () => {
+        toast.info('✅ Two-factor authentication has been successfully deactivated.', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+    const handleTurnOffButtonClick = () => {
+        notifyOff();
+        handleClosePopups();
+    };
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB]">
@@ -207,8 +274,8 @@ const Page = () => {
 
                     {/* Modal Area Start */}
                     {/* Turn On Enter Password Pop-Up Start */}
-                    {modalType === FIRST_MODAL && (
-                        <Modal size="lg" dismissible
+                    {modalType === ON_MODAL && (
+                        <Modal size="lg"
                                show={isChecked}
                                onClose={handleCloseModal}
                         >
@@ -231,50 +298,214 @@ const Page = () => {
                                         type="text"
                                         placeholder="******"
                                     />
-
-                                    <h4 className="text-[14px] mt-6">
-                                        New Passord
-                                    </h4>
-                                    <input
-                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                        type="text"
-                                        placeholder="******"
-                                    />
-
-                                    <h4 className="text-[14px] mt-6">
-                                        Confirm New Password
-                                    </h4>
-                                    <input
-                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                        type="text"
-                                        placeholder="******"
-                                    />
                                 </div>
                             </Modal.Body>
                             <Modal.Footer>
                                 <div className="flex w-full items-center justify-between">
-                                    <button
-                                        className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
+                                    <button onClick={handleCloseModal}
+                                            className="px-8 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
                                     </button>
-                                    <button
-                                        className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
+                                    <button onClick={() => setOpenSelectEmailPhone(true)}
+                                            className="px-8 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
+                                        Continue
                                     </button>
                                 </div>
                             </Modal.Footer>
                         </Modal>
                     )}
+
+                    {/* Select Password or Number Modal */}
+                    <Modal size="lg"
+                           show={openSelectEmailPhone}
+                           onClose={() => setOpenSelectEmailPhone(false)}
+                           style={{
+                               backgroundColor: 'rgb(17 24 39 / 20%)',
+                               padding: '0px',
+                           }}
+                           className="modal_cntrl"
+                    >
+                        <Modal.Header>
+                            <h4 className="text-[16px]">
+                                Select Email Address or Phone Number
+                            </h4>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <div className="modal_body box">
+                                <p className="pb-4">
+                                    Choose an email address or a phone number that is already
+                                    associated with your Nosres Account. This is the phone number or
+                                    email address you will receive your authentication code on.
+                                </p>
+                                <div className="flex items-center gap-2">
+                                    <div
+                                        className={`box border px-2 py-2 rounded flex items-start gap-2 ${selectedOption === 'email' ? 'border-primary' : 'border-gray-300'}`}
+                                        onClick={handleEmailClick}
+                                    >
+                                        <PiEnvelopeLight size={18} className="text-gray-400"/>
+                                        <div className="content ml-[2px]">
+                                            <h4 className="text-[12px]">Email</h4>
+                                            <h4 className="text-[12px] text-[#828D9E] mt-1">
+                                                We’ll send you an email containing
+                                                your authentication code
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        className={`box border px-2 py-2 rounded flex items-start gap-2 ${selectedOption === 'phone' ? 'border-primary' : 'border-gray-300'}`}
+                                        onClick={handlePhoneClick}
+                                    >
+                                        <HiOutlineDevicePhoneMobile size={18} className="text-gray-400"/>
+                                        <div className="content">
+                                            <div className="flex items-start gap-2">
+                                                <h4 className="text-[12px]">Phone</h4>
+                                                <h4 className="-mt-2 text-[12px] text-primary">BETA</h4>
+                                            </div>
+                                            <h4 className="text-[12px] text-[#828D9E] mt-1">
+                                                We will send you an SMS containing
+                                                your authentication code.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                {selectedOption === 'email' && (
+                                    <div id="checkbox" className="email_content mt-4">
+                                        <fieldset className="flex max-w-md flex-col -space-y-1 gap-4">
+                                            <div className="flex items-center gap-2">
+                                                <Radio id="emailone" name="emails" value="emailone" defaultChecked/>
+                                                <Label htmlFor="emailone" className="text-[14px] font-normal">
+                                                    johndoe@mailcom
+                                                </Label>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <Radio id="emailtwo" name="emails" value="emailtwo"/>
+                                                <Label htmlFor="emailtwo" className="text-[14px] font-normal">
+                                                    johndoe2@mailcom
+                                                </Label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                )}
+
+                                {selectedOption === 'phone' && (
+                                    <div id="checkbox" className="phone_content mt-4">
+                                        <fieldset className="flex max-w-md flex-col -space-y-1 gap-4">
+                                            <div className="flex items-center gap-2">
+                                                <Radio id="phoneone" name="phones" value="phoneone" defaultChecked/>
+                                                <Label htmlFor="phoneone" className="text-[14px] font-normal">
+                                                    84515805256
+                                                </Label>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <Radio id="phonetwo" name="phones" value="phonetwo"/>
+                                                <Label htmlFor="phonetwo" className="text-[14px] font-normal">
+                                                    45562568458
+                                                </Label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                )}
+                            </div>
+                        </Modal.Body>
+                        <Modal.Footer>
+                            <div className="flex w-full items-center justify-between">
+                                <button onClick={() => setOpenSelectEmailPhone(false)}
+                                        className="px-8 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">
+                                    Back
+                                </button>
+                                <button onClick={() => setOpenTwoFactorPhoneModal(true)}
+                                        className="px-8 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
+                                    Continue
+                                </button>
+                            </div>
+                        </Modal.Footer>
+                    </Modal>
+
+                    {/* Two factor Phone Pop-Up Start */}
+                    <Modal size="lg" dismissible show={openTwoFactorPhoneModal}
+                           onClose={() => setOpenTwoFactorPhoneModal(false)}
+                           style={{
+                               backgroundColor: 'rgb(17 24 39 / 20%)',
+                               padding: '0px',
+                           }}
+                           className="modal_cntrl"
+                    >
+                        <Modal.Header>
+                            <h4 className="text-[16px]">
+                                Two-Factor Authentication
+                            </h4>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <div className="modal_body box">
+                                <p className="pb-4">
+                                    An SMS containing a unique 6-digit authentication code has been
+                                    sent to +*******161. Please enter it to finish setting up two-factor
+                                    authentication.
+                                </p>
+                                <h4 className="text-[14px]">
+                                    Enter Authentication Code
+                                </h4>
+                                <div className="flex items-center gap-1 pb-2">
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        maxLength={1}
+                                        placeholder=""/>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        maxLength={1}
+                                        placeholder=""/>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        maxLength={1}
+                                        placeholder=""/>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        maxLength={1}
+                                        placeholder=""/>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        maxLength={1}
+                                        placeholder=""/>
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="text"
+                                        maxLength={1}
+                                        placeholder=""/>
+                                </div>
+                                <Link href='#' className="text-[14px] text-primary">Resend authentication code</Link>
+                            </div>
+                        </Modal.Body>
+                        <Modal.Footer>
+                            <div className="flex w-full items-center justify-between">
+                                <button onClick={() => setOpenTwoFactorPhoneModal(false)}
+                                        className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">
+                                    Back
+                                </button>
+                                <button onClick={handleverifyButtonClick}
+                                        className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
+                                    Verify
+                                </button>
+                            </div>
+                        </Modal.Footer>
+                    </Modal>
+                    {/* Two factor Phone Pop-Up End */}
                     {/* Turn On Enter Password Pop-Up End */}
 
 
                     {/* Turn Off Enter Password Pop-Up Start */}
-                    {modalType === SECOND_MODAL && (
-                        <Modal size="lg" dismissible
+                    {modalType === OFF_MODAL && (
+                        <Modal size="lg"
                                show={!isChecked}
                                onClose={handleCloseModal}
                         >
                             <Modal.Header>
                                 <h4 className="text-[16px]">
-                                    Second Modal Off
+                                    Enter Password
                                 </h4>
                             </Modal.Header>
                             <Modal.Body>
@@ -291,33 +522,16 @@ const Page = () => {
                                         type="text"
                                         placeholder="******"
                                     />
-
-                                    <h4 className="text-[14px] mt-6">
-                                        New Passord
-                                    </h4>
-                                    <input
-                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                        type="text"
-                                        placeholder="******"
-                                    />
-
-                                    <h4 className="text-[14px] mt-6">
-                                        Confirm New Password
-                                    </h4>
-                                    <input
-                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
-                                        type="text"
-                                        placeholder="******"
-                                    />
                                 </div>
                             </Modal.Body>
                             <Modal.Footer>
                                 <div className="flex w-full items-center justify-between">
-                                    <button
-                                        className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
+                                    <button onClick={handleCloseModal}
+                                            className="px-8 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
                                     </button>
-                                    <button
-                                        className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
+                                    <button onClick={handleTurnOffButtonClick}
+                                            className="px-8 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
+                                        Turn Off
                                     </button>
                                 </div>
                             </Modal.Footer>
@@ -346,13 +560,15 @@ const Page = () => {
                                     <Skeleton height={10} count={1}/>
                                 </>
                             ) : (
-                                <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
+                                <div
+                                    className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
                                     <div className="left">
                                         <h6 className="text-[14px] flex items-center gap-2">
                                             <HiComputerDesktop size={25}/>
                                             PC, Windows, Chrome
                                         </h6>
-                                        <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
+                                        <div
+                                            className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
                                             <h4>
                                                 Just now
                                             </h4>
@@ -377,13 +593,15 @@ const Page = () => {
                                     <Skeleton height={10} count={1}/>
                                 </>
                             ) : (
-                                <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
+                                <div
+                                    className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
                                     <div className="left">
                                         <h6 className="text-[14px] flex items-center gap-2">
                                             <MdOutlineLaptopMac size={25}/>
                                             Mac, MacOS, Safari
                                         </h6>
-                                        <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
+                                        <div
+                                            className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
                                             <h4>
                                                 11 days ago
                                             </h4>
@@ -407,13 +625,15 @@ const Page = () => {
                                     <Skeleton height={10} count={1}/>
                                 </>
                             ) : (
-                                <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
+                                <div
+                                    className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
                                     <div className="left">
                                         <h6 className="text-[14px] flex items-center gap-2">
                                             <HiDeviceTablet size={25}/>
                                             Samsung, Android App
                                         </h6>
-                                        <div className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
+                                        <div
+                                            className="ml-8 flex items-center mt-1 text-[12px] text-[#828D9E]">
                                             <h4>
                                                 1 minute ago
                                             </h4>

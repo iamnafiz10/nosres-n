@@ -178,7 +178,7 @@ const Header = () => {
                                 <HiOutlineBell size={20}
                                                className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/notification' ? 'text-primary' : ''}`}/>
                                 <span
-                                    className={`ms-3 ${pathname === '/notification' ? 'font-semibold' : ''}`}>Notification</span>
+                                    className={`ms-3 ${pathname === '/notification' ? 'font-semibold' : ''}`}>Notifications</span>
                             </Link>
                         </li>
 

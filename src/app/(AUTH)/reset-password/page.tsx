@@ -1,8 +1,9 @@
 'use client';
 import React, {useState} from 'react';
 import '@/./app/globals.css';
-import Link from "next/link";
+import LogoImg from '@/../public/assets/images/logo.svg'
 import {Modal} from "flowbite-react";
+import Image from "next/image";
 
 const Page = () => {
     // Reset done popup
@@ -11,6 +12,10 @@ const Page = () => {
         <>
             <section id="reset-pawword-section" className="bg-[#F4F4F4] h-screen">
                 <div className="container pt-20">
+                    <div className="icon-box flex gap-2 items-center justify-center py-4">
+                        <Image src={LogoImg} className="w-12" alt="LogoImg"/>
+                        <h3 className="text-[38px] font-normal">nosres</h3>
+                    </div>
                     <form className="register_form w-full mx-auto lg:w-[400px] px-6 py-6 bg-white rounded">
                         <div className="box">
                             <h3 className="text-[16px]">
@@ -62,13 +67,10 @@ const Page = () => {
                             <Modal.Body>
                                 <div className="modal_body box">
                                     <h4 className="pb-4 font-semibold text-[16px]">
-                                        Hooray, fantastic!
+                                        Password Reset
                                     </h4>
                                     <p>
-                                        Your password has been reset successfully. Please click <Link
-                                        href='#' onClick={() => setOpenResetDoneModal(false)}
-                                        className="text-primary">here</Link> to
-                                        proceed with signing in.
+                                        Your password has been reset successfully.
                                     </p>
                                 </div>
                             </Modal.Body>
@@ -76,7 +78,7 @@ const Page = () => {
                                 <div className="flex w-full items-center justify-end">
                                     <button onClick={() => setOpenResetDoneModal(false)}
                                             className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
-                                        Ok
+                                        Sign In
                                     </button>
                                 </div>
                             </Modal.Footer>

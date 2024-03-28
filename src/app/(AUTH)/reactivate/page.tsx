@@ -121,7 +121,7 @@ const Page = () => {
                                                 <br/>
                                                 Your account was temporarily deactivated on March 23, 2024. To
                                                 reactivate your account and resume using Nosres as before,
-                                                simply click on the ‘Reactivate Account’ button below
+                                                simply click on the ‘Reactivate Account’ button below.
                                             </p>
                                         </div>
                                     </Modal.Body>

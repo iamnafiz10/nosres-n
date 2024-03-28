@@ -1,4 +1,5 @@
 import '@/./app/globals.css';
+import { ToastContainer } from "react-toastify";
 import Header from "@/app/(SITE B)/Header";
 
 export const metadata = {
@@ -7,8 +8,8 @@ export const metadata = {
 }
 
 export default function RootLayout({
-children,
-}: {
+                                       children,
+                                   }: {
     children: React.ReactNode
 }) {
     return (
@@ -16,6 +17,7 @@ children,
         <body>
         <Header/>
         {children}
+        <ToastContainer/>
         </body>
         </html>
     )
