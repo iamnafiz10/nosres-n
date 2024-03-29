@@ -1,5 +1,7 @@
 "use client";
 import React, {useEffect, useRef, useState} from 'react';
+import Skeleton, {SkeletonTheme} from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 import {Modal} from 'flowbite-react';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -294,7 +296,7 @@ const Page = () => {
     const [openEmailPasswordModal, setOpenEmailPasswordModal] = useState<boolean>(false);
     const [openConfirmEmailModal, setOpenConfirmEmailModal] = useState<boolean>(false);
 
-// Function to close all Email popups
+    // Function to close all Email popups
     const closeAllEmailPopups = () => {
         setOpenEmailModal(false);
         setOpenAddEmailModal(false);
@@ -354,6 +356,132 @@ const Page = () => {
         closeAllPhonePopups();
     };
 // --------------------- Phone change popup END -----------------------//
+    // For Page Loading
+    const [loading, setLoading] = useState(true); // Set loading state
+    useEffect(() => {
+        // Simulate loading
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 500);
+
+        return () => {
+            clearTimeout(timer);
+        };
+    }, []);
+
+    useEffect(() => {
+    }, [loading]);
+
+    // Email remove popup
+    const [OpenEmailRemoveModal, setOpenEmailRemoveModal] = useState<boolean>(false);
+
+    // Email primary popup
+    const [OpenEmailMakePrimaryModal, setOpenEmailMakePrimaryModal] = useState<boolean>(false);
+
+    // Phone remove popup
+    const [OpenPhoneRemoveModal, setOpenPhoneRemoveModal] = useState<boolean>(false);
+
+    // Phone primary popup
+    const [OpenPhoneMakePrimaryModal, setOpenPhoneMakePrimaryModal] = useState<boolean>(false);
+
+    // Notify Email remove
+    const notifyEmailRemove = () => {
+        toast.info('✅ Your email has been removed successfully', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+
+    const handleCloseEmailAllPopups = () => {
+        setOpenEmailModal(false);
+        setOpenEmailRemoveModal(false);
+    };
+
+    const handleEmailRemoveButtonClick = () => {
+        notifyEmailRemove();
+        handleCloseEmailAllPopups();
+    };
+
+    // Notify Email primary
+    const notifyEmailPrimary = () => {
+        toast.info('✅ This email has been successfully set as the primary', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+
+    const handleCloseEmailAllPopupsTwo = () => {
+        setOpenEmailModal(false);
+        setOpenEmailMakePrimaryModal(false);
+    };
+
+    const handleEmailPrimaryButtonClick = () => {
+        notifyEmailPrimary();
+        handleCloseEmailAllPopupsTwo();
+    };
+
+    // ---------------------- Email Notify Close ---------------------------//
+
+    // Notify Phone remove
+    const notifyPhoneRemove = () => {
+        toast.info('✅ Your phone number has been removed successfully.', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+
+    const handleClosePhoneAllPopups = () => {
+        setOpenPhoneModal(false);
+        setOpenPhoneRemoveModal(false);
+    };
+
+    const handlePhoneRemoveButtonClick = () => {
+        notifyPhoneRemove();
+        handleClosePhoneAllPopups();
+    };
+
+    // Notify Phone primary
+    const notifyPhonePrimary = () => {
+        toast.info('✅ Your phone number has been successfully set as the primary', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+
+    const handleClosePhoneAllPopupsTwo = () => {
+        setOpenPhoneModal(false);
+        setOpenPhoneMakePrimaryModal(false);
+    };
+
+    const handlePhonePrimaryButtonClick = () => {
+        notifyPhonePrimary();
+        handleClosePhoneAllPopupsTwo();
+    };
+
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB]">
@@ -367,29 +495,40 @@ const Page = () => {
                                 <h6 className="text-[18px]">Personal Information</h6>
                             </div>
                             <hr/>
-                            <div
-                                className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
-                                <div className="head mb-2">
-                                    <h6>Profile Picture</h6>
-                                </div>
-                                <hr/>
-                                <div className="mt-4 sm:flex box items-center gap-3">
-                                    <div className="one w-16 h-16 relative">
-                                        <HiUserCircle className="w-16 h-16 text-primary"/>
-                                        <HiOutlineCamera onClick={() => setOpenProfileImageModal(true)} size={20}
-                                                         className="cursor-pointer absolute bottom-[15%] right-[18%] bg-white opacity-[0.5] rounded-full p-1"/>
-                                    </div>
+                            <div className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={2}/>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className="head mb-2">
+                                            <h6>Profile Picture</h6>
+                                        </div>
+                                        <hr/>
+                                        <div className="mt-4 sm:flex box items-center gap-3">
+                                            <div className="one w-16 h-16 relative">
+                                                <HiUserCircle className="w-16 h-16 text-primary"/>
+                                                <HiOutlineCamera onClick={() => setOpenProfileImageModal(true)}
+                                                                 size={20}
+                                                                 className="cursor-pointer absolute bottom-[15%] right-[18%] bg-white opacity-[0.5] rounded-full p-1"/>
+                                            </div>
 
-                                    <div className="two mt-2 sm:mt-0">
-                                        <p>
-                                            Adding a profile picture to your Nosres account helps you express yourself
-                                            and
-                                            helps other people identify you. It also helps others to develop the right
-                                            impression
-                                            of you. Click photo to update.
-                                        </p>
-                                    </div>
-                                </div>
+                                            <div className="two mt-2 sm:mt-0">
+                                                <p>
+                                                    Adding a profile picture to your Nosres account helps you express
+                                                    yourself
+                                                    and
+                                                    helps other people identify you. It also helps others to develop the
+                                                    right
+                                                    impression
+                                                    of you. Click photo to update.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </>
+                                )}
                             </div>
                         </div>
 
@@ -472,8 +611,7 @@ const Page = () => {
 
                         {/* Primary Information */}
                         <div className="grid grid-cols-1 mb-4 info-wrapper">
-                            <div
-                                className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
+                            <div className="mt-8 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
                                 <div className="head mb-2">
                                     <h6>Primary Information</h6>
                                 </div>
@@ -484,17 +622,23 @@ const Page = () => {
                                         language, etc.
                                     </p>
                                 </div>
-
-                                <div
-                                    className="box mt-6 rounded flex items-start justify-between bg-white border px-4 py-4">
-                                    <div className="left">
-                                        <h6 className="text-[14px]">Name</h6>
-                                        <p className="mt-0">Jane Doe</p>
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={1}/>
+                                    </>
+                                ) : (
+                                    <div
+                                        className="box mt-6 rounded flex items-start justify-between bg-white border px-4 py-4">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Name</h6>
+                                            <p className="mt-0">Jane Doe</p>
+                                        </div>
+                                        <div onClick={() => setOpenNameModal(true)} className="right">
+                                            <button className="text-primary text-[14px]">Edit</button>
+                                        </div>
                                     </div>
-                                    <div onClick={() => setOpenNameModal(true)} className="right">
-                                        <button className="text-primary text-[14px]">Edit</button>
-                                    </div>
-                                </div>
+                                )}
                                 {/* Name change Pop-Up Start */}
                                 <Modal size="lg" dismissible show={openNameModal}
                                        onClose={() => setOpenNameModal(false)}>
@@ -537,17 +681,23 @@ const Page = () => {
                                     </Modal.Footer>
                                 </Modal>
                                 {/* Name change Pop-Up End */}
-
-                                <div
-                                    className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
-                                    <div className="left">
-                                        <h6 className="text-[14px]">Username</h6>
-                                        <p className="mt-0">Janedoe</p>
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={1}/>
+                                    </>
+                                ) : (
+                                    <div
+                                        className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Username</h6>
+                                            <p className="mt-0">Janedoe</p>
+                                        </div>
+                                        <div onClick={() => setOpenUsernameModal(true)} className="right">
+                                            <button className="text-primary text-[14px]">Edit</button>
+                                        </div>
                                     </div>
-                                    <div onClick={() => setOpenUsernameModal(true)} className="right">
-                                        <button className="text-primary text-[14px]">Edit</button>
-                                    </div>
-                                </div>
+                                )}
                                 {/* Username change Pop-Up Start */}
                                 <Modal size="lg" dismissible show={openUsernameModal}
                                        onClose={() => setOpenUsernameModal(false)}>
@@ -582,17 +732,23 @@ const Page = () => {
                                     </Modal.Footer>
                                 </Modal>
                                 {/* Username change Pop-Up End */}
-
-                                <div
-                                    className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
-                                    <div className="left">
-                                        <h6 className="text-[14px]">Birthday</h6>
-                                        <p className="mt-0">January 22, 2000</p>
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={1}/>
+                                    </>
+                                ) : (
+                                    <div
+                                        className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Birthday</h6>
+                                            <p className="mt-0">January 22, 2000</p>
+                                        </div>
+                                        <div onClick={() => setOpenBirthdayModal(true)} className="right">
+                                            <button className="text-primary text-[14px]">Edit</button>
+                                        </div>
                                     </div>
-                                    <div onClick={() => setOpenBirthdayModal(true)} className="right">
-                                        <button className="text-primary text-[14px]">Edit</button>
-                                    </div>
-                                </div>
+                                )}
                                 {/* Birthday change Pop-Up Start */}
                                 <Modal size="lg" dismissible show={openBirthdayModal}
                                        onClose={() => setOpenBirthdayModal(false)}>
@@ -687,17 +843,23 @@ const Page = () => {
                                     </Modal.Footer>
                                 </Modal>
                                 {/* Birthday change Pop-Up End */}
-
-                                <div
-                                    className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
-                                    <div className="left">
-                                        <h6 className="text-[14px]">Gender</h6>
-                                        <p className="mt-0">Female</p>
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={1}/>
+                                    </>
+                                ) : (
+                                    <div
+                                        className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Gender</h6>
+                                            <p className="mt-0">Female</p>
+                                        </div>
+                                        <div className="right" onClick={() => setOpenGenderModal(true)}>
+                                            <button className="text-primary text-[14px]">Edit</button>
+                                        </div>
                                     </div>
-                                    <div className="right" onClick={() => setOpenGenderModal(true)}>
-                                        <button className="text-primary text-[14px]">Edit</button>
-                                    </div>
-                                </div>
+                                )}
                                 {/* Gender change Pop-Up Start */}
                                 <Modal size="lg" dismissible show={openGenderModal}
                                        onClose={() => setOpenGenderModal(false)}>
@@ -744,16 +906,23 @@ const Page = () => {
                                 </Modal>
                                 {/* Gender change Pop-Up End */}
 
-                                <div
-                                    className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
-                                    <div className="left">
-                                        <h6 className="text-[14px]">Country / Region</h6>
-                                        <p className="mt-0">United States</p>
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={1}/>
+                                    </>
+                                ) : (
+                                    <div
+                                        className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Country / Region</h6>
+                                            <p className="mt-0">United States</p>
+                                        </div>
+                                        <div className="right" onClick={() => setOpenCountryModal(true)}>
+                                            <button className="text-primary text-[14px]">Edit</button>
+                                        </div>
                                     </div>
-                                    <div className="right" onClick={() => setOpenCountryModal(true)}>
-                                        <button className="text-primary text-[14px]">Edit</button>
-                                    </div>
-                                </div>
+                                )}
                                 {/* Country change Pop-Up Start */}
                                 <Modal size="lg" dismissible show={openCountryModal}
                                        onClose={() => setOpenCountryModal(false)}>
@@ -799,16 +968,23 @@ const Page = () => {
                                 </Modal>
                                 {/* Country change Pop-Up End */}
 
-                                <div
-                                    className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
-                                    <div className="left">
-                                        <h6 className="text-[14px]">Language</h6>
-                                        <p className="mt-0">English</p>
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={1}/>
+                                    </>
+                                ) : (
+                                    <div
+                                        className="box rounded mt-4 flex items-start justify-between bg-white border px-4 py-4">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Language</h6>
+                                            <p className="mt-0">English</p>
+                                        </div>
+                                        <div className="right" onClick={() => setOpenLanguageModal(true)}>
+                                            <button className="text-primary text-[14px]">Edit</button>
+                                        </div>
                                     </div>
-                                    <div className="right" onClick={() => setOpenLanguageModal(true)}>
-                                        <button className="text-primary text-[14px]">Edit</button>
-                                    </div>
-                                </div>
+                                )}
                                 {/* Language change Pop-Up Start */}
                                 <Modal size="lg" dismissible show={openLanguageModal}
                                        onClose={() => setOpenLanguageModal(false)}>
@@ -867,20 +1043,26 @@ const Page = () => {
                                         numbers.
                                     </p>
                                 </div>
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={1}/>
+                                    </>
+                                ) : (
+                                    <div
+                                        className="box mt-6 rounded flex items-start justify-between bg-white border px-4 py-4">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Email Address</h6>
+                                            <p className="mt-0">
+                                                janedoe@mail.com
+                                            </p>
+                                        </div>
+                                        <div className="right" onClick={() => setOpenEmailModal(true)}>
+                                            <button className="text-primary text-[14px]">Edit</button>
+                                        </div>
+                                    </div>
+                                )}
 
-                                <div
-                                    className="box mt-6 rounded flex items-start justify-between bg-white border px-4 py-4">
-                                    <div className="left">
-                                        <h6 className="text-[14px]">Email Address</h6>
-                                        <p className="mt-0">
-                                            janedoe@mail.com
-                                        </p>
-                                    </div>
-                                    <div className="right" onClick={() => setOpenEmailModal(true)}>
-                                        <button className="text-primary text-[14px]">Edit</button>
-                                    </div>
-                                </div>
-                                {/* Email change Pop-Up Start */}
                                 <Modal size="lg"
                                        show={openEmailModal}
                                        onClose={() => setOpenEmailModal(false)}
@@ -923,13 +1105,14 @@ const Page = () => {
                                                     <h6 className="text-[14px]">
                                                         janedoe55@mail.com
                                                     </h6>
-                                                    <h6 className="mt-0 text-[14px] text-primary">
+                                                    <button onClick={() => setOpenEmailMakePrimaryModal(true)}
+                                                            type='button' className="mt-0 text-[14px] text-primary">
                                                         Make Primary
-                                                    </h6>
+                                                    </button>
                                                 </div>
                                                 <div className="right">
-                                                    <button
-                                                        className="text-primary flex gap-1 items-center text-[14px]">
+                                                    <button onClick={() => setOpenEmailRemoveModal(true)}
+                                                            className="text-primary flex gap-1 items-center text-[14px]">
                                                         <HiOutlineMinusCircle size={17}/>
                                                         Remove
                                                     </button>
@@ -947,8 +1130,8 @@ const Page = () => {
                                                     </h6>
                                                 </div>
                                                 <div className="right">
-                                                    <button
-                                                        className="text-primary flex gap-1 items-center text-[14px]">
+                                                    <button onClick={() => setOpenEmailRemoveModal(true)}
+                                                            className="text-primary flex gap-1 items-center text-[14px]">
                                                         <HiOutlineMinusCircle size={17}/>
                                                         Remove
                                                     </button>
@@ -1086,19 +1269,25 @@ const Page = () => {
                                 {/* Confirm Email Pop-Up End */}
 
                                 {/*--------------------- Phone Start */}
-                                <div
-                                    className="box mt-4 rounded flex items-start justify-between bg-white border px-4 py-4">
-                                    <div className="left">
-                                        <h6 className="text-[14px]">Phone Number</h6>
-                                        <p className="mt-0">
-                                            +123 234 234 566
-                                        </p>
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={60} count={1}/>
+                                        <Skeleton height={10} count={1}/>
+                                    </>
+                                ) : (
+                                    <div
+                                        className="box mt-4 rounded flex items-start justify-between bg-white border px-4 py-4">
+                                        <div className="left">
+                                            <h6 className="text-[14px]">Phone Number</h6>
+                                            <p className="mt-0">
+                                                +123 234 234 566
+                                            </p>
+                                        </div>
+                                        <div className="right" onClick={() => setOpenPhoneModal(true)}>
+                                            <button className="text-primary text-[14px]">Edit</button>
+                                        </div>
                                     </div>
-                                    <div className="right" onClick={() => setOpenPhoneModal(true)}>
-                                        <button className="text-primary text-[14px]">Edit</button>
-                                    </div>
-                                </div>
-                                {/* Phone change Pop-Up Start */}
+                                )}
                                 <Modal size="lg"
                                        show={openPhoneModal}
                                        onClose={() => setOpenPhoneModal(false)}
@@ -1115,7 +1304,8 @@ const Page = () => {
                                         <div className="modal_body box">
                                             <p>
                                                 Adding your phone number helps you receive notifications, reset your
-                                                password easily, and more. Your phone number in your profile is visible
+                                                password easily, and more. Your phone number in your profile is
+                                                visible
                                                 to you only.
                                             </p>
 
@@ -1141,13 +1331,14 @@ const Page = () => {
                                                     <h6 className="text-[14px]">
                                                         +886 754 458 578
                                                     </h6>
-                                                    <h6 className="mt-0 text-[14px] text-primary">
+                                                    <button onClick={() => setOpenPhoneMakePrimaryModal(true)}
+                                                            type='button' className="mt-0 text-[14px] text-primary">
                                                         Make Primary
-                                                    </h6>
+                                                    </button>
                                                 </div>
                                                 <div className="right">
-                                                    <button
-                                                        className="text-primary gap-1 flex items-center text-[14px]">
+                                                    <button onClick={() => setOpenPhoneRemoveModal(true)} type='button'
+                                                            className="text-primary gap-1 flex items-center text-[14px]">
                                                         <HiOutlineMinusCircle size={17}/>
                                                         Remove
                                                     </button>
@@ -1160,13 +1351,14 @@ const Page = () => {
                                                     <h6 className="text-[14px]">
                                                         +886 564 455 775
                                                     </h6>
-                                                    <h6 className="mt-0 text-[14px] text-primary">
+                                                    <button onClick={() => setOpenPhoneMakePrimaryModal(true)}
+                                                            type='button' className="mt-0 text-[14px] text-primary">
                                                         Make Primary
-                                                    </h6>
+                                                    </button>
                                                 </div>
                                                 <div className="right">
-                                                    <button
-                                                        className="text-primary gap-1 flex items-center text-[14px]">
+                                                    <button onClick={() => setOpenPhoneRemoveModal(true)} type='button'
+                                                            className="text-primary gap-1 flex items-center text-[14px]">
                                                         <HiOutlineMinusCircle size={17}/>
                                                         Remove
                                                     </button>
@@ -1248,7 +1440,8 @@ const Page = () => {
                                     <Modal.Body>
                                         <div className="modal_body box">
                                             <p>
-                                                Nosres will send you a verification code at +134522334 to make sure this
+                                                Nosres will send you a verification code at +134522334 to make sure
+                                                this
                                                 number is yours.
                                             </p>
                                         </div>
@@ -1268,7 +1461,7 @@ const Page = () => {
                                 </Modal>
                                 {/* Phone Verify Pop-Up End */}
 
-                                {/* ConfirmV Code Phone Pop-Up Start */}
+                                {/* Confirm Code Phone Pop-Up Start */}
                                 <Modal size="lg"
                                        show={openConfirmVCodePhoneModal}
                                        onClose={() => setOpenConfirmVCodePhoneModal(false)}
@@ -1286,7 +1479,8 @@ const Page = () => {
                                             <p>
                                                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                                                 We've just send you an SMS at +134522334 with a verification code.
-                                                Please wait al least 5 minutes before requesting another verification
+                                                Please wait al least 5 minutes before requesting another
+                                                verification
                                                 code.
                                                 <span className="text-primary cursor-pointer"> Resend Code</span>
                                             </p>
@@ -1317,8 +1511,189 @@ const Page = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Email remove modal */}
+            <Modal size="lg"
+                   show={OpenEmailRemoveModal}
+                   onClose={() => setOpenEmailRemoveModal(false)}
+                   style={{
+                       backgroundColor: 'rgb(17 24 39 / 20%)',
+                       padding: '0px',
+                   }}
+                   className="modal_cntrl"
+            >
+                <Modal.Header>
+                    <h4 className="text-[16px]">
+                        Enter Password
+                    </h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="modal_body box">
+                        <p className="pb-4">
+                            To ensure security, please enter your password to verify that this
+                            request is authorized by you.
+                        </p>
+                        <h4 className="text-[14px]">
+                            Enter Password
+                        </h4>
+                        <input
+                            className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                            type="text"
+                            placeholder="******"
+                        />
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <div className="flex w-full items-center justify-between">
+                        <button onClick={() => setOpenEmailRemoveModal(false)}
+                                className="px-8 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">
+                            Back
+                        </button>
+                        <button onClick={handleEmailRemoveButtonClick}
+                                className="px-8 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
+                            Remove
+                        </button>
+                    </div>
+                </Modal.Footer>
+            </Modal>
+
+            {/* Email primary modal */}
+            <Modal size="lg"
+                   show={OpenEmailMakePrimaryModal}
+                   onClose={() => setOpenEmailMakePrimaryModal(false)}
+                   style={{
+                       backgroundColor: 'rgb(17 24 39 / 20%)',
+                       padding: '0px',
+                   }}
+                   className="modal_cntrl"
+            >
+                <Modal.Header>
+                    <h4 className="text-[16px]">
+                        Enter Password
+                    </h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="modal_body box">
+                        <p className="pb-4">
+                            To ensure security, please enter your password to verify that this
+                            request is authorized by you.
+                        </p>
+                        <h4 className="text-[14px]">
+                            Enter Password
+                        </h4>
+                        <input
+                            className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                            type="text"
+                            placeholder="******"
+                        />
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <div className="flex w-full items-center justify-between">
+                        <button onClick={() => setOpenEmailMakePrimaryModal(false)}
+                                className="px-8 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">
+                            Back
+                        </button>
+                        <button onClick={handleEmailPrimaryButtonClick}
+                                className="px-8 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
+                            Make Primary
+                        </button>
+                    </div>
+                </Modal.Footer>
+            </Modal>
+
+            {/* Phone remove modal */}
+            <Modal size="lg"
+                   show={OpenPhoneRemoveModal}
+                   onClose={() => setOpenPhoneRemoveModal(false)}
+                   style={{
+                       backgroundColor: 'rgb(17 24 39 / 20%)',
+                       padding: '0px',
+                   }}
+                   className="modal_cntrl"
+            >
+                <Modal.Header>
+                    <h4 className="text-[16px]">
+                        Enter Password
+                    </h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="modal_body box">
+                        <p className="pb-4">
+                            To ensure security, please enter your password to verify that this
+                            request is authorized by you.
+                        </p>
+                        <h4 className="text-[14px]">
+                            Enter Password
+                        </h4>
+                        <input
+                            className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                            type="text"
+                            placeholder="******"
+                        />
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <div className="flex w-full items-center justify-between">
+                        <button onClick={() => setOpenPhoneRemoveModal(false)}
+                                className="px-8 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">
+                            Back
+                        </button>
+                        <button onClick={handlePhoneRemoveButtonClick}
+                                className="px-8 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
+                            Remove
+                        </button>
+                    </div>
+                </Modal.Footer>
+            </Modal>
+
+            {/* Phone primary modal */}
+            <Modal size="lg"
+                   show={OpenPhoneMakePrimaryModal}
+                   onClose={() => setOpenPhoneMakePrimaryModal(false)}
+                   style={{
+                       backgroundColor: 'rgb(17 24 39 / 20%)',
+                       padding: '0px',
+                   }}
+                   className="modal_cntrl"
+            >
+                <Modal.Header>
+                    <h4 className="text-[16px]">
+                        Enter Password
+                    </h4>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="modal_body box">
+                        <p className="pb-4">
+                            To ensure security, please enter your password to verify that this
+                            request is authorized by you.
+                        </p>
+                        <h4 className="text-[14px]">
+                            Enter Password
+                        </h4>
+                        <input
+                            className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                            type="text"
+                            placeholder="******"
+                        />
+                    </div>
+                </Modal.Body>
+                <Modal.Footer>
+                    <div className="flex w-full items-center justify-between">
+                        <button onClick={() => setOpenPhoneMakePrimaryModal(false)}
+                                className="px-8 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">
+                            Back
+                        </button>
+                        <button onClick={handlePhonePrimaryButtonClick}
+                                className="px-8 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
+                            Make Primary
+                        </button>
+                    </div>
+                </Modal.Footer>
+            </Modal>
         </>
-    );
+    )
+        ;
 };
 
 export default Page;

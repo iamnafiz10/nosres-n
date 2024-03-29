@@ -558,8 +558,7 @@ const Page = () => {
                                     <Skeleton height={10} count={1}/>
                                 </>
                             ) : (
-                                <div
-                                    className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
+                                <div className="box mt-4 rounded flex items-start justify-between border p-4 bg-white">
                                     <div className="left">
                                         <h6 className="text-[14px] flex items-center gap-2">
                                             <HiComputerDesktop size={25}/>
