@@ -82,7 +82,7 @@ const Page = () => {
                                     </div>
 
                                     {/* Two factor Pop-Up Start */}
-                                    <Modal size="lg" dismissible show={openTwoFactorModal}
+                                    <Modal size="lg" show={openTwoFactorModal}
                                            onClose={() => setOpenTwoFactorModal(false)}>
                                         <Modal.Header>
                                             <h4 className="text-[16px]">

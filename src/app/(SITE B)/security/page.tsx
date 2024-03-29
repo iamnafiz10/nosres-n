@@ -341,11 +341,11 @@ const Page = () => {
                                         className={`box border px-2 py-2 rounded flex items-start gap-2 ${selectedOption === 'email' ? 'border-primary' : 'border-gray-300'}`}
                                         onClick={handleEmailClick}
                                     >
-                                        <PiEnvelopeLight size={18} className="text-gray-400"/>
+                                        <PiEnvelopeLight size={20} className="text-gray-400"/>
                                         <div className="content ml-[2px]">
                                             <h4 className="text-[12px]">Email</h4>
                                             <h4 className="text-[12px] text-[#828D9E] mt-1">
-                                                We’ll send you an email containing
+                                                We will send you an email containing
                                                 your authentication code
                                             </h4>
                                         </div>

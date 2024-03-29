@@ -25,7 +25,7 @@ const Page = () => {
                                 Your password must be at least eight characters long, including
                                 both upper and lowercase letters, as well as numbers. Please
                                 choose a strong password that you haven’t used on other websites
-                                and is not easily guessable by others
+                                and is not easily guessable by others.
                             </p>
                         </div>
                         <div className="block mt-4">

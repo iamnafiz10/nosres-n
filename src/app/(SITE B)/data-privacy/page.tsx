@@ -169,13 +169,16 @@ const Page = () => {
                     {/* Data */}
                     <div className="grid grid-cols-1 mb-4 info-wrapper">
                         <div className="mt-6 col w-full lg:w-[650px] py-6 px-8 bg-white rounded">
-                            <div className="head mb-2">
-                                <h6>Data</h6>
+                            <div className="head mb-2 flex items-start gap-2">
+                                <h6 className="mt-3">Data</h6>
+                                <h4 className="text-[12px] text-white bg-primary py-1 px-3 rounded">
+                                    BETA
+                                </h4>
                             </div>
                             <hr/>
                             <div className="mt-4 box">
                                 <p>
-                                    Turn important email notifications from Nosres on or off
+                                    Turn important email notifications from Nosres on or off.
                                 </p>
                             </div>
 
@@ -191,13 +194,13 @@ const Page = () => {
                                             Nosres Data Download
                                         </h6>
                                         <p>
-                                            Download a copy of your Nosres data
+                                            Download a copy of your Nosres data.
                                         </p>
                                     </div>
                                     <div className="right">
                                         <Link onClick={() => setOpenDataDownloadModal(true)} href='#'
                                               className="text-primary text-[14px]">
-                                            Request a copy of your data
+                                            Request a Copy of Your Data
                                         </Link>
                                     </div>
                                 </div>
@@ -211,7 +214,7 @@ const Page = () => {
                                         <h4 className="text-[16px]">
                                             Get a Copy of Your Nosres Data
                                         </h4>
-                                        <h4 className="text-[12px] -mt-5 text-white bg-primary py-1 px-3 rounded">
+                                        <h4 className="text-[12px] -mt-5 text-white bg-primary py-0 px-3 rounded">
                                             BETA
                                         </h4>
                                     </div>
@@ -225,7 +228,7 @@ const Page = () => {
                                             we will send you an email containing an encrypted file for you to
                                             download.<br/><br/>
                                             To ensure security, please provide your email and password to
-                                            verify that this data request is authorized by you
+                                            verify that this data request is authorized by you.
                                         </p>
                                         <h4 className="text-[14px]">
                                             Enter Email
@@ -237,7 +240,7 @@ const Page = () => {
                                             placeholder="johndoe@mail.com"
                                         />
                                         <h4 className="mt-4 text-[14px]">
-                                            Enter Authentication Code
+                                            Enter Password
                                         </h4>
                                         <div className="relative">
                                             <input
@@ -256,9 +259,6 @@ const Page = () => {
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <Link href='#' className="text-[14px] text-primary">Resend authentication
-                                            code</Link>
                                     </div>
                                 </Modal.Body>
                                 <Modal.Footer>
@@ -323,7 +323,7 @@ const Page = () => {
                                     <div className="right">
                                         <Link onClick={() => setOpenSearchClearModal(true)} href='#'
                                               className="text-primary text-[14px]">
-                                            Clear searches
+                                            Clear Searches
                                         </Link>
                                     </div>
                                 </div>
@@ -336,7 +336,7 @@ const Page = () => {
                                         <h4 className="text-[16px]">
                                             Clear Searches?
                                         </h4>
-                                        <h4 className="text-[12px] -mt-4 text-white bg-primary py-1 px-3 rounded">
+                                        <h4 className="text-[12px] -mt-4 text-white bg-primary py-0 px-3 rounded">
                                             BETA
                                         </h4>
                                     </div>
@@ -357,7 +357,7 @@ const Page = () => {
                                         </button>
                                         <button onClick={() => setOpenSearchClearModal(false)}
                                                 className="px-8 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">
-                                            Turn Off
+                                            Clear Searches
                                         </button>
                                     </div>
                                 </Modal.Footer>
@@ -376,7 +376,7 @@ const Page = () => {
                             <hr/>
                             <div className="mt-4 box">
                                 <p>
-                                    Decide whether you want to deactivate or delete your Nosres Account
+                                    Decide whether you want to deactivate or delete your Nosres Account.
                                 </p>
                             </div>
 
@@ -601,7 +601,7 @@ const Page = () => {
                                                 <div className="info-content gender_content">
                                                     <ul className="options">
                                                         <li onClick={() => handleOptionClickAccDlt("I have another Nosres Account")}>
-                                                            I have another Nosres Account
+                                                            I have another Nosres Account.
                                                         </li>
                                                         <li onClick={() => handleOptionClickAccDlt("I have concerns about my privacy and data.")}>
                                                             I have concerns about my privacy and data.
@@ -678,11 +678,6 @@ const Page = () => {
                                 <Modal.Body>
                                     <div className="modal_body box">
                                         <p className="pb-4">
-                                            Your account will be permanently deleted once you click “Delete”.
-                                            The deletion process may take up to three days. Once deleted, this
-                                            accountwill no longer be available — you will no longer be able to
-                                            sign in or access your content — and any documents associated
-                                            with it will be deleted. This action cannot be reversed.
                                             To ensure security, please enter your password to verify that this
                                             request is authorized by you.
                                         </p>

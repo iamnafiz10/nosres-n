@@ -75,8 +75,8 @@ const Page = () => {
                                            onClose={() => setOpenEmailModal(false)}>
                                         <Modal.Header>
                                             <div className="head text-[16px] flex items-start gap-2">
-                                                <h6 className="mt-3">Email Notifications</h6>
-                                                <h4 className="text-[12px] text-white bg-primary py-[1px] px-2 rounded">
+                                                <h6>Email Notifications</h6>
+                                                <h4 className="-mt-4 text-[12px] text-white bg-primary py-0 px-3 rounded">
                                                     BETA
                                                 </h4>
                                             </div>
@@ -176,8 +176,8 @@ const Page = () => {
                                            onClose={() => setOpenSmsModal(false)}>
                                         <Modal.Header>
                                             <div className="head text-[16px] flex items-start gap-2">
-                                                <h6 className="mt-3">SMS Notifications</h6>
-                                                <h4 className="text-[12px] text-white bg-primary py-[1px] px-2 rounded">
+                                                <h6>SMS Notifications</h6>
+                                                <h4 className="-mt-4 text-[12px] text-white bg-primary py-0 px-3 rounded">
                                                     BETA
                                                 </h4>
                                             </div>
