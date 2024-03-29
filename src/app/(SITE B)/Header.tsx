@@ -4,7 +4,7 @@ import {usePathname} from 'next/navigation';
 import Link from "next/link";
 import {HiOutlineMenuAlt2, HiUserCircle} from "react-icons/hi";
 import Image from "next/image";
-import LogoImg from "../../../public/assets/images/logo.svg";
+import LogoImg from "@/../public/assets/images/logo.svg";
 import {GoQuestion} from "react-icons/go";
 import {
     HiOutlineArrowRightOnRectangle, HiOutlineBell, HiOutlineCircleStack, HiOutlineCreditCard,
@@ -136,19 +136,19 @@ const Header = () => {
 
                         <hr/>
                         <li>
-                            <Link href='#' className="flex items-center p-2 rounded-lg hover:bg-gray-100 group">
+                            <Link href='b-home' className="flex items-center p-2 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineHome size={25}
-                                               className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
-                                <span className="ms-3">Home</span>
+                                               className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/b-home' ? 'text-primary' : ''}`}/>
+                                <span className={`ms-3 ${pathname === '/b-home' ? 'font-semibold' : ''}`}>Home</span>
                             </Link>
                         </li>
 
                         <li>
-                            <Link href='#'
+                            <Link href='personal-info'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineIdentification size={25}
-                                                         className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
-                                <span className="ms-3">Personal Information</span>
+                                                         className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/personal-info' ? 'text-primary' : ''}`}/>
+                                <span className={`ms-3 ${pathname === '/personal-info' ? 'font-semibold' : ''}`}>Personal Information</span>
                             </Link>
                         </li>
 

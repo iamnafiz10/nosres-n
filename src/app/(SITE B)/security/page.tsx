@@ -11,7 +11,6 @@ import {
 } from 'react-icons/hi2';
 import {LuDot} from "react-icons/lu";
 import {MdOutlineLaptopMac} from "react-icons/md";
-import Header from "@/app/(SITE B)/Header";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import {PiEnvelopeLight} from "react-icons/pi";
@@ -125,7 +124,6 @@ const Page = () => {
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB]">
-                <Header/>
                 {/* Dashboard Body */}
                 <div className="pt-14 p-4 sm:ml-64 md:ml-80 bg-gray-50">
                     <div className="pt-8 pb-2 flex items-center gap-1">

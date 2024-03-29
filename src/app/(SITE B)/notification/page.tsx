@@ -1,6 +1,5 @@
 "use client";
 import React, {useEffect, useState} from 'react';
-import Header from "@/app/(SITE B)/Header";
 import {
     HiOutlineBell,
 } from "react-icons/hi2";
@@ -29,7 +28,6 @@ const Page = () => {
     return (
         <>
             <section id="dashboard-section" className="bg-[#F9FAFB]">
-                <Header/>
                 {/* Dashboard Body */}
                 <div className="pt-14 p-4 sm:ml-64 md:ml-80 bg-gray-50 h-screen">
                     <div className="pt-8 pb-2 flex items-center gap-1">
