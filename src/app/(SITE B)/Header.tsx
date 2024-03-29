@@ -199,7 +199,7 @@ const Header = () => {
                             <Link href='/' className="text-[12px] hover:text-primary">Support</Link>
                         </div>
                         <h6 className="mt-1 text-gray-500 text-[12px]">
-                            © {currentYear} Nosres Inc. All rights reserved
+                            © {currentYear} Nosres Inc. All rights reserved.
                         </h6>
                     </div>
                 </div>

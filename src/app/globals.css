@@ -484,7 +484,6 @@ textarea {
 
 /* --------------- Loader Design --------------*/
 .loader-container {
-    margin-top: 100px;
     height: 200px;
     width: 400px;
     border: none;

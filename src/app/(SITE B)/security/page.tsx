@@ -274,6 +274,7 @@ const Page = () => {
                     {/* Turn On Enter Password Pop-Up Start */}
                     {modalType === ON_MODAL && (
                         <Modal size="lg"
+                               dismissible
                                show={isChecked}
                                onClose={handleCloseModal}
                         >
@@ -344,7 +345,7 @@ const Page = () => {
                                             <h4 className="text-[12px]">Email</h4>
                                             <h4 className="text-[12px] text-[#828D9E] mt-1">
                                                 We will send you an email containing
-                                                your authentication code
+                                                your authentication code.
                                             </h4>
                                         </div>
                                     </div>
