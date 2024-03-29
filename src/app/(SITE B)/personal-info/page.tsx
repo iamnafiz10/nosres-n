@@ -1064,6 +1064,7 @@ const Page = () => {
                                 )}
 
                                 <Modal size="lg"
+                                       dismissible={!openAddEmailModal && !OpenEmailMakePrimaryModal && !OpenEmailRemoveModal}
                                        show={openEmailModal}
                                        onClose={() => setOpenEmailModal(false)}
                                        style={{
@@ -1290,6 +1291,7 @@ const Page = () => {
                                 )}
                                 <Modal size="lg"
                                        show={openPhoneModal}
+                                       dismissible={!openAddPhoneModal && !OpenPhoneMakePrimaryModal && !OpenPhoneRemoveModal}
                                        onClose={() => setOpenPhoneModal(false)}
                                        style={{
                                            backgroundColor: 'rgb(17 24 39 / 50%)',

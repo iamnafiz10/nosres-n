@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Label, Modal, Radio} from 'flowbite-react';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -274,7 +274,7 @@ const Page = () => {
                     {/* Turn On Enter Password Pop-Up Start */}
                     {modalType === ON_MODAL && (
                         <Modal size="lg"
-                               dismissible
+                               dismissible={!openSelectEmailPhone}
                                show={isChecked}
                                onClose={handleCloseModal}
                         >
@@ -421,7 +421,7 @@ const Page = () => {
                     </Modal>
 
                     {/* Two factor Phone Pop-Up Start */}
-                    <Modal size="lg" dismissible show={openTwoFactorPhoneModal}
+                    <Modal size="lg" show={openTwoFactorPhoneModal}
                            onClose={() => setOpenTwoFactorPhoneModal(false)}
                            style={{
                                backgroundColor: 'rgb(17 24 39 / 20%)',
@@ -500,6 +500,7 @@ const Page = () => {
                     {modalType === OFF_MODAL && (
                         <Modal size="lg"
                                show={!isChecked}
+                               dismissible
                                onClose={handleCloseModal}
                         >
                             <Modal.Header>

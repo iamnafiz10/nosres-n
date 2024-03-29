@@ -208,14 +208,9 @@ const Page = () => {
                             <Modal size="lg" dismissible show={openDataDownloadModal}
                                    onClose={() => setOpenDataDownloadModal(false)}>
                                 <Modal.Header>
-                                    <div className="flex items-start gap-5">
-                                        <h4 className="text-[16px]">
-                                            Get a Copy of Your Nosres Data
-                                        </h4>
-                                        <h4 className="text-[12px] -mt-5 text-white bg-primary py-0 px-3 rounded">
-                                            BETA
-                                        </h4>
-                                    </div>
+                                    <h4 className="text-[16px]">
+                                        Get a Copy of Your Nosres Data
+                                    </h4>
                                 </Modal.Header>
                                 <Modal.Body>
                                     <div className="modal_body box">
@@ -330,14 +325,9 @@ const Page = () => {
                             <Modal size="lg" dismissible show={openSearchClearModal}
                                    onClose={() => setOpenSearchClearModal(false)}>
                                 <Modal.Header>
-                                    <div className="flex items-start gap-5 pb-4">
-                                        <h4 className="text-[16px]">
-                                            Clear Searches?
-                                        </h4>
-                                        <h4 className="text-[12px] -mt-4 text-white bg-primary py-0 px-3 rounded">
-                                            BETA
-                                        </h4>
-                                    </div>
+                                    <h4 className="text-[16px]">
+                                        Clear Searches?
+                                    </h4>
                                 </Modal.Header>
                                 <Modal.Body>
                                     <div className="modal_body box">
@@ -403,7 +393,9 @@ const Page = () => {
                             )}
 
                             {/* Account deactivate Pop-Up Start */}
-                            <Modal size="lg" show={OpenAccountDeactivateModal}
+                            <Modal size="lg"
+                                   dismissible={!OpenDeactivateConfirmModal}
+                                   show={OpenAccountDeactivateModal}
                                    onClose={() => setOpenAccountDeactivateModal(false)}
                                    style={{
                                        backgroundColor: 'rgb(17 24 39 / 20%)',
@@ -564,7 +556,9 @@ const Page = () => {
                             )}
 
                             {/* Account Delete Pop-Up Start */}
-                            <Modal size="lg" show={OpenAccountDeleteModal}
+                            <Modal size="lg"
+                                   dismissible={!OpenDeleteConfirmModal}
+                                   show={OpenAccountDeleteModal}
                                    onClose={() => setOpenAccountDeleteModal(false)}
                                    style={{
                                        backgroundColor: 'rgb(17 24 39 / 20%)',

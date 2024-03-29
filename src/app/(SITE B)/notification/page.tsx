@@ -74,9 +74,6 @@ const Page = () => {
                                         <Modal.Header>
                                             <div className="head text-[16px] flex items-start gap-2">
                                                 <h6>Email Notifications</h6>
-                                                <h4 className="-mt-4 text-[12px] text-white bg-primary py-0 px-3 rounded">
-                                                    BETA
-                                                </h4>
                                             </div>
                                         </Modal.Header>
                                         <Modal.Body>
@@ -175,9 +172,6 @@ const Page = () => {
                                         <Modal.Header>
                                             <div className="head text-[16px] flex items-start gap-2">
                                                 <h6>SMS Notifications</h6>
-                                                <h4 className="-mt-4 text-[12px] text-white bg-primary py-0 px-3 rounded">
-                                                    BETA
-                                                </h4>
                                             </div>
                                         </Modal.Header>
                                         <Modal.Body>
