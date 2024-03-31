@@ -525,6 +525,10 @@ textarea {
     bottom: 10px;
 }
 
+.css-1c0ed4l div {
+    margin: 3px;
+}
+
 
 /* ------------------- Media Query ----------------*/
 @media only screen and (max-width: 1100px) {
