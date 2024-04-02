@@ -305,7 +305,7 @@ const Page = () => {
     };
 
     const notify = () => {
-        toast.success('Your email has been verified', {
+        toast.info('Your email has been verified.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,
@@ -339,7 +339,7 @@ const Page = () => {
     };
 
     const notifyP = () => {
-        toast.success('Your phone has been verified', {
+        toast.success('Your phone has been verified.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,
@@ -386,7 +386,7 @@ const Page = () => {
 
     // Notify Email remove
     const notifyEmailRemove = () => {
-        toast.warning('Your email has been removed successfully', {
+        toast.warning('Your email has been removed successfully.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,
@@ -410,7 +410,7 @@ const Page = () => {
 
     // Notify Email primary
     const notifyEmailPrimary = () => {
-        toast.success('This email has been successfully set as the primary', {
+        toast.success('This email has been successfully set as the primary.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,
@@ -460,7 +460,7 @@ const Page = () => {
 
     // Notify Phone primary
     const notifyPhonePrimary = () => {
-        toast.success('Your phone number has been successfully set as the primary', {
+        toast.success('Your phone number has been successfully set as the primary.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,

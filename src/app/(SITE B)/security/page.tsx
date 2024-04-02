@@ -88,7 +88,7 @@ const Page = () => {
     };
 
     const notify = () => {
-        toast.success('Two-factor authentication has been successfully activated', {
+        toast.success('Two-factor authentication has been successfully activated.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,
