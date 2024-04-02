@@ -73,7 +73,7 @@ const Page = () => {
     };
 
     const notify = () => {
-        toast.info('✅ Your Nosres Account has been deactivated successfully.', {
+        toast.warn('Your Nosres Account has been deactivated successfully.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,
@@ -134,7 +134,7 @@ const Page = () => {
     };
 
     const notifyDelete = () => {
-        toast.info('✅ Your Nosres Account has been deleted successfully.', {
+        toast.error('Your Nosres Account has been deleted successfully.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,

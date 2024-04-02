@@ -1,6 +1,7 @@
 import '@/./app/globals.css';
-import { ToastContainer } from "react-toastify";
+import {ToastContainer} from "react-toastify";
 import Header from "@/app/(SITE B)/Header";
+import React from "react";
 
 export const metadata = {
     title: 'Nosres',
@@ -17,7 +18,9 @@ export default function RootLayout({
         <body>
         <Header/>
         {children}
-        <ToastContainer/>
+        <ToastContainer
+            bodyClassName="toastBody"
+        />
         </body>
         </html>
     )

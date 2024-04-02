@@ -529,6 +529,43 @@ textarea {
     margin: 3px;
 }
 
+/*--------------- Toastify Message Design ------------------*/
+.toastBody {
+    font-size: 14px;
+}
+
+/* Success */
+.Toastify__toast-theme--colored.Toastify__toast--success {
+    background: rgb(71 174 116 / 17%) !important;
+    color: #47AE74 !important;
+    border: 1.5px solid #47AE74 !important;
+}
+
+.Toastify__toast--success .Toastify__close-button > svg {
+    color: #47AE74 !important;
+}
+
+/* Warning */
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+    background: rgb(253 246 178 / 67%) !important;
+    color: #C27839 !important;
+    border: 1.5px solid #C27839 !important;
+}
+
+.Toastify__toast--warning .Toastify__close-button > svg {
+    color: #C27839 !important;
+}
+
+/* Error */
+.Toastify__toast-theme--colored.Toastify__toast--error {
+    background: rgba(255, 0, 0, 0.28) !important;
+    color: #b22020 !important;
+    border: 1.5px solid #b22020 !important;
+}
+
+.Toastify__toast--error .Toastify__close-button > svg {
+    color: darkred !important;
+}
 
 /* ------------------- Media Query ----------------*/
 @media only screen and (max-width: 1100px) {

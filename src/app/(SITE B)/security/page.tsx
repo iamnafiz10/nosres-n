@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Label, Modal, Radio} from 'flowbite-react';
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -88,7 +88,7 @@ const Page = () => {
     };
 
     const notify = () => {
-        toast.info('✅ Two-factor authentication has been successfully activated', {
+        toast.success('Two-factor authentication has been successfully activated', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,
@@ -106,7 +106,7 @@ const Page = () => {
     };
 
     const notifyOff = () => {
-        toast.info('✅ Two-factor authentication has been successfully deactivated.', {
+        toast.warn('Two-factor authentication has been successfully deactivated.', {
             position: "top-center",
             autoClose: 3000,
             hideProgressBar: false,
