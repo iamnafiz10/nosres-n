@@ -483,6 +483,15 @@ textarea {
 }
 
 /* --------------- Loader Design --------------*/
+.css-1c0ed4l {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh !important;
+    text-align: center !important;
+}
+
+
 .loader-container {
     height: 200px;
     width: 400px;
