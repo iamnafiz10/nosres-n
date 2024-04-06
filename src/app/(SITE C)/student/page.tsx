@@ -1,12 +1,12 @@
 "use client";
 import React, {useEffect, useState} from 'react';
 import PulseLoader from "@/app/PulseLoader";
-import Hero from '@/app/(SITE C)/culture/components/Hero/page';
-import Vision from '@/app/(SITE C)/culture/components/Vision/page';
-import Misson from '@/app/(SITE C)/culture/components/Misson/page';
-import Values from '@/app/(SITE C)/culture/components/Values/page';
-import Ethics from '@/app/(SITE C)/culture/components/Ethics/page';
-import FooterUp from '@/app/(SITE C)/culture/components/FooterUp/page';
+import Hero from '@/app/(SITE C)/student/components/Hero/page';
+import Program from '@/app/(SITE C)/student/components/Program/page';
+import Intern from '@/app/(SITE C)/student/components/Intern/page';
+import Together from '@/app/(SITE C)/student/components/Together/page';
+import Different from '@/app/(SITE C)/student/components/Different/page';
+import Graduation from '@/app/(SITE C)/student/components/Graduation/page';
 import useTitle from "@/app/useTitle";
 
 const Page = () => {
@@ -19,7 +19,7 @@ const Page = () => {
 
         return () => clearTimeout(timer);
     }, []);
-    useTitle("Nosres Culture")
+    useTitle("Nosres at Student")
     return (
         <>
             {showLoader && (
@@ -33,11 +33,11 @@ const Page = () => {
             {!showLoader && (
                 <>
                     <Hero/>
-                    <Vision/>
-                    <Misson/>
-                    <Values/>
-                    <Ethics/>
-                    <FooterUp/>
+                    <Program/>
+                    <Intern/>
+                    <Together/>
+                    <Different/>
+                    <Graduation/>
                 </>
             )}
         </>
