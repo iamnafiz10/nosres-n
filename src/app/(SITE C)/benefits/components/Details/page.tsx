@@ -32,21 +32,35 @@ const Page = () => {
                                 benefits for them at no cost.
                             </p>
                             <ul className="mt-4 space-y-1">
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    On-site balanced meals and healthy snacks
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                    <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">On-site balanced meals and healthy snacks</div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Nearby fitness centers to exercise regularly and be physically active
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                    <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">Nearby fitness centers to exercise regularly and
+                                        be physically active
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Medical, dental, and vision insurance for employees and dependents
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                    <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Medical, dental, and vision insurance for employees and dependents
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Assistance programs that help with mental health
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                    <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Assistance programs that help with mental health
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -74,21 +88,37 @@ const Page = () => {
                                 to reduce stress. They are as follows:
                             </p>
                             <ul className="mt-4 space-y-1">
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    On-site balanced meals and healthy snacks
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                    <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Competitive compensation
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Nearby fitness centers to exercise regularly and be physically active
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                    <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Financial coaching
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Medical, dental, and vision insurance for employees and dependents
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                   <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Competitive retirement plan
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Assistance programs that help with mental health
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                     <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Bonus and equity awards
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -106,8 +136,8 @@ const Page = () => {
                                     <path
                                         d="M50.0002 3.69995C75.5002 3.69995 96.3002 24.5 96.3002 50C96.3002 75.5 75.5002 96.3 50.0002 96.3C24.5002 96.3 3.7002 75.5 3.7002 50C3.7002 24.5 24.5002 3.69995 50.0002 3.69995ZM50.0002 0.699951C22.8002 0.699951 0.700195 22.7999 0.700195 50C0.700195 77.2 22.8002 99.3 50.0002 99.3C77.2002 99.3 99.3002 77.2 99.3002 50C99.3002 22.7999 77.2002 0.699951 50.0002 0.699951Z"
                                         fill="#4C7EB8"></path>
-                                    <path d="M50 71V50L63.8 36.2" stroke="#4C7EB8" stroke-width="3"
-                                          stroke-miterlimit="10"></path>
+                                    <path d="M50 71V50L63.8 36.2" stroke="#4C7EB8" strokeWidth="3"
+                                          strokeMiterlimit="10"></path>
                                 </g>
                                 <defs>
                                     <clipPath id="clip0_815_405">
@@ -122,13 +152,21 @@ const Page = () => {
                                 pursue their interests outside of work whenever they need it.
                             </p>
                             <ul className="mt-4 space-y-1">
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Regular paid time off work to recharge.
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                      <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Regular paid time off work to recharge.
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Remote and hybrid work flexibility.
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                      <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Remote and hybrid work flexibility.
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -176,17 +214,29 @@ const Page = () => {
                                 them.
                             </p>
                             <ul className="mt-4 space-y-1">
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Paid parental (maternity, paternity, and adoption) leave for new parents
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                        <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Paid parental (maternity, paternity, and adoption) leave for new parents
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Subsidized backup childcare
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                        <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Subsidized backup childcare
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Parenting classes
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                        <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Parenting classes
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -247,17 +297,29 @@ const Page = () => {
                                 communities both internally and externally.
                             </p>
                             <ul className="mt-4 space-y-1">
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Education, including online classes
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                         <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Education, including online classes
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    Internal employee clubs to connect with other employees
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                         <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        Internal employee clubs to connect with other employees
+                                    </div>
                                 </li>
-                                <li className="flex items-center gap-1 text-[14px] text-[#828D9E]">
-                                    <HiOutlineCheck size={30} className="text-primary"/>
-                                    External community groups to volunteer and make a difference
+                                <li className="flex items-center text-[14px] text-[#828D9E]">
+                                         <span className="w-10">
+                                        <HiOutlineCheck size={30} className="text-primary"/>
+                                    </span>
+                                    <div className="w-full">
+                                        External community groups to volunteer and make a difference
+                                    </div>
                                 </li>
                             </ul>
                         </div>
