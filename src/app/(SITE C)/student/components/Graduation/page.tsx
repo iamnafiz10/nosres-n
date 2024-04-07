@@ -18,15 +18,11 @@ const Page = () => {
                                 after you graduate from school, we will always be happy to welcome you back. We enjoy
                                 working with great minds from different cultural and academic backgrounds.
                             </p>
-
-                            <div
-                                className="mt-8 flex cursor-pointer items-center gap-1 justify-start text-primary hover:text-[#3A5F8A]">
+                            <button type='button'
+                                    className="mt-8 text-[14px] flex cursor-pointer items-center gap-1 justify-start text-primary hover:text-[#3A5F8A]">
                                 <HiOutlineArrowRightCircle size={30}/>
-                                <Link href='#'
-                                      className="text-[14px]">
-                                    See available job opportunities
-                                </Link>
-                            </div>
+                                See available internships
+                            </button>
                         </div>
                         <div className="col">
                             <Image src={GraduationImg} alt="BenefitImg"/>
