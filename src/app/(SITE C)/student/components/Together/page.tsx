@@ -11,7 +11,7 @@ const Page = () => {
                 <div className="container py-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="col mt-2">
-                            <Image src={TogetherImg} className="rounded" alt="BenefitImg"/>
+                            <Image src={TogetherImg} alt="BenefitImg"/>
                         </div>
                         <div className="col">
                             <h4 className="text-[24px]">Come and build the future together!</h4>

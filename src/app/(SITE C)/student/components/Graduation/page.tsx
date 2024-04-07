@@ -29,7 +29,7 @@ const Page = () => {
                             </div>
                         </div>
                         <div className="col">
-                            <Image src={GraduationImg} className="rounded" alt="BenefitImg"/>
+                            <Image src={GraduationImg} alt="BenefitImg"/>
                         </div>
                     </div>
                 </div>
