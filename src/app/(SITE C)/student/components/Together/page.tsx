@@ -14,7 +14,7 @@ const Page = () => {
                             <Image src={TogetherImg} alt="BenefitImg"/>
                         </div>
                         <div className="col">
-                            <h4 className="text-[24px]">Come and build the future together!</h4>
+                            <h4 className="text-[24px]">Let’s come together and build the future!</h4>
                             <p className="mt-4">
                                 At Nosres, we look to the future. And we believe you can play a part in helping us shape
                                 it and make an impact in the world. Therefore, we will treat you as a full-time

@@ -1,22 +1,21 @@
 import React from 'react';
+import Image from "next/image";
+import ProgramImg from "../../../../../../public/assets/images/sitec/g-program.jpg";
 import {HiOutlineArrowRightCircle} from "react-icons/hi2";
 import Link from "next/link";
-import Image from "next/image";
-import GraduationImg from "../../../../../../public/assets/images/sitec/graduation.jpg";
 
 const Page = () => {
     return (
         <>
-            <section id="student-graduation-section">
+            <section id="student-program-section">
                 <div className="container pt-28 pb-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="col">
-                            <h4 className="text-[24px]">Career Opportunities After Graduation</h4>
+                            <h4 className="text-[24px]">About Nosres Recent Graduate Program</h4>
                             <p className="mt-4">
-                                The Nosres Internship Program will equip you with a sturdy foundation to build any
-                                career you desire. However, if you want to apply for a full-time position at Nosres
-                                after you graduate from school, we will always be happy to welcome you back. We enjoy
-                                working with great minds from different cultural and academic backgrounds.
+                                The Nosres Recent Graduate Program is designed for highly motivated recent graduates
+                                who, within the previous two years, graduated from qualifying educational institutions
+                                with a bachelor’s, master’s, or doctorate degree.
                             </p>
 
                             <div
@@ -24,12 +23,12 @@ const Page = () => {
                                 <HiOutlineArrowRightCircle size={30}/>
                                 <Link href='#'
                                       className="text-[14px]">
-                                    See available job opportunities
+                                    See available recent graduates opportunities
                                 </Link>
                             </div>
                         </div>
                         <div className="col">
-                            <Image src={GraduationImg} alt="BenefitImg"/>
+                            <Image src={ProgramImg} alt="BenefitImg"/>
                         </div>
                     </div>
                 </div>
