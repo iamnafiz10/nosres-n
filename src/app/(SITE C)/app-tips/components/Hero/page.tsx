@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import BenefitImg from '@/../public/assets/images/sitec/benefits1.jpg';
+import AppTipsImg from '@/../public/assets/images/sitec/app-tips.jpg';
 
 const Page = () => {
     return (
@@ -9,17 +9,16 @@ const Page = () => {
                 <div className="container pt-28 pb-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="col">
-                            <h4 className="text-[24px]">Benefits at Nosres</h4>
+                            <h4 className="text-[24px]">General Application Tips</h4>
                             <p className="mt-4">
-                                At Nosres, we care for and support our employees and their families. We cannot
-                                accomplish our mission unless our employees and their loved ones are healthy and well.
-                                Therefore, we considerately design benefit programs to ensure that they are physically,
-                                mentally, and financially healthy and well. Learn what types of benefits Nosres will
-                                provide.
+                                Writing a successful job application can be mentally and physically tiring. Therefore,
+                                we want to help you utilize your time and energy effectively and efficiently when
+                                applying for a job at Nosres. Follow the following tips to stand out and increase the
+                                likelihood of interviewing. They are applicable to all roles.
                             </p>
                         </div>
                         <div className="col">
-                            <Image src={BenefitImg} alt="BenefitImg"/>
+                            <Image src={AppTipsImg} alt="AppTipsImg"/>
                         </div>
                     </div>
                 </div>

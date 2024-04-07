@@ -2,6 +2,7 @@
 import React, {useEffect, useState} from 'react';
 import PulseLoader from "@/app/PulseLoader";
 import Hero from "@/app/(SITE C)/app-tips/components/Hero/page";
+import Details from "@/app/(SITE C)/app-tips/components/Details/page";
 import useTitle from "@/app/useTitle";
 
 const Page = () => {
@@ -29,6 +30,7 @@ const Page = () => {
                 {!showLoader && (
                     <>
                         <Hero/>
+                        <Details/>
                     </>
                 )}
             </>
