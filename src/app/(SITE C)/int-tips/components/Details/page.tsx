@@ -24,7 +24,7 @@ const Page = () => {
                                     <h4 className="text-[24px]">
                                         Pre-Interview
                                     </h4>
-                                    <ul className="space-y-8">
+                                    <ul className="space-y-8 text-[#39393b]">
                                         <li className="mt-2 list-disc">
                                             <b>Do your homework.</b> It is essential to research the company’s products
                                             and
