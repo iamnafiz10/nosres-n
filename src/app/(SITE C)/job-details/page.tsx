@@ -89,7 +89,7 @@ const Page = () => {
                                 {/* Job Details */}
                                 <div className="box mt-4 bg-white py-4 px-6 rounded">
                                     <div className="wrap pb-4">
-                                        <h4 className="text-[16px] text-black">
+                                        <h4 className="text-[16px] font-semibold text-black">
                                             Overview
                                         </h4>
                                         <h4 className="mt-2 text-[14px] text-[#39393b]">
@@ -116,7 +116,7 @@ const Page = () => {
                                     </div>
                                     <hr/>
                                     <div className="wrap pt-4 pb-4">
-                                        <h4 className="text-[16px] text-black">
+                                        <h4 className="text-[16px] font-semibold text-black">
                                             Responsibilities
                                         </h4>
                                         <h4 className="mt-2 text-[14px] text-[#39393b]">
@@ -140,7 +140,7 @@ const Page = () => {
                                     </div>
                                     <hr/>
                                     <div className="wrap pt-4 pb-4">
-                                        <h4 className="text-[16px] text-black">
+                                        <h4 className="text-[16px] font-semibold text-black">
                                             Education and Experience
                                         </h4>
                                         <h4 className="mt-2 text-[14px] text-[#39393b]">
@@ -164,7 +164,7 @@ const Page = () => {
                                     </div>
                                     <hr/>
                                     <div className="wrap pt-4 pb-4">
-                                        <h4 className="text-[16px] text-black">
+                                        <h4 className="text-[16px] font-semibold text-black">
                                             Key Requirements and Skills
                                         </h4>
                                         <h4 className="mt-2 text-[14px] text-[#39393b]">
@@ -188,7 +188,7 @@ const Page = () => {
                                     </div>
                                     <hr/>
                                     <div className="wrap pt-4 pb-4">
-                                        <h4 className="text-[16px] text-black">
+                                        <h4 className="text-[16px] font-semibold text-black">
                                             Additional Requirements
                                         </h4>
                                         <h4 className="mt-2 text-[14px] text-[#39393b]">
@@ -231,11 +231,12 @@ const Page = () => {
                                         </div>
                                         {isBookmarkedOne ? (
                                             <a href="#" className="right text-primary" onClick={toggleBookmarkOne}>
-                                                <HiBookmark />
+                                                <HiBookmark/>
                                             </a>
                                         ) : (
-                                            <a href="#" className="right hover:text-primary" onClick={toggleBookmarkOne}>
-                                                <HiOutlineBookmark />
+                                            <a href="#" className="right hover:text-primary"
+                                               onClick={toggleBookmarkOne}>
+                                                <HiOutlineBookmark/>
                                             </a>
                                         )}
                                     </div>
@@ -248,11 +249,12 @@ const Page = () => {
                                         </div>
                                         {isBookmarkedTwo ? (
                                             <a href="#" className="right text-primary" onClick={toggleBookmarkTwo}>
-                                                <HiBookmark />
+                                                <HiBookmark/>
                                             </a>
                                         ) : (
-                                            <a href="#" className="right hover:text-primary" onClick={toggleBookmarkTwo}>
-                                                <HiOutlineBookmark />
+                                            <a href="#" className="right hover:text-primary"
+                                               onClick={toggleBookmarkTwo}>
+                                                <HiOutlineBookmark/>
                                             </a>
                                         )}
                                     </div>
@@ -265,11 +267,12 @@ const Page = () => {
                                         </div>
                                         {isBookmarkedThree ? (
                                             <a href="#" className="right text-primary" onClick={toggleBookmarkThree}>
-                                                <HiBookmark />
+                                                <HiBookmark/>
                                             </a>
                                         ) : (
-                                            <a href="#" className="right hover:text-primary" onClick={toggleBookmarkThree}>
-                                                <HiOutlineBookmark />
+                                            <a href="#" className="right hover:text-primary"
+                                               onClick={toggleBookmarkThree}>
+                                                <HiOutlineBookmark/>
                                             </a>
                                         )}
                                     </div>
