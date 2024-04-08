@@ -2,6 +2,8 @@
 import React, {useEffect, useRef, useState, ChangeEvent} from 'react';
 import {IoAlertCircle} from "react-icons/io5";
 import {ImAttachment} from "react-icons/im";
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
     HiOutlinePlusCircle,
     HiOutlineMinusCircle,
@@ -10,7 +12,6 @@ import {
     HiOutlineMapPin, HiOutlineClock,
 } from "react-icons/hi2";
 import {Checkbox, Label, Modal, Radio} from "flowbite-react";
-import Link from "next/link";
 
 const Page = () => {
 
@@ -207,6 +208,56 @@ const Page = () => {
         };
     }, []);
 
+    // Submit
+    const notify = () => {
+        toast.success('Your application has been successfully submitted', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+    const handleSubmitSubmission = () => {
+        notify();
+    };
+
+    // Draft
+    const notifyDraft = () => {
+        toast.warning('You have already applied for this job.', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+    const handleDraftSubmission = () => {
+        notifyDraft();
+    };
+
+    // Cancel
+    const notifyCancel = () => {
+        toast.warning('You have reached the application limit.', {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+    };
+    const handleCancelSubmission = () => {
+        notifyCancel();
+    };
     return (
         <>
             <section id="user-details-section" className="bg-[#F9FAFB] h-[100%]">
@@ -1210,15 +1261,15 @@ const Page = () => {
 
                                     <div
                                         className="mt-6 block space-y-6 sm:space-y-0 sm:flex items-center gap-4 justify-end">
-                                        <button type='button'
+                                        <button onClick={handleCancelSubmission} type='button'
                                                 className="w-full sm:w-auto py-2 px-8 text-[14px] border border-primary text-white bg-primary hover:bg-transparent hover:border-primary hover:text-black rounded">Cancel
                                         </button>
-                                        <button type='button'
+                                        <button onClick={handleDraftSubmission} type='button'
                                                 className="w-full sm:w-auto py-2 px-8 text-[14px] border border-primary text-primary bg-transparent hover:bg-primary hover:border-primary hover:text-white rounded">Save
                                             Draft
                                         </button>
-                                        <button
-                                            className="w-full sm:w-auto text-primary hover:bg-primary hover:text-white rounded px-6 py-2 border text-[14px]">
+                                        <button onClick={handleSubmitSubmission} type='button'
+                                                className="w-full sm:w-auto text-primary hover:bg-primary hover:text-white rounded px-6 py-2 border text-[14px]">
                                             Submit Application
                                         </button>
                                     </div>
