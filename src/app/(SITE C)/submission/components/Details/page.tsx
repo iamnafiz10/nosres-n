@@ -582,7 +582,7 @@ const Page = () => {
                                     </div>
 
                                     <button onClick={() => setOpenEducationModal(true)}
-                                            className="mt-4 text-primary flex items-center gap-1 text-[14px]">
+                                            className={`mt-4 text-primary flex items-center gap-1 text-[14px] ${isEducationBoxVisible ? '' : 'hidden'}`}>
                                         <HiOutlinePlusCircle size={17}/>
                                         Add Another Degree
                                     </button>
@@ -828,7 +828,7 @@ const Page = () => {
                                     </div>
 
                                     <button onClick={() => setOpenExperienceModal(true)}
-                                            className="mt-4 text-primary flex items-center gap-1 text-[14px]">
+                                            className={`mt-4 text-primary flex items-center gap-1 text-[14px] ${isExperienceBoxVisible ? '' : 'hidden'}`}>
                                         <HiOutlinePlusCircle size={17}/>
                                         Add Another Experience
                                     </button>
