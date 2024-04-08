@@ -25,6 +25,12 @@ const Page = () => {
     }, []);
     useTitle("Job Details")
 
+    const [isBookmarked, setIsBookmarked] = useState(false);
+
+    const toggleBookmark = () => {
+        setIsBookmarked(prevState => !prevState);
+    };
+
     const [isBookmarkedOne, setIsBookmarkedOne] = useState(false);
 
     const toggleBookmarkOne = () => {
@@ -82,7 +88,16 @@ const Page = () => {
                                     <hr/>
                                     <div className="flex items-center gap-4 mt-2">
                                         <HiOutlineArrowPath size={15} className="cursor-pointer hover:text-primary"/>
-                                        <HiOutlineBookmark size={15} className="cursor-pointer hover:text-primary"/>
+                                        {isBookmarked ? (
+                                            <a href="#" className="right text-primary" onClick={toggleBookmark}>
+                                                <HiBookmark size={15}/>
+                                            </a>
+                                        ) : (
+                                            <a href="#" className="right hover:text-primary"
+                                               onClick={toggleBookmark}>
+                                                <HiOutlineBookmark size={15}/>
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
 

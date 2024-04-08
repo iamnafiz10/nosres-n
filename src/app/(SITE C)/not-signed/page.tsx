@@ -41,7 +41,7 @@ const Page = () => {
                             </p>
                             <button type='button'
                                     className="mt-4 rounded hover:bg-primary hover:text-white text-[14px] text-primary py-1 px-6 border">
-                                Create a Profile
+                                Create Your Careers Profile
                             </button>
                         </div>
                     </div>
