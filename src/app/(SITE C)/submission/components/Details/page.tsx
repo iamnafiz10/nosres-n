@@ -298,7 +298,7 @@ const Page = () => {
                                     <IoAlertCircle/>
                                     <h4 className="text-[12px]">
                                         This information is part of your profile, and any updates made here will be
-                                        reflected in your profile
+                                        reflected in your profile.
                                     </h4>
                                 </div>
                             </div>
@@ -530,7 +530,7 @@ const Page = () => {
                                     <div id="checkbox" className="py-3">
                                         <div className="flex items-center gap-2">
                                             <Checkbox onClick={handleEducationCheckboxClick} id="education1"
-                                                      defaultChecked/>
+                                            />
                                             <Label htmlFor="education1"
                                                    className="text-gray-500 font-normal">
                                                 I didn’t attend college
@@ -776,7 +776,7 @@ const Page = () => {
                                     <div id="checkbox" className="py-3">
                                         <div className="flex items-center gap-2">
                                             <Checkbox onClick={handleExperienceCheckboxClick} id="exprience1"
-                                                      defaultChecked/>
+                                            />
                                             <Label htmlFor="exprience1"
                                                    className="text-gray-500 font-normal">
                                                 I don’t have prior experience
