@@ -533,7 +533,7 @@ const Page = () => {
                                             />
                                             <Label htmlFor="education1"
                                                    className="text-gray-500 font-normal">
-                                                I didn’t attend college
+                                                I didn’t attend college.
                                             </Label>
                                         </div>
                                     </div>
@@ -779,7 +779,7 @@ const Page = () => {
                                             />
                                             <Label htmlFor="exprience1"
                                                    className="text-gray-500 font-normal">
-                                                I don’t have prior experience
+                                                I don’t have prior experience.
                                             </Label>
                                         </div>
                                     </div>
