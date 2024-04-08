@@ -33,7 +33,7 @@ const Page = () => {
                             className="box flex flex-col items-center rounded justify-center py-8 px-6 bg-white box text-center">
                             <Image src={JobImg} alt="JobImg"/>
                             <h4 className="text-[16px] mt-2">
-                                Create Your Nosres Pofile
+                                Create Your Careers Profile
                             </h4>
                             <p className="mt-2">
                                 Create a careers profile to save your information and easily apply<br/>
@@ -41,7 +41,7 @@ const Page = () => {
                             </p>
                             <button type='button'
                                     className="mt-4 rounded hover:bg-primary hover:text-white text-[14px] text-primary py-1 px-6 border">
-                                Create Your Careers Profile
+                                Create a Profile
                             </button>
                         </div>
                     </div>
