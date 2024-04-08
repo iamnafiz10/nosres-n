@@ -5,6 +5,7 @@ import {
     HiOutlineMapPin,
     HiOutlineClock,
     HiOutlineBookmark,
+    HiBookmark,
     HiOutlineArrowPath,
 } from "react-icons/hi2";
 import Link from "next/link";
@@ -23,6 +24,24 @@ const Page = () => {
         return () => clearTimeout(timer);
     }, []);
     useTitle("Job Details")
+
+    const [isBookmarkedOne, setIsBookmarkedOne] = useState(false);
+
+    const toggleBookmarkOne = () => {
+        setIsBookmarkedOne(prevState => !prevState);
+    };
+
+    const [isBookmarkedTwo, setIsBookmarkedTwo] = useState(false);
+
+    const toggleBookmarkTwo = () => {
+        setIsBookmarkedTwo(prevState => !prevState);
+    };
+
+    const [isBookmarkedThree, setIsBookmarkedThree] = useState(false);
+
+    const toggleBookmarkThree = () => {
+        setIsBookmarkedThree(prevState => !prevState);
+    };
     return (
         <>
             {showLoader && (
@@ -73,7 +92,7 @@ const Page = () => {
                                         <h4 className="text-[16px] text-black">
                                             Overview
                                         </h4>
-                                        <p className="mt-2">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants
@@ -93,14 +112,14 @@ const Page = () => {
                                             acquire
                                             valuable
                                             hands-on experience in your degree.
-                                        </p>
+                                        </h4>
                                     </div>
                                     <hr/>
                                     <div className="wrap pt-4 pb-4">
                                         <h4 className="text-[16px] text-black">
                                             Responsibilities
                                         </h4>
-                                        <p className="mt-2">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants to
@@ -117,14 +136,14 @@ const Page = () => {
                                             with other interns. As a result, you will be able to sharpen your skills and
                                             acquire valuable
                                             hands-on experience in your degree.
-                                        </p>
+                                        </h4>
                                     </div>
                                     <hr/>
                                     <div className="wrap pt-4 pb-4">
                                         <h4 className="text-[16px] text-black">
                                             Education and Experience
                                         </h4>
-                                        <p className="mt-2">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants to
@@ -141,14 +160,14 @@ const Page = () => {
                                             with other interns. As a result, you will be able to sharpen your skills and
                                             acquire valuable
                                             hands-on experience in your degree
-                                        </p>
+                                        </h4>
                                     </div>
                                     <hr/>
                                     <div className="wrap pt-4 pb-4">
                                         <h4 className="text-[16px] text-black">
                                             Key Requirements and Skills
                                         </h4>
-                                        <p className="mt-2">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants to
@@ -165,14 +184,14 @@ const Page = () => {
                                             with other interns. As a result, you will be able to sharpen your skills and
                                             acquire valuable
                                             hands-on experience in your degree.
-                                        </p>
+                                        </h4>
                                     </div>
                                     <hr/>
                                     <div className="wrap pt-4 pb-4">
                                         <h4 className="text-[16px] text-black">
                                             Additional Requirements
                                         </h4>
-                                        <p className="mt-2">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants to
@@ -180,10 +199,10 @@ const Page = () => {
                                             allow
                                             you to
                                             apply knowledge gained from your Art, Design.
-                                        </p>
+                                        </h4>
                                     </div>
                                     <hr/>
-                                    <p className="pt-4">
+                                    <h4 className="pt-4 text-[12px] text-[#828D9E]">
                                         Data gathered and analyzed from your Nosres Careers Profile, along with any job
                                         applications you decide to send, are
                                         governed by Nosres’ <Link href='#' className="text-primary">Applicant and
@@ -197,7 +216,7 @@ const Page = () => {
                                         be
                                         held responsible for any fees
                                         related to unsolicited résumés.
-                                    </p>
+                                    </h4>
                                 </div>
                             </div>
 
@@ -210,9 +229,15 @@ const Page = () => {
                                             <h4 className="text-[14px]">Graphic Design Intern</h4>
                                             <p>Remote</p>
                                         </div>
-                                        <Link href='#' className="right hover:text-primary">
-                                            <HiOutlineBookmark/>
-                                        </Link>
+                                        {isBookmarkedOne ? (
+                                            <a href="#" className="right text-primary" onClick={toggleBookmarkOne}>
+                                                <HiBookmark />
+                                            </a>
+                                        ) : (
+                                            <a href="#" className="right hover:text-primary" onClick={toggleBookmarkOne}>
+                                                <HiOutlineBookmark />
+                                            </a>
+                                        )}
                                     </div>
 
                                     <hr/>
@@ -221,9 +246,15 @@ const Page = () => {
                                             <h4 className="text-[14px]">Interaction Designer</h4>
                                             <p>Hybrid</p>
                                         </div>
-                                        <Link href='#' className="right hover:text-primary">
-                                            <HiOutlineBookmark/>
-                                        </Link>
+                                        {isBookmarkedTwo ? (
+                                            <a href="#" className="right text-primary" onClick={toggleBookmarkTwo}>
+                                                <HiBookmark />
+                                            </a>
+                                        ) : (
+                                            <a href="#" className="right hover:text-primary" onClick={toggleBookmarkTwo}>
+                                                <HiOutlineBookmark />
+                                            </a>
+                                        )}
                                     </div>
 
                                     <hr/>
@@ -232,9 +263,15 @@ const Page = () => {
                                             <h4 className="text-[14px]">Product Designer</h4>
                                             <p>Hybrid</p>
                                         </div>
-                                        <Link href='#' className="right hover:text-primary">
-                                            <HiOutlineBookmark/>
-                                        </Link>
+                                        {isBookmarkedThree ? (
+                                            <a href="#" className="right text-primary" onClick={toggleBookmarkThree}>
+                                                <HiBookmark />
+                                            </a>
+                                        ) : (
+                                            <a href="#" className="right hover:text-primary" onClick={toggleBookmarkThree}>
+                                                <HiOutlineBookmark />
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
 
