@@ -89,14 +89,14 @@ const Page = () => {
                                     <div className="flex items-center gap-4 mt-2">
                                         <HiOutlineArrowPath size={15} className="cursor-pointer hover:text-primary"/>
                                         {isBookmarked ? (
-                                            <a href="#" className="right text-primary" onClick={toggleBookmark}>
+                                            <Link href="#" className="right text-primary" onClick={toggleBookmark}>
                                                 <HiBookmark size={15}/>
-                                            </a>
+                                            </Link>
                                         ) : (
-                                            <a href="#" className="right hover:text-primary"
+                                            <Link href="#" className="right hover:text-primary"
                                                onClick={toggleBookmark}>
                                                 <HiOutlineBookmark size={15}/>
-                                            </a>
+                                            </Link>
                                         )}
                                     </div>
                                 </div>
@@ -245,14 +245,14 @@ const Page = () => {
                                             <p>Remote</p>
                                         </div>
                                         {isBookmarkedOne ? (
-                                            <a href="#" className="right text-primary" onClick={toggleBookmarkOne}>
+                                            <Link href="#" className="right text-primary" onClick={toggleBookmarkOne}>
                                                 <HiBookmark/>
-                                            </a>
+                                            </Link>
                                         ) : (
-                                            <a href="#" className="right hover:text-primary"
+                                            <Link href="#" className="right hover:text-primary"
                                                onClick={toggleBookmarkOne}>
                                                 <HiOutlineBookmark/>
-                                            </a>
+                                            </Link>
                                         )}
                                     </div>
 
@@ -263,14 +263,14 @@ const Page = () => {
                                             <p>Hybrid</p>
                                         </div>
                                         {isBookmarkedTwo ? (
-                                            <a href="#" className="right text-primary" onClick={toggleBookmarkTwo}>
+                                            <Link href="#" className="right text-primary" onClick={toggleBookmarkTwo}>
                                                 <HiBookmark/>
-                                            </a>
+                                            </Link>
                                         ) : (
-                                            <a href="#" className="right hover:text-primary"
+                                            <Link href="#" className="right hover:text-primary"
                                                onClick={toggleBookmarkTwo}>
                                                 <HiOutlineBookmark/>
-                                            </a>
+                                            </Link>
                                         )}
                                     </div>
 
@@ -281,14 +281,14 @@ const Page = () => {
                                             <p>Hybrid</p>
                                         </div>
                                         {isBookmarkedThree ? (
-                                            <a href="#" className="right text-primary" onClick={toggleBookmarkThree}>
+                                            <Link href="#" className="right text-primary" onClick={toggleBookmarkThree}>
                                                 <HiBookmark/>
-                                            </a>
+                                            </Link>
                                         ) : (
-                                            <a href="#" className="right hover:text-primary"
+                                            <Link href="#" className="right hover:text-primary"
                                                onClick={toggleBookmarkThree}>
                                                 <HiOutlineBookmark/>
-                                            </a>
+                                            </Link>
                                         )}
                                     </div>
                                 </div>
