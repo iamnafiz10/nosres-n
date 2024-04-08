@@ -106,7 +106,7 @@ const Page = () => {
                                     <h4 className="text-[24px]">
                                         Interview
                                     </h4>
-                                    <ul className="space-y-8">
+                                    <ul className="space-y-8 text-[#39393b]">
                                         <li className="mt-2 list-disc">
                                             <b>Be punctual.</b>
                                             Punctuality is crucial when it comes to interview at Nosres. Hence, plan
@@ -169,7 +169,7 @@ const Page = () => {
                                     <h4 className="text-[24px]">
                                         Post-Interview
                                     </h4>
-                                    <ul className="space-y-8">
+                                    <ul className="space-y-8 text-[#39393b]">
                                         <li className="mt-2 list-disc">
                                             <b>Ask for the next step.</b>
                                             Generally, the recruiting team will follow up with the interview

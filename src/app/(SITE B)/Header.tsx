@@ -147,8 +147,8 @@ const Header = () => {
                             <Link href='personal-info'
                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                 <HiOutlineIdentification size={25}
-                                                         className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/personal-info' ? 'text-primary' : ''}`}/>
-                                <span className={`ms-3 ${pathname === '/personal-info' ? 'font-semibold' : ''}`}>Personal Information</span>
+                                                         className={`w-7 transition duration-75 group-hover:text-primary ${pathname === '/information' ? 'text-primary' : ''}`}/>
+                                <span className={`ms-3 ${pathname === '/information' ? 'font-semibold' : ''}`}>Personal Information</span>
                             </Link>
                         </li>
 
