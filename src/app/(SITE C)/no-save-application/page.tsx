@@ -99,7 +99,13 @@ const Page = () => {
                                         </>
                                     ) : (
                                         <>
-                                            <div className="head mb-2">
+                                            <div className="flex justify-center">
+                                                <div
+                                                    className="w-20 h-20 flex text-primary justify-center items-center bg-[#F3F3F3] text-center rounded-full">
+                                                    <HiOutlineFolder size={50}/>
+                                                </div>
+                                            </div>
+                                            <div className="head mb-2 mt-3">
                                                 <h6>You haven{`'`}t submitted any applications</h6>
                                             </div>
                                             <p>

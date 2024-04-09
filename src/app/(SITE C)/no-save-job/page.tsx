@@ -5,8 +5,7 @@ import {GoQuestion} from "react-icons/go";
 import {
     HiOutlineIdentification,
     HiOutlineFolder,
-    HiBookmark,
-    HiOutlineArrowRightCircle,
+    HiOutlineArrowRightCircle, HiOutlineBookmark,
 } from "react-icons/hi2";
 import Link from "next/link";
 import Skeleton from 'react-loading-skeleton'
@@ -61,9 +60,9 @@ const Page = () => {
                                         <li>
                                             <Link href="#"
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
-                                                <HiBookmark size={22}
-                                                            className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
-                                                <span className="ms-3">Saved Jobs</span>
+                                                <HiOutlineBookmark size={22}
+                                                                   className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
+                                                <span className="ms-3 font-semibold">Saved Jobs</span>
                                             </Link>
                                         </li>
 
@@ -102,7 +101,14 @@ const Page = () => {
                                         </>
                                     ) : (
                                         <>
-                                            <div className="head mb-2">
+                                            <div className="flex justify-center">
+                                                <div
+                                                    className="w-20 h-20 flex text-primary justify-center items-center bg-[#F3F3F3] text-center rounded-full">
+                                                    <HiOutlineBookmark size={50}/>
+                                                </div>
+                                            </div>
+
+                                            <div className="head mb-2 mt-3">
                                                 <h6>You don{`'`}t have any saved jobs.</h6>
                                             </div>
                                             <p>

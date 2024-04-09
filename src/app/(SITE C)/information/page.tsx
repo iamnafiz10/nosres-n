@@ -221,7 +221,7 @@ const Page = () => {
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                                 <HiOutlineIdentification size={25}
                                                                          className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
-                                                <span className="ms-3">Information</span>
+                                                <span className="ms-3 font-semibold">Information</span>
                                             </Link>
                                         </li>
 
