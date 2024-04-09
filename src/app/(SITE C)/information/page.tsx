@@ -526,8 +526,7 @@ const Page = () => {
 
                                             <div id="checkbox" className="py-3">
                                                 <div className="flex items-center gap-2">
-                                                    <Checkbox onClick={handleEducationCheckboxClick} id="education1"
-                                                              defaultChecked/>
+                                                    <Checkbox onClick={handleEducationCheckboxClick} id="education1"/>
                                                     <Label htmlFor="education1"
                                                            className="text-gray-500 font-normal">
                                                         I didn’t attend college
@@ -579,7 +578,7 @@ const Page = () => {
                                             </div>
 
                                             <button onClick={() => setOpenEducationModal(true)}
-                                                    className="mt-4 text-primary flex items-center gap-1 text-[14px]">
+                                                    className={`mt-4 text-primary flex items-center gap-1 text-[14px] ${isEducationBoxVisible ? '' : 'hidden'}`}>
                                                 <HiOutlinePlusCircle size={17}/>
                                                 Add Another Degree
                                             </button>
@@ -781,8 +780,7 @@ const Page = () => {
 
                                             <div id="checkbox" className="py-3">
                                                 <div className="flex items-center gap-2">
-                                                    <Checkbox onClick={handleExperienceCheckboxClick} id="exprience1"
-                                                              defaultChecked/>
+                                                    <Checkbox onClick={handleExperienceCheckboxClick} id="exprience1"/>
                                                     <Label htmlFor="exprience1"
                                                            className="text-gray-500 font-normal">
                                                         I don’t have prior experience
@@ -834,7 +832,7 @@ const Page = () => {
                                             </div>
 
                                             <button onClick={() => setOpenExperienceModal(true)}
-                                                    className="mt-4 text-primary flex items-center gap-1 text-[14px]">
+                                                    className={`mt-4 text-primary flex items-center gap-1 text-[14px] ${isExperienceBoxVisible ? '' : 'hidden'}`}>
                                                 <HiOutlinePlusCircle size={17}/>
                                                 Add Another Experience
                                             </button>
