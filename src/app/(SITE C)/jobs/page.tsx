@@ -11,7 +11,7 @@ import {
     HiOutlineBookmark,
     HiOutlineArrowPath,
     HiArrowLongLeft,
-    HiArrowLongRight,
+    HiArrowLongRight, HiBookmark,
 } from "react-icons/hi2";
 import Link from "next/link";
 
@@ -39,6 +39,49 @@ function Page() {
 
     useEffect(() => {
     }, [loading]);
+
+    const [isBookmarkedOne, setIsBookmarkedOne] = useState(false);
+
+    const toggleBookmarkOne = () => {
+        setIsBookmarkedOne(prevState => !prevState);
+    };
+
+    const [isBookmarkedTwo, setIsBookmarkedTwo] = useState(false);
+
+    const toggleBookmarkTwo = () => {
+        setIsBookmarkedTwo(prevState => !prevState);
+    };
+
+    const [isBookmarkedThree, setIsBookmarkedThree] = useState(false);
+
+    const toggleBookmarkThree = () => {
+        setIsBookmarkedThree(prevState => !prevState);
+    };
+
+    const [isBookmarkedFore, setIsBookmarkedFore] = useState(false);
+
+    const toggleBookmarkFore = () => {
+        setIsBookmarkedFore(prevState => !prevState);
+    };
+
+    const [isBookmarkedFive, setIsBookmarkedFive] = useState(false);
+
+    const toggleBookmarkFive = () => {
+        setIsBookmarkedFive(prevState => !prevState);
+    };
+
+
+    const [isBookmarkedSix, setIsBookmarkedSix] = useState(false);
+
+    const toggleBookmarkSix = () => {
+        setIsBookmarkedSix(prevState => !prevState);
+    };
+
+    const [isBookmarkedSeven, setIsBookmarkedSeven] = useState(false);
+
+    const toggleBookmarkSeven = () => {
+        setIsBookmarkedSeven(prevState => !prevState);
+    };
     return (
         <>
             <section id="job-section" className="bg-gray-50 h-100%">
@@ -304,7 +347,17 @@ function Page() {
                                         <div className="flex items-center gap-4 mt-2">
                                             <HiOutlineArrowPath size={15}
                                                                 className="cursor-pointer hover:text-primary"/>
-                                            <HiOutlineBookmark size={15} className="cursor-pointer hover:text-primary"/>
+                                            {isBookmarkedOne ? (
+                                                <button type='button' className="right text-primary"
+                                                        onClick={toggleBookmarkOne}>
+                                                    <HiBookmark size={15}/>
+                                                </button>
+                                            ) : (
+                                                <button type='button' className="right hover:text-primary"
+                                                        onClick={toggleBookmarkOne}>
+                                                    <HiOutlineBookmark size={15}/>
+                                                </button>
+                                            )}
                                         </div>
                                     </>
                                 )}
@@ -343,7 +396,17 @@ function Page() {
                                         <div className="flex items-center gap-4 mt-2">
                                             <HiOutlineArrowPath size={15}
                                                                 className="cursor-pointer hover:text-primary"/>
-                                            <HiOutlineBookmark size={15} className="cursor-pointer hover:text-primary"/>
+                                            {isBookmarkedTwo ? (
+                                                <button type='button' className="right text-primary"
+                                                        onClick={toggleBookmarkTwo}>
+                                                    <HiBookmark size={15}/>
+                                                </button>
+                                            ) : (
+                                                <button type='button' className="right hover:text-primary"
+                                                        onClick={toggleBookmarkTwo}>
+                                                    <HiOutlineBookmark size={15}/>
+                                                </button>
+                                            )}
                                         </div>
                                     </>
                                 )}
@@ -382,7 +445,17 @@ function Page() {
                                         <div className="flex items-center gap-4 mt-2">
                                             <HiOutlineArrowPath size={15}
                                                                 className="cursor-pointer hover:text-primary"/>
-                                            <HiOutlineBookmark size={15} className="cursor-pointer hover:text-primary"/>
+                                            {isBookmarkedThree ? (
+                                                <button type='button' className="right text-primary"
+                                                        onClick={toggleBookmarkThree}>
+                                                    <HiBookmark size={15}/>
+                                                </button>
+                                            ) : (
+                                                <button type='button' className="right hover:text-primary"
+                                                        onClick={toggleBookmarkThree}>
+                                                    <HiOutlineBookmark size={15}/>
+                                                </button>
+                                            )}
                                         </div>
                                     </>
                                 )}
@@ -421,7 +494,17 @@ function Page() {
                                         <div className="flex items-center gap-4 mt-2">
                                             <HiOutlineArrowPath size={15}
                                                                 className="cursor-pointer hover:text-primary"/>
-                                            <HiOutlineBookmark size={15} className="cursor-pointer hover:text-primary"/>
+                                            {isBookmarkedFore ? (
+                                                <button type='button' className="right text-primary"
+                                                        onClick={toggleBookmarkFore}>
+                                                    <HiBookmark size={15}/>
+                                                </button>
+                                            ) : (
+                                                <button type='button' className="right hover:text-primary"
+                                                        onClick={toggleBookmarkFore}>
+                                                    <HiOutlineBookmark size={15}/>
+                                                </button>
+                                            )}
                                         </div>
                                     </>
                                 )}
@@ -460,7 +543,17 @@ function Page() {
                                         <div className="flex items-center gap-4 mt-2">
                                             <HiOutlineArrowPath size={15}
                                                                 className="cursor-pointer hover:text-primary"/>
-                                            <HiOutlineBookmark size={15} className="cursor-pointer hover:text-primary"/>
+                                            {isBookmarkedFive ? (
+                                                <button type='button' className="right text-primary"
+                                                        onClick={toggleBookmarkFive}>
+                                                    <HiBookmark size={15}/>
+                                                </button>
+                                            ) : (
+                                                <button type='button' className="right hover:text-primary"
+                                                        onClick={toggleBookmarkFive}>
+                                                    <HiOutlineBookmark size={15}/>
+                                                </button>
+                                            )}
                                         </div>
                                     </>
                                 )}
@@ -499,7 +592,66 @@ function Page() {
                                         <div className="flex items-center gap-4 mt-2">
                                             <HiOutlineArrowPath size={15}
                                                                 className="cursor-pointer hover:text-primary"/>
-                                            <HiOutlineBookmark size={15} className="cursor-pointer hover:text-primary"/>
+                                            {isBookmarkedSix ? (
+                                                <button type='button' className="right text-primary"
+                                                        onClick={toggleBookmarkSix}>
+                                                    <HiBookmark size={15}/>
+                                                </button>
+                                            ) : (
+                                                <button type='button' className="right hover:text-primary"
+                                                        onClick={toggleBookmarkSix}>
+                                                    <HiOutlineBookmark size={15}/>
+                                                </button>
+                                            )}
+                                        </div>
+                                    </>
+                                )}
+                            </div>
+
+                            {/* Job */}
+                            <div className="box mt-4 bg-white py-4 px-6 rounded">
+                                {loading ? (
+                                    <>
+                                        <Skeleton height={10} count={1}/>
+                                        <Skeleton height={60} count={1}/>
+                                    </>
+                                ) : (
+                                    <>
+                                        <h4 className="text-[16px] text-black">
+                                            UI/UX Designer
+                                        </h4>
+
+                                        <div className="job_wrapper pb-3 flex items-center justify-between">
+                                            <div className="flex mt-4 text-[14px] items-center gap-1">
+                                                <HiOutlineUserGroup/>
+                                                <p>Design</p>
+                                            </div>
+
+                                            <div className="flex mt-4 text-[14px] items-center gap-1">
+                                                <HiOutlineMapPin/>
+                                                <p>Remote</p>
+                                            </div>
+
+                                            <div className="flex mt-4 text-[14px] items-center gap-1">
+                                                <HiOutlineClock/>
+                                                <p>October 5, 2023</p>
+                                            </div>
+                                        </div>
+                                        <hr/>
+                                        <div className="flex items-center gap-4 mt-2">
+                                            <HiOutlineArrowPath size={15}
+                                                                className="cursor-pointer hover:text-primary"/>
+                                            {isBookmarkedSeven ? (
+                                                <button type='button' className="right text-primary"
+                                                        onClick={toggleBookmarkSeven}>
+                                                    <HiBookmark size={15}/>
+                                                </button>
+                                            ) : (
+                                                <button type='button' className="right hover:text-primary"
+                                                        onClick={toggleBookmarkSeven}>
+                                                    <HiOutlineBookmark size={15}/>
+                                                </button>
+                                            )}
                                         </div>
                                     </>
                                 )}

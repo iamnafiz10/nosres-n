@@ -89,14 +89,15 @@ const Page = () => {
                                     <div className="flex items-center gap-4 mt-2">
                                         <HiOutlineArrowPath size={15} className="cursor-pointer hover:text-primary"/>
                                         {isBookmarked ? (
-                                            <Link href="#" className="right text-primary" onClick={toggleBookmark}>
+                                            <button type='button' className="right text-primary"
+                                                    onClick={toggleBookmark}>
                                                 <HiBookmark size={15}/>
-                                            </Link>
+                                            </button>
                                         ) : (
-                                            <Link href="#" className="right hover:text-primary"
-                                               onClick={toggleBookmark}>
+                                            <button type='button' className="right hover:text-primary"
+                                                    onClick={toggleBookmark}>
                                                 <HiOutlineBookmark size={15}/>
-                                            </Link>
+                                            </button>
                                         )}
                                     </div>
                                 </div>
@@ -107,7 +108,7 @@ const Page = () => {
                                         <h4 className="text-[16px] font-semibold text-black">
                                             Overview
                                         </h4>
-                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b] leading-[24px]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants
@@ -134,7 +135,7 @@ const Page = () => {
                                         <h4 className="text-[16px] font-semibold text-black">
                                             Responsibilities
                                         </h4>
-                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b] leading-[24px]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants to
@@ -158,7 +159,7 @@ const Page = () => {
                                         <h4 className="text-[16px] font-semibold text-black">
                                             Education and Experience
                                         </h4>
-                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b] leading-[24px]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants to
@@ -182,7 +183,7 @@ const Page = () => {
                                         <h4 className="text-[16px] font-semibold text-black">
                                             Key Requirements and Skills
                                         </h4>
-                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b] leading-[24px]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants to
@@ -206,7 +207,7 @@ const Page = () => {
                                         <h4 className="text-[16px] font-semibold text-black">
                                             Additional Requirements
                                         </h4>
-                                        <h4 className="mt-2 text-[14px] text-[#39393b]">
+                                        <h4 className="mt-2 text-[14px] text-[#39393b] leading-[24px]">
                                             Nosres is looking for a highly motivated and energetic UI/UX Design Intern
                                             who
                                             wants to
@@ -245,14 +246,15 @@ const Page = () => {
                                             <p>Remote</p>
                                         </div>
                                         {isBookmarkedOne ? (
-                                            <Link href="#" className="right text-primary" onClick={toggleBookmarkOne}>
+                                            <button type='button' className="right text-primary"
+                                                    onClick={toggleBookmarkOne}>
                                                 <HiBookmark/>
-                                            </Link>
+                                            </button>
                                         ) : (
-                                            <Link href="#" className="right hover:text-primary"
-                                               onClick={toggleBookmarkOne}>
+                                            <button type='button' className="right hover:text-primary"
+                                                    onClick={toggleBookmarkOne}>
                                                 <HiOutlineBookmark/>
-                                            </Link>
+                                            </button>
                                         )}
                                     </div>
 
@@ -263,14 +265,15 @@ const Page = () => {
                                             <p>Hybrid</p>
                                         </div>
                                         {isBookmarkedTwo ? (
-                                            <Link href="#" className="right text-primary" onClick={toggleBookmarkTwo}>
+                                            <button type='button' className="right text-primary"
+                                                    onClick={toggleBookmarkTwo}>
                                                 <HiBookmark/>
-                                            </Link>
+                                            </button>
                                         ) : (
-                                            <Link href="#" className="right hover:text-primary"
-                                               onClick={toggleBookmarkTwo}>
+                                            <button type='button' className="right hover:text-primary"
+                                                    onClick={toggleBookmarkTwo}>
                                                 <HiOutlineBookmark/>
-                                            </Link>
+                                            </button>
                                         )}
                                     </div>
 
@@ -281,14 +284,15 @@ const Page = () => {
                                             <p>Hybrid</p>
                                         </div>
                                         {isBookmarkedThree ? (
-                                            <Link href="#" className="right text-primary" onClick={toggleBookmarkThree}>
+                                            <button type='button' className="right text-primary"
+                                                    onClick={toggleBookmarkThree}>
                                                 <HiBookmark/>
-                                            </Link>
+                                            </button>
                                         ) : (
-                                            <Link href="#" className="right hover:text-primary"
-                                               onClick={toggleBookmarkThree}>
+                                            <button type='button' className="right hover:text-primary"
+                                                    onClick={toggleBookmarkThree}>
                                                 <HiOutlineBookmark/>
-                                            </Link>
+                                            </button>
                                         )}
                                     </div>
                                 </div>
