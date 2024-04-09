@@ -244,8 +244,7 @@ function Page() {
                         </div>
 
                         <div className="col lg:col-span-8">
-
-                            <div className="box mt-4 bg-white py-4 px-6 rounded">
+                            <div className="box bg-white py-4 px-6 rounded">
                                 {loading ? (
                                     <>
                                         <Skeleton height={10} count={1}/>
