@@ -58,7 +58,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Familiarize yourself with the interview stages.</b>
+                                            <b>Familiarize yourself with the interview stages. </b>
                                             We want to make the interview as structured,<br/> crystal clear, and
                                             relaxing as
                                             possible. Our interview consists of five stages. Check out those<br/> stages
@@ -67,7 +67,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Write down answers to common job interview questions.</b>
+                                            <b>Write down answers to common job interview questions. </b>
                                             It is indeed difficult to predict what<br/> types of questions you will be
                                             asked
                                             during the interview, but it’s beneficial to learn how to<br/> answer common
@@ -75,7 +75,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Draw up a list of smart questions for the interviewer.</b>
+                                            <b>Draw up a list of smart questions for the interviewer. </b>
                                             Typically, we will invite you to ask your<br/> questions before the end of
                                             the
                                             interview. Your questions are crucial to us. Therefore, we<br/> encourage
@@ -84,7 +84,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Rehearse your job interview.</b>
+                                            <b>Rehearse your job interview. </b>
                                             As the saying goes, “Practice makes perfect.” So, practice as<br/> much as
                                             you
                                             can. You can ask a family member or a friend to play the role of
@@ -108,7 +108,7 @@ const Page = () => {
                                     </h4>
                                     <ul className="space-y-8 text-[#39393b]">
                                         <li className="mt-2 list-disc">
-                                            <b>Be punctual.</b>
+                                            <b>Be punctual. </b>
                                             Punctuality is crucial when it comes to interview at Nosres. Hence, plan
                                             your<br/> schedule to arrive 10 to15 minutes early to complete any necessary
                                             paperwork, have time relax,<br/> and use the restroom if needed. Remember to
@@ -118,7 +118,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Bring hard copies of your résumé, a notebook and a pen.</b>
+                                            <b>Bring hard copies of your résumé, a notebook and a pen. </b>
                                             Of course, we will have a printed copy<br/> of your résumé and cover letter,
                                             but
                                             remember to bring your own. In addition, bring a pen and a<br/> notebook to
@@ -127,7 +127,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Be authentic and honest.</b>
+                                            <b>Be authentic and honest. </b>
                                             At Nosres, we value authenticity and honesty. So, it is paramount
                                             to<br/> act
                                             like yourself. Be positive and tell the truth when answering questions. If
@@ -137,7 +137,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Keep your answers specific, detailed, and concise.</b>
+                                            <b>Keep your answers specific, detailed, and concise. </b>
                                             Avoid giving lengthy or unclear answers to<br/> the interviewer’s questions.
                                             When
                                             the interviewer asks you a question, take a deep breath so<br/> you can
@@ -149,7 +149,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Ask smart questions.</b>
+                                            <b>Ask smart questions. </b>
                                             Now it’s your turn to ask questions. It is an opportunity to know
                                             more<br/> about
                                             us and the position you are applying for. Not only does it show that you are
@@ -171,7 +171,7 @@ const Page = () => {
                                     </h4>
                                     <ul className="space-y-8 text-[#39393b]">
                                         <li className="mt-2 list-disc">
-                                            <b>Ask for the next step.</b>
+                                            <b>Ask for the next step. </b>
                                             Generally, the recruiting team will follow up with the interview
                                             results<br/>
                                             within a week or two following your interview. But remember to ask when you
@@ -179,7 +179,7 @@ const Page = () => {
                                         </li>
 
                                         <li className="mt-2 list-disc">
-                                            <b>Submit take-home assignments in a timely fashion.</b>
+                                            <b>Submit take-home assignments in a timely fashion. </b>
                                             f we ask you to complete a take-home<br/> interview assignment, please
                                             provide
                                             quality work within a reasonable time frame. It is an<br/> opportunity for
