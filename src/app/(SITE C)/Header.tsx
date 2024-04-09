@@ -4,11 +4,11 @@ import {AiOutlineClose} from "react-icons/ai";
 import {IoIosArrowDown} from "react-icons/io";
 import {HiOutlineBars3} from "react-icons/hi2";
 
-import WhoImg1 from '@/../public/assets/images/m1.svg';
-import WhoImg2 from '@/../public/assets/images/m2.svg';
+import WhoImg1 from '@/../public/assets/images/job/culture.svg';
+import WhoImg2 from '@/../public/assets/images/job/benefits.svg';
 
-import UbImg1 from '@/../public/assets/images/ub1.svg';
-import UbImg2 from '@/../public/assets/images/ub2.svg';
+import UbImg1 from '@/../public/assets/images/job/internship.svg';
+import UbImg2 from '@/../public/assets/images/job/recent-graduate.svg';
 import LogoImg from '@/../public/assets/images/logo.svg';
 import Link from "next/link";
 import Image from "next/image";
