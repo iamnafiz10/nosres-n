@@ -7,8 +7,8 @@ const Page = () => {
         <>
             <section id="media-guidelines-section">
                 <div className="container pt-16">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <div className="col mt-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                        <div className="col lg:col-span-7 mt-4">
                             <div className="box">
                                 <h4 className="text-[16px] font-semibold pb-2">General Guidelines</h4>
                                 <hr/>
@@ -28,7 +28,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col lg:col-span-5">
                             <div className="box py-4 px-4 border rounded">
                                 <h4 className="text-[16px] font-semibold pb-2">Press Contact</h4>
                                 <hr/>

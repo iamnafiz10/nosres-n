@@ -4,9 +4,9 @@ import {RxPlus} from "react-icons/rx";
 import {Checkbox, Label, Select} from 'flowbite-react';
 import Skeleton from 'react-loading-skeleton'
 import "react-loading-skeleton/dist/skeleton.css";
-import {RxCrossCircled} from "react-icons/rx";
 import Link from "next/link";
 import {MdOutlineSearchOff} from "react-icons/md";
+import {HiMiniXCircle} from "react-icons/hi2";
 
 
 function Page() {
@@ -262,14 +262,14 @@ function Page() {
                                         </div>
                                         <div className="icon flex items-center gap-6 mt-3">
                                             <div className="flex items-center gap-1">
-                                                <RxCrossCircled size={15}
-                                                                className="text-gray-500 cursor-pointer hover:text-primary"/>
+                                                <HiMiniXCircle size={15}
+                                                               className="text-gray-500 cursor-pointer hover:text-primary"/>
                                                 <h4 className="text-[12px] text-gray-500">Design</h4>
                                             </div>
 
                                             <div className="flex items-center gap-1">
-                                                <RxCrossCircled size={15}
-                                                                className="text-gray-500 cursor-pointer hover:text-primary"/>
+                                                <HiMiniXCircle size={15}
+                                                               className="text-gray-500 cursor-pointer hover:text-primary"/>
                                                 <h4 className="text-[12px] text-gray-500">In Office</h4>
                                             </div>
                                         </div>
