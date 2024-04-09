@@ -71,7 +71,7 @@ const Page = () => {
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                                 <HiOutlineFolder size={20}
                                                                  className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
-                                                <span className="ms-3">Applications</span>
+                                                <span className="ms-3 font-semibold">Applications</span>
                                             </Link>
                                         </li>
                                         <hr/>
