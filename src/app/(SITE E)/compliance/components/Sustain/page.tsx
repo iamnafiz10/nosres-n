@@ -77,7 +77,7 @@ const Page = () => {
                                 </defs>
                             </svg>
                             <h4 className="text-[16px] mt-2">Read and Abide</h4>
-                            <h4 className="text-[14px] mt-2">
+                            <h4 className="text-[14px] text-prgcolor mt-2">
                                 Read and comply with Nosres and Compliance policies, and applicable laws and regulations
                                 to make positive impact.
                             </h4>
@@ -118,7 +118,7 @@ const Page = () => {
                                 </defs>
                             </svg>
                             <h4 className="text-[16px] mt-2">Speak Up</h4>
-                            <h4 className="text-[14px] mt-2">
+                            <h4 className="text-[14px] text-prgcolor mt-2">
                                 Feel free to speak up if you have any questions or concerns. Do not be afraid to reveal
                                 any unacceptable behavior.
                             </h4>
@@ -165,7 +165,7 @@ const Page = () => {
                                 </defs>
                             </svg>
                             <h4 className="text-[16px] mt-2">Be Honest</h4>
-                            <h4 className="text-[14px] mt-2">
+                            <h4 className="text-[14px] text-prgcolor mt-2">
                                 Be honest with yourself and Nosres. You need to cooperate without reservation during an
                                 ethical investigation.
                             </h4>
@@ -212,7 +212,7 @@ const Page = () => {
                                 </defs>
                             </svg>
                             <h4 className="text-[16px] mt-2">Lead by Example</h4>
-                            <h4 className="text-[14px] mt-2">
+                            <h4 className="text-[14px] text-prgcolor mt-2">
                                 Senior leaders must model ethical and compliant behavior to create a culture that values
                                 these principles.
                             </h4>

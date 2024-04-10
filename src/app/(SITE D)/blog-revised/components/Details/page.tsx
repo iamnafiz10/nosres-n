@@ -8,7 +8,7 @@ const Page = () => {
                     {/* Blog Content */}
                     <div className="pt-8 px-6 lg:px-0 blog-content w-full lg:w-[600px] mx-auto">
                         <div className="point py-4 section">
-                            <p className="mt-1 leading-[24px]">
+                            <h4 className="mt-1 text-[14px] text-prgcolor leading-[24px]">
                                 Jane Doe is a captivating wordsmith, renowned for her extraordinary storytelling prowess
                                 that
                                 transcends the boundaries of imagination. With a career spanning decades, Jane has left
@@ -68,7 +68,7 @@ const Page = () => {
                                 featured speaker at numerous literary events, captivating audiences with her insights
                                 into the
                                 craft of writing and the power of storytelling.
-                            </p>
+                            </h4>
                         </div>
                     </div>
                 </div>

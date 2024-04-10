@@ -99,13 +99,13 @@ const Page = () => {
                                 <div className="box">
                                     <h3 className="text-[16px]">Get the latest news, updates and articles from
                                         Nosres.</h3>
-                                    <p className="font-normal mt-4">
+                                    <h4 className="font-normal text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Please subscribe to receive the latest news, updates,and articles from
                                         Nosres.
                                         By
                                         staying subscribed, you’ll stay informed about our latest content and
                                         developments.
-                                    </p>
+                                    </h4>
                                 </div>
                             </div>
 
@@ -134,7 +134,8 @@ const Page = () => {
                                         by clicking the unsubscribe link included in our emails. For further
                                         information, please consult our<br/>
                                         <Link href='#' className="text-[12px] text-primary">
-                                            Terms of <span className="text-[#828D9E] cursor-auto">Use</span> and Privacy Policy.
+                                            Terms of <span className="text-[#828D9E] cursor-auto">Use</span> and Privacy
+                                            Policy.
                                         </Link>
                                     </h4>
                                 </div>

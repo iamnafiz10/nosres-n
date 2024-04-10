@@ -17,7 +17,7 @@ const Page = () => {
                             <h4 className="text-[24px]">
                                 Report a Concern
                             </h4>
-                            <p className="mt-4">
+                            <p className="mt-4 leading-[24px]">
                                 Employees, officers, directors, and third parties are encouraged to report any suspected
                                 corruption to the Ethics and Compliance or Legal department at <Link href='#' className="text-primary">ethics@nosres.com</Link> or
                                 <Link href='#' className="text-primary"> legal@nosres.com</Link>, respectively. Reports can be made anonymously, and Nosres will take no

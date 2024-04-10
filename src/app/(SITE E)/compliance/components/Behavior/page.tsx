@@ -159,7 +159,7 @@ const Page = () => {
                     <div className="mt-10 xl:mt-0 grid grid-cols-1 lg:grid-cols-2 gap-8">
                         <div className="col">
                             <h4 className="text-[24px]">Nosres Code of Ethics</h4>
-                            <h4 className="mt-3 text-[14px]">
+                            <h4 className="mt-3 c text-[14px]">
                                 The Nosres Code of ethics outlines the ethical principles that govern the way we work
                                 and conduct business.
                             </h4>
@@ -173,7 +173,7 @@ const Page = () => {
                             <h4 className="text-[24px]">
                                 Nosres Anti-Corruption Policy
                             </h4>
-                            <h4 className="mt-3 text-[14px]">
+                            <h4 className="mt-3 text-prgcolor text-[14px]">
                                 Nosres strictly prohibits corruption of all kinds, including bribery, kickbacks,
                                 embezzlement, and facilitating payments.
                             </h4>
