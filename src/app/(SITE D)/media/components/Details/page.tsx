@@ -127,7 +127,7 @@ const Page = () => {
                                     <div className="block sm:flex items-center gap-20 mt-8">
                                         <div className="col">
                                             <a href={LogoImg.src} download="logo.png">
-                                                <Image src={LogoImg} className="w-56 h-40" alt="LogoImg"/>
+                                                <Image src={LogoImg} className="w-56 h-[150px]" alt="LogoImg"/>
                                             </a>
                                             <div className="mt-8 sm:mt-4 ml-[53px]">
                                                 <h4 className="text-[16px]">
@@ -147,7 +147,7 @@ const Page = () => {
 
                                         <div className="col">
                                             <Link href={FullLogoImg.src} download="full-logo.png">
-                                                <Image src={FullLogoImg} className="w-56 h-40" alt="FullLogoImg"/>
+                                                <Image src={FullLogoImg} className="w-56 h-[150px]" alt="FullLogoImg"/>
                                             </Link>
                                             <div className="mt-0 sm:mt-4 ml-[33px]">
                                                 <h4 className="text-[16px]">
