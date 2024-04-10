@@ -5,6 +5,7 @@ import {AiOutlineClose} from "react-icons/ai";
 import {HiOutlineBars3} from "react-icons/hi2";
 import Link from "next/link";
 import Image from "next/image";
+import {Modal} from 'flowbite-react';
 
 const Page = () => {
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
@@ -20,6 +21,9 @@ const Page = () => {
             setMenuVisible(!isMenuVisible);
         }
     };
+
+    // Subscribe Modal
+    const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
     return (
         <>
             <section id="header-section" className="relative">
@@ -45,8 +49,8 @@ const Page = () => {
                             </div>
 
                             <div className="five group">
-                                <button
-                                    className="text-primary hover:bg-primary hover:text-white rounded px-4 py-1 border text-[14px]">
+                                <button onClick={() => setOpenSubscribeModal(true)} type='button'
+                                        className="text-primary hover:bg-primary hover:text-white rounded px-4 py-1 border text-[14px]">
                                     Subscribe
                                 </button>
                             </div>
@@ -75,12 +79,68 @@ const Page = () => {
                         </details>
 
                         <div className="flex p-4 pt-0 profile">
-                            <button
-                                className="text-primary rounded hover:bg-primary hover:text-white px-4 py-1 border text-[14px]">
+                            <button onClick={() => setOpenSubscribeModal(true)} type='button'
+                                    className="text-primary rounded hover:bg-primary hover:text-white px-4 py-1 border text-[14px]">
                                 Subscribe
                             </button>
                         </div>
                     </div>
+                </div>
+
+
+                {/* Modal Content */}
+                <div id="modal_content_wrap">
+                    <Modal dismissible show={openSubscribeModal} onClose={() => setOpenSubscribeModal(false)}>
+                        {/*<Modal.Header>*/}
+
+                        {/*</Modal.Header>*/}
+                        <Modal.Body>
+                            <div className="flex items-center gap-4">
+                                <div className="box">
+                                    <h3 className="text-[16px]">Get the latest news, updates and articles from
+                                        Nosres.</h3>
+                                    <p className="font-normal mt-4">
+                                        Please subscribe to receive the latest news, updates,and articles from
+                                        Nosres.
+                                        By
+                                        staying subscribed, you’ll stay informed about our latest content and
+                                        developments.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="modal_body box mt-4">
+                                <div className="flex items-center gap-4">
+                                    <input
+                                        className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"
+                                        type="email"
+                                        placeholder="johndoe@mail.com"
+                                    />
+
+                                    <button type='button'
+                                            className="border text-primary hover:text-white hover:bg-primary px-6 p-2 text-[14px] rounded">
+                                        Subscribe
+                                    </button>
+                                </div>
+
+                                <div className="box mt-4">
+                                    <h4 className="text-[12px] text-[#828D9E] leading-[20px]">
+                                        By submiting this form, you agree to receive marketing-related electronic
+                                        communication from
+                                        Nosres, including news, events, updates and promotions. Your privacy is very
+                                        important to us and we
+                                        do not share any information with third-party sites or afilliate companies. You
+                                        may opt out at any time
+                                        by clicking the unsubscribe link included in our emails. For further
+                                        information, please consult our<br/>
+                                        <Link href='#' className="text-[12px] text-primary">
+                                            Terms of <span className="text-[#828D9E] cursor-auto">Use</span> and Privacy Policy.
+                                        </Link>
+                                    </h4>
+                                </div>
+                            </div>
+                        </Modal.Body>
+                    </Modal>
                 </div>
             </section>
         </>
