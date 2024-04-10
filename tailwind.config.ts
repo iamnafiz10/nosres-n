@@ -21,6 +21,7 @@ const config: Config = {
         extend: {
             colors: {
                 'primary': "#4D7FB8",
+                'prgcolor': "#39393b",
             }
         },
     },

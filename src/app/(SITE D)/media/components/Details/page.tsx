@@ -91,7 +91,7 @@ const Page = () => {
                                 <div className="grid grid-cols-1 mt-12">
                                     <div className="box">
                                         <h4 className="text-[16px] font-semibold">Attribution</h4>
-                                        <p className="mt-2">
+                                        <h4 className="mt-2 text-[14px] text-prgcolor leading-[24px]">
                                             You should include a legal attribution line with a prominent disclaimer of
                                             affiliation
                                             where
@@ -103,14 +103,14 @@ const Page = () => {
                                             affiliated with
                                             Nosres in
                                             any way.”
-                                        </p>
+                                        </h4>
                                     </div>
                                 </div>
 
                                 <div className="grid grid-cols-1 mt-12">
                                     <div className="box">
                                         <h4 className="text-[16px] font-semibold">Images</h4>
-                                        <p className="mt-2">
+                                        <h4 className="mt-2 text-[14px] text-prgcolor leading-[24px]">
                                             The guiding principle of the media resources is simple — all content
                                             downloaded from
                                             the
@@ -121,7 +121,7 @@ const Page = () => {
                                             credit: {`"Source: Nosres"`}. Any other use of Site content including,
                                             without limitation
                                             personal or commercial use, is strictly prohibited.
-                                        </p>
+                                        </h4>
                                     </div>
 
                                     <div className="block sm:flex items-center gap-20 mt-8">
@@ -171,7 +171,7 @@ const Page = () => {
                                     <div className="box">
                                         <h4 className="text-[16px] font-semibold pb-2">Legal</h4>
                                         <hr/>
-                                        <p className="mt-2">
+                                        <p className="mt-2 leading-[24px]">
                                             Do not use Nosres trademarks for anything that would be antithetical to our
                                             Terms of
                                             Service. We may rescind permission to use our trademarks at any time.
