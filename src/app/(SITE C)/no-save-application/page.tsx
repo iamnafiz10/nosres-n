@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import {MdOutlineFolderOff} from "react-icons/md";
 
 const Page = () => {
     // For Page Loading
@@ -102,7 +103,7 @@ const Page = () => {
                                             <div className="flex justify-center">
                                                 <div
                                                     className="w-20 h-20 flex text-primary justify-center items-center bg-[#F3F3F3] text-center rounded-full">
-                                                    <HiOutlineFolder size={50}/>
+                                                    <MdOutlineFolderOff size={50}/>
                                                 </div>
                                             </div>
                                             <div className="head mb-2 mt-3">
