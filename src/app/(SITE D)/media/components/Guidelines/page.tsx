@@ -10,9 +10,9 @@ const Page = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
                         <div className="col lg:col-span-7 mt-4">
                             <div className="">
-                                <h4 className="text-[16px] font-semibold pb-2">General Guidelines</h4>
+                                <h4 className="text-[24px] font-semibold pb-2">General Guidelines</h4>
                                 <hr/>
-                                <h4 className="pt-2 text-[14px] text-prgcolor leading-[24px]">
+                                <h4 className="pt-2 text-[16px] text-prgcolor leading-[24px]">
                                     Nosres is about logic, imagination, and creativity. We attach a lot of importance to
                                     our
                                     brand. So, please make sure you help us protect it by complying with our brand

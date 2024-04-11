@@ -47,14 +47,14 @@ const Page = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-12">
                             <div className="col lg:col-span-7">
                                 <div className="grid grid-cols-1">
-                                    <h4 className="text-[16px] font-semibold">Brand Name</h4>
-                                    <div className="space-y-3 mt-2">
+                                    <h4 className="text-[24px] font-semibold">Brand Name</h4>
+                                    <div className="space-y-3 mt-2 text-[16px] text-[#828D9E]">
                                         <div className="flex box items-center gap-3 mt-2">
                                             <div className="icon">
                                                 <IoIosCheckmarkCircle size={20} className="text-primary"/>
                                             </div>
                                             <div className="texts">
-                                                <p>Do capitalize the word “Nosres”.</p>
+                                                <h4>Do capitalize the word “Nosres”.</h4>
                                             </div>
                                         </div>
 
@@ -63,8 +63,8 @@ const Page = () => {
                                                 <RxCrossCircled size={20} className="text-red-600"/>
                                             </div>
                                             <div className="texts">
-                                                <p> Do not incorporate the Nosres brand name into your company
-                                                    identity.</p>
+                                                <h4> Do not incorporate the Nosres brand name into your company
+                                                    identity.</h4>
                                             </div>
                                         </div>
 
@@ -73,7 +73,7 @@ const Page = () => {
                                                 <RxCrossCircled size={20} className="text-red-600"/>
                                             </div>
                                             <div className="texts">
-                                                <p>Do not use Nosres as a verb or abbreviate it.</p>
+                                                <h4>Do not use Nosres as a verb or abbreviate it.</h4>
                                             </div>
                                         </div>
 
@@ -82,7 +82,7 @@ const Page = () => {
                                                 <RxCrossCircled size={20} className="text-red-600"/>
                                             </div>
                                             <div className="texts">
-                                                <p>Do not alter Nosres trademarked names, for example, “Nosreser”.</p>
+                                                <h4>Do not alter Nosres trademarked names, for example, “Nosreser”.</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -90,8 +90,8 @@ const Page = () => {
 
                                 <div className="grid grid-cols-1 mt-12">
                                     <div className="box">
-                                        <h4 className="text-[16px] font-semibold">Attribution</h4>
-                                        <h4 className="mt-2 text-[14px] text-prgcolor leading-[24px]">
+                                        <h4 className="text-[24px] font-semibold">Attribution</h4>
+                                        <h4 className="mt-2 text-[16px] text-prgcolor leading-[24px]">
                                             You should include a legal attribution line with a prominent disclaimer of
                                             affiliation
                                             where
@@ -109,8 +109,8 @@ const Page = () => {
 
                                 <div className="grid grid-cols-1 mt-12">
                                     <div className="box">
-                                        <h4 className="text-[16px] font-semibold">Images</h4>
-                                        <h4 className="mt-2 text-[14px] text-prgcolor leading-[24px]">
+                                        <h4 className="text-[24px] font-semibold">Images</h4>
+                                        <h4 className="mt-2 text-[16px] text-prgcolor leading-[24px]">
                                             The guiding principle of the media resources is simple — all content
                                             downloaded from
                                             the

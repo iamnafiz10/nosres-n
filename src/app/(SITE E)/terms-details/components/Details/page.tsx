@@ -84,17 +84,17 @@ function Page() {
                                 </li>
 
                                 <li>
-                                    <Link href="#" className="flex items-center gap-2 cursor-pointer">
+                                    <div onClick={() => handleClick('nosres-account')} className="flex items-center gap-2 cursor-pointer">
                                         <div
                                             className="w-[27px] h-[27px] bg-[#E9C336] rounded-full flex items-center justify-center">
                                             <h1 className="text-white text-[16px]">
                                                 3
                                             </h1>
                                         </div>
-                                        <h4 className="text-prgcolor hover:text-primary text-[14px]">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'nosres-account' ? 'text-primary' : ''}`}>
                                             Nosres Account
                                         </h4>
-                                    </Link>
+                                    </div>
                                 </li>
 
                                 <li>
