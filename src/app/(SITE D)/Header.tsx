@@ -97,7 +97,8 @@ const Page = () => {
                         <Modal.Body>
                             <div className="flex items-center gap-4">
                                 <div className="box">
-                                    <h3 className="text-[18px] font-semibold">Get the latest news, updates and articles from
+                                    <h3 className="text-[18px] font-semibold">Get the latest news, updates and articles
+                                        from
                                         Nosres.</h3>
                                     <h4 className="font-normal text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Please subscribe to receive the latest news, updates,and articles from
@@ -134,9 +135,10 @@ const Page = () => {
                                         by clicking the unsubscribe link included in our emails. For further
                                         information, please consult our<br/>
                                         <Link href='#' className="text-[12px] text-primary">
-                                            Terms of <span className="text-[#828D9E] cursor-auto">Use</span> and Privacy
-                                            Policy.
+                                            Terms of Use <span className="text-[#828D9E] cursor-auto">and</span> Privacy
+                                            Policy
                                         </Link>
+                                        .
                                     </h4>
                                 </div>
                             </div>
