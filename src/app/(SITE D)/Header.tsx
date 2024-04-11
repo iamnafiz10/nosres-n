@@ -97,7 +97,7 @@ const Page = () => {
                         <Modal.Body>
                             <div className="flex items-center gap-4">
                                 <div className="box">
-                                    <h3 className="text-[16px]">Get the latest news, updates and articles from
+                                    <h3 className="text-[18px] font-semibold">Get the latest news, updates and articles from
                                         Nosres.</h3>
                                     <h4 className="font-normal text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Please subscribe to receive the latest news, updates,and articles from
