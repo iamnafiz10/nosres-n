@@ -341,7 +341,7 @@ function Page() {
                         </div>
 
                         {/* Right Side Content */}
-                        <div className="col lg:col-span-8 pt-8">
+                        <div className="col lg:col-span-8 pt-8 right_side_content">
                             <div id="overview" ref={assignRef('overview')} className="section border rounded p-8">
                                 <div className="scroll_content_wrap">
                                     <div className="flex items-center gap-2">
@@ -356,7 +356,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Welcome to Nosres.com (the “Site”). Nosres provides Services to you subject to
                                         the Terms and Conditions of Use (the “Terms of Use”) set forth in this agreement
                                         (the {`"`}Agreement{`"`}). This is a biding legal agreement between Nosres’s
@@ -411,7 +411,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         When you use Nosres Services, or send emails to us, you are communicating with
                                         us electronically. Therefore, you consent to receive communications from us
                                         electronically and you consent to receive announcements, administrative
@@ -437,7 +437,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         The Site may require you to register in order to have access to some of the
                                         Services, which means you are required to open a Nosres Account. The
                                         registration is free. You may be required to provide certain personal
@@ -471,7 +471,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         By accessing to this Site and using the Services, you are agreeing and accepting
                                         that you will follow <br/> these rules:
                                         <br/>
@@ -507,7 +507,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         If you discover any content that may violate our Terms of Use, you should report
                                         it to our Customer Support Team (Please see the “How to Contact Nosres” section
                                         below).
@@ -531,7 +531,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Your privacy is very important to us. Nosres Privacy Policy explains how we
                                         handle the information that you provide to us and protect your privacy when you
                                         use our Services. The Privacy Policy is a part of these Terms of Use and
@@ -557,7 +557,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         All text, graphics, images, photographs, sound files, video, user interfaces and
                                         other materials, including but not limited to the design, and {`"`}look and
                                         feel{`"`}of
@@ -592,7 +592,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Some of Our Services enable you to post, submit, upload or send content. This
                                         includes, without limitation, reviews, comments, photos, videos, ideas,
                                         suggestions, questions. Any content you post or submit to this Site will be
@@ -633,7 +633,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         You may be asked to submit a business proposal if you wish to start a Nosres
                                         company. However, it is our policy to not sign a nondisclosure or
                                         confidentiality agreement because we have received several proposals that may be
@@ -659,7 +659,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         You may be asked to submit a business proposal if you wish to start a Nosres
                                         company. However, it is our policy to not sign a nondisclosure or
                                         confidentiality agreement because we have received several proposals that may be
@@ -685,7 +685,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         The Site may contain links to third party web sites ({`"`}Linked Sites{`"`}).
                                         These
                                         links are provided as an ‘As is’ basis. When you access a Linked Site, you agree
@@ -712,7 +712,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Nosres reserves the right, in its sole discretion and without prior notice, to
                                         delete or suspend or terminate your account, for any reason or no reason at any
                                         time, and refuse all current or future use of the Services. You may also
@@ -750,7 +750,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Your Access To The Site And Your Use Of The Services Or Any Content Are At Your
                                         Sole Risk. You Agree And Understand That The Site, The Services Or Any Content
                                         Are Provided To You On An “as Is” And “as Available” Basis Without Warranty Of
@@ -793,7 +793,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         To the maximum extent permissible by applicable law, in no event shall Nosres,
                                         and its affiliates and officers, directors, employees, agents, representatives,
                                         licensors, or partners be responsible or liable for any damages of any kind or
@@ -829,7 +829,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         Upon request by Nosres, its affiliates, officers, directors, employees, agents,
                                         representatives, licensors, partners, and third party providers, you agree to
                                         indemnify, defend and hold harmless Nosres, its affiliates and their respective
@@ -864,7 +864,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         In the event of any contention or dispute between you and Nosres arising out of
                                         or in connection with your use of or access to the Site, or any products or
                                         services sold, offered or purchased through Nosres Services, the parties shall
@@ -903,7 +903,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         By using Nosres Services, you agree that the laws of the State of Delaware
                                         without reference to principles of conflict of laws, will govern these Terms of
                                         Use and any dispute of any sort that has arisen or might arise between you and
@@ -928,7 +928,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         We are dedicated ourselves to providing a safe and reliable Site for all users.
                                         We have carried out technical measures designed to secure your personal
                                         information from unauthorized access, alteration, or disclosure. However, we
@@ -955,7 +955,7 @@ function Page() {
                                         </h4>
                                     </div>
 
-                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                    <h4 className="right_text text-[14px] text-prgcolor leading-[24px] mt-4">
                                         If you have a question or complaint about the Site, please visit our contact us
                                         page for information about how to contact Nosres. If you have a question about
                                         Nosres collection or use of personal information, please see Nosres Privacy

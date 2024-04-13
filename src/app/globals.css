@@ -618,6 +618,11 @@ textarea {
     background: rgba(77, 127, 184, 0.61) !important;
 }
 
+/* ----------------------------- Terms And Details Page Design ----------------------*/
+.right_side_content .right_text {
+    text-transform: uppercase;
+}
+
 /* ------------------- Media Query ----------------*/
 @media only screen and (max-width: 1100px) {
     #hiring-section .bimage_wrap::before {
