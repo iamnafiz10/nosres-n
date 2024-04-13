@@ -961,10 +961,10 @@ function Page() {
                                         Nosres collection or use of personal information, please see Nosres Privacy
                                         Statement.
                                     </h4>
+                                    <div className="footer_text box pt-8">
+                                        <h4 className="text-[12px] text-[#828D9E]">Effective September 9, 2019</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="footer_text box pt-8 ml-16">
-                                <h4 className="text-[12px] text-[#828D9E]">Effective September 9, 2019</h4>
                             </div>
                         </div>
                     </div>
