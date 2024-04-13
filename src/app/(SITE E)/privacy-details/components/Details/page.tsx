@@ -11,6 +11,7 @@ import privacySeven from '@/../public/assets/images/sitee/pp-7.svg';
 import privacyEight from '@/../public/assets/images/sitee/pp-8.svg';
 import privacyNine from '@/../public/assets/images/sitee/pp-9.svg';
 import privacyTen from '@/../public/assets/images/sitee/pp-10.svg';
+import privacyEleven from '@/../public/assets/images/sitee/pp-11.svg';
 
 function Page() {
     const [activeTab, setActiveTab] = useState('tab_one'); // Initial active tab
@@ -172,6 +173,17 @@ function Page() {
 
                                         <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tab_Ten' ? 'text-primary' : ''}`}>
                                             Changes to This Privacy Policy
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tab_Eleven')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <Image src={privacyEleven} className="w-[27px]" alt="privacyImg"/>
+
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tab_Eleven' ? 'text-primary' : ''}`}>
+                                            Privacy Inquiries
                                         </h4>
                                     </div>
                                 </li>
@@ -543,6 +555,127 @@ function Page() {
                                             </li>
                                         </ul>
                                     </h4>
+                                </div>
+                            </div>
+
+                            <div id="tab_Seven" ref={assignRef('tab_Seven')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <Image src={privacySeven} className="w-[35px]" alt="PrivacyImg"/>
+
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Access to Personal Information
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Nosres wants you to keep your Personal Information accurate, complete, and up to
+                                        date. Please log in to your Nosres account to access, correct, update or delete
+                                        the information from or about you at any time. If you are unable to do so,
+                                        please send a written request directly to legal@nosres.com or our mailing
+                                        address below. For the security of your account and your protection, we may need
+                                        to verify your identity before implementing your request. We may reject your
+                                        access or deletion requests if we believe that fulfilling such requests will be
+                                        prejudicial to our legitimate use of data for anti-fraud and security purposes.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tab_Eight" ref={assignRef('tab_Eight')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <Image src={privacyEight} className="w-[35px]" alt="PrivacyImg"/>
+
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Collection of Children’s Personal Information
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Children’s online privacy protection is very important to us. To the extent
+                                        prohibited by applicable law, we do not knowingly collect or use information
+                                        from children under the age of 18. If you are younger than 18, please do not
+                                        provide any personal information through our websites without prior parental or
+                                        legal guardian consent. If we learn that we have received personal information
+                                        from a child under age 18 without the express consent of a parent or legal
+                                        guardian, we will take steps to delete such information from our system as soon
+                                        as possible.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tab_Nine" ref={assignRef('tab_Nine')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <Image src={privacyNine} className="w-[35px]" alt="PrivacyImg"/>
+
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Links to Third-Party Sites and Services
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Nosres websites may contains links to third-party websites. Please be aware that
+                                        we are not responsible for the content or privacy practices of any other
+                                        third-party websites. We encourage you to read the privacy policies of those
+                                        third-party websites.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tab_Ten" ref={assignRef('tab_Ten')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <Image src={privacyTen} className="w-[35px]" alt="PrivacyImg"/>
+
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Changes to This Privacy Policy
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Nosres reserves the right, at its sole discretion, to change or modify its
+                                        Privacy Policy, at any time and without prior notice. It is your responsibility
+                                        to frequently check this page for any changes or modifications. Changes will be
+                                        effective upon the posting of the changes and modifications. Your continued
+                                        access to and use of the Site and Services following the posting of changes will
+                                        constitute your acceptance to such changes.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tab_Eleven" ref={assignRef('tab_Eleven')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <Image src={privacyEleven} className="w-[35px]" alt="PrivacyImg"/>
+
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Privacy Inquiries
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        If you have any questions or concerns regarding our privacy practices, please
+                                        contact us by email at legal@nosres.com or write to us at the following address:
+                                        <br/>
+                                        <br/>
+                                        <span className="text-[20px] font-semibold">
+                                            Nosres Inc. Mailing Address
+                                        </span>
+                                        <br/>
+                                        <br/>
+                                        447 Broadway, 2nd Floor, Suite #1680<br/>
+                                        New York, NY 10013<br/>
+                                        USA
+                                    </h4>
+                                    <div className="footer_text box pt-8">
+                                        <h4 className="text-[12px] text-[#828D9E]">Effective September 9, 2019</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
