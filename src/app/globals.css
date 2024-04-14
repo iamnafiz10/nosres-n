@@ -621,6 +621,11 @@ textarea {
 /* ----------------------------- All Tab Page Design ----------------------*/
 .obligations_list li {
     list-style: lower-alpha;
+    font-weight: 900;
+}
+
+.obligations_list li h4 {
+    font-weight: 400;
 }
 
 /* ------------------- Media Query ----------------*/

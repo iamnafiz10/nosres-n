@@ -390,41 +390,63 @@ function Page() {
 
                                         <ul className="obligations_list space-y-4 ml-6">
                                             <li>
-                                                You must provide us accurate information about you and your business
-                                                when registering on Nosres and must update that information as
-                                                applicable. Therefore, you agree to authorize Nosres to verify your
-                                                information from time to time while using the services.
+                                                <h4>
+                                                    You must provide us accurate information about you and your business
+                                                    when registering on Nosres and must update that information as
+                                                    applicable. Therefore, you agree to authorize Nosres to verify your
+                                                    information from time to time while using the services.
+                                                </h4>
                                             </li>
                                             <li>
-                                                You cannot upload images or videos that illegal, obscene, threatening,
-                                                or infringing of intellectual property rights, and contains software
-                                                viruses, or any form of {`"`}spam{`"`}.
+                                                <h4>
+                                                    You cannot upload images or videos that illegal, obscene,
+                                                    threatening,
+                                                    or infringing of intellectual property rights, and contains software
+                                                    viruses, or any form of {`"`}spam{`"`}.
+                                                </h4>
                                             </li>
                                             <li>
-                                                You must list MP3 music, books, or eBooks, CDs, DVDs, VCDs (Video CDs),
-                                                photos and videos that You own all the rights, or You purchase from the
-                                                owner’s official website.
+                                                <h4>
+                                                    You must list MP3 music, books, or eBooks, CDs, DVDs, VCDs (Video
+                                                    CDs),
+                                                    photos and videos that You own all the rights, or You purchase from
+                                                    the
+                                                    owner’s official website.
+                                                </h4>
                                             </li>
                                             <li>
-                                                You only allow to sell brand new and 100% genuine items on Nosres. You
-                                                cannot list counterfeits, fake of brand name items, including
-                                                electronics and accessories.
+                                                <h4>
+                                                    You only allow to sell brand new and 100% genuine items on Nosres.
+                                                    You
+                                                    cannot list counterfeits, fake of brand name items, including
+                                                    electronics and accessories.
+                                                </h4>
                                             </li>
                                             <li>
-                                                You must not ask to sell outside Nosres platform. In case you have been
-                                                asked to sell an item outside Nosres platform please report it
-                                                immediately to us (Please see the “How to Contact Nosres” section
-                                                below).
+                                                <h4>
+                                                    You must not ask to sell outside Nosres platform. In case you have
+                                                    been
+                                                    asked to sell an item outside Nosres platform please report it
+                                                    immediately to us (Please see the “How to Contact Nosres” section
+                                                    below).
+                                                </h4>
                                             </li>
                                             <li>
-                                                You may not offer a buyer to pay, or make payment using any method other
-                                                than through the site. If you receive an offer from a buyer to use an
-                                                alternative payment method, please report it immediately to us (Please
-                                                see the “How to Contact Nosres” section below).
+                                                <h4>
+                                                    You may not offer a buyer to pay, or make payment using any method
+                                                    other
+                                                    than through the site. If you receive an offer from a buyer to use
+                                                    an
+                                                    alternative payment method, please report it immediately to us
+                                                    (Please
+                                                    see the “How to Contact Nosres” section below).
+                                                </h4>
                                             </li>
                                             <li>
-                                                You will not interfere with or otherwise prevent other sellers from
-                                                providing their services.
+                                                <h4>
+                                                    You will not interfere with or otherwise prevent other sellers from
+                                                    providing their services.
+                                                </h4>
                                             </li>
                                         </ul>
                                     </h4>
@@ -455,41 +477,63 @@ function Page() {
 
                                         <ul className="obligations_list space-y-4 ml-6">
                                             <li>
-                                                You must provide us accurate information about you and your business
-                                                when registering on Nosres and must update that information as
-                                                applicable. Therefore, you agree to authorize Nosres to verify your
-                                                information from time to time while using the services.
+                                                <h4>
+                                                    You must provide us accurate information about you and your business
+                                                    when registering on Nosres and must update that information as
+                                                    applicable. Therefore, you agree to authorize Nosres to verify your
+                                                    information from time to time while using the services.
+                                                </h4>
                                             </li>
                                             <li>
-                                                You cannot upload images or videos that illegal, obscene, threatening,
-                                                or infringing of intellectual property rights, and contains software
-                                                viruses, or any form of {`"`}spam{`"`}.
+                                                <h4>
+                                                    You cannot upload images or videos that illegal, obscene,
+                                                    threatening,
+                                                    or infringing of intellectual property rights, and contains software
+                                                    viruses, or any form of {`"`}spam{`"`}.
+                                                </h4>
                                             </li>
                                             <li>
-                                                You must list MP3 music, books, or eBooks, CDs, DVDs, VCDs (Video CDs),
-                                                photos and videos that You own all the rights, or You purchase from the
-                                                owner’s official website.
+                                                <h4>
+                                                    You must list MP3 music, books, or eBooks, CDs, DVDs, VCDs (Video
+                                                    CDs),
+                                                    photos and videos that You own all the rights, or You purchase from
+                                                    the
+                                                    owner’s official website.
+                                                </h4>
                                             </li>
                                             <li>
-                                                You only allow to sell brand new and 100% genuine items on Nosres. You
-                                                cannot list counterfeits, fake of brand name items, including
-                                                electronics and accessories.
+                                                <h4>
+                                                    You only allow to sell brand new and 100% genuine items on Nosres.
+                                                    You
+                                                    cannot list counterfeits, fake of brand name items, including
+                                                    electronics and accessories.
+                                                </h4>
                                             </li>
                                             <li>
-                                                You must not ask to sell outside Nosres platform. In case you have been
-                                                asked to sell an item outside Nosres platform please report it
-                                                immediately to us (Please see the “How to Contact Nosres” section
-                                                below).
+                                                <h4>
+                                                    You must not ask to sell outside Nosres platform. In case you have
+                                                    been
+                                                    asked to sell an item outside Nosres platform please report it
+                                                    immediately to us (Please see the “How to Contact Nosres” section
+                                                    below).
+                                                </h4>
                                             </li>
                                             <li>
-                                                You may not offer a buyer to pay, or make payment using any method other
-                                                than through the site. If you receive an offer from a buyer to use an
-                                                alternative payment method, please report it immediately to us (Please
-                                                see the “How to Contact Nosres” section below).
+                                                <h4>
+                                                    You may not offer a buyer to pay, or make payment using any method
+                                                    other
+                                                    than through the site. If you receive an offer from a buyer to use
+                                                    an
+                                                    alternative payment method, please report it immediately to us
+                                                    (Please
+                                                    see the “How to Contact Nosres” section below).
+                                                </h4>
                                             </li>
                                             <li>
-                                                You will not interfere with or otherwise prevent other sellers from
-                                                providing their services.
+                                                <h4>
+                                                    You will not interfere with or otherwise prevent other sellers from
+                                                    providing their services.
+                                                </h4>
                                             </li>
                                         </ul>
                                     </h4>
@@ -923,23 +967,35 @@ function Page() {
 
                                         <ul className="obligations_list space-y-4 ml-6">
                                             <li>
-                                                Do not violate any of Nosres policies.
+                                                <h4>
+                                                    Do not violate any of Nosres policies.
+                                                </h4>
                                             </li>
                                             <li>
-                                                Do not mislead the buyers about the listing description of the item,
-                                                which means that the listing description should be as accurate as
-                                                possible.
+                                                <h4>
+                                                    Do not mislead the buyers about the listing description of the item,
+                                                    which means that the listing description should be as accurate as
+                                                    possible.
+                                                </h4>
                                             </li>
                                             <li>
-                                                Do ship the item on time and to the right address, and mark the order as
-                                                shipped after you send it out.
+                                                <h4>
+                                                    Do ship the item on time and to the right address, and mark the
+                                                    order as
+                                                    shipped after you send it out.
+                                                </h4>
                                             </li>
                                             <li>
-                                                Do not ship empty boxes or put other things like piece of brick or wood
-                                                in them.
+                                                <h4>
+                                                    Do not ship empty boxes or put other things like piece of brick or
+                                                    wood
+                                                    in them.
+                                                </h4>
                                             </li>
                                             <li>
-                                                Do provide an adequate proof of shipping and delivery.
+                                                <h4>
+                                                    Do provide an adequate proof of shipping and delivery.
+                                                </h4>
                                             </li>
                                         </ul>
                                     </h4>
