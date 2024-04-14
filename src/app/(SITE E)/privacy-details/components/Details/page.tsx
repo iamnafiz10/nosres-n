@@ -214,7 +214,7 @@ function Page() {
                                 </div>
                             </div>
 
-                            <div id="tab_one" ref={assignRef('tab_one')} className="section border rounded p-8">
+                            <div id="tab_one" ref={assignRef('tab_one')} className="section mt-12 border rounded p-8">
                                 <div className="scroll_content_wrap">
                                     <div className="flex items-center gap-2">
                                         <Image src={privacyOne} className="w-[35px]" alt="PrivacyImg"/>
