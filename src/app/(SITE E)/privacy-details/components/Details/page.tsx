@@ -664,7 +664,7 @@ function Page() {
                                         contact us by email at legal@nosres.com or write to us at the following address:
                                         <br/>
                                         <br/>
-                                        <span className="text-[20px] font-semibold">
+                                        <span className="text-[16px] font-semibold">
                                             Nosres Inc. Mailing Address
                                         </span>
                                         <br/>
