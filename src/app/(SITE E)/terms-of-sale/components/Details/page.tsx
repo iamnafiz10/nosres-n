@@ -71,6 +71,115 @@ function Page() {
                                         </h4>
                                     </div>
                                 </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_three')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_three' ? 'text-primary' : ''}`}>
+                                            Product Descriptions
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_four')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_four' ? 'text-primary' : ''}`}>
+                                            Pricing
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_five')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_five' ? 'text-primary' : ''}`}>
+                                            Payments
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_six')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_six' ? 'text-primary' : ''}`}>
+                                            Fees and Charges
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_seven')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_seven' ? 'text-primary' : ''}`}>
+                                            Order Cancellations, Returns and Refunds
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_eight')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_eight' ? 'text-primary' : ''}`}>
+                                            Risk of Loss
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_nine')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_nine' ? 'text-primary' : ''}`}>
+                                            Disclaimer of warranties and Limitation of liability
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_ten')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_ten' ? 'text-primary' : ''}`}>
+                                            Dispute with Sellers or Other Users
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_eleven')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_eleven' ? 'text-primary' : ''}`}>
+                                            General Release
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_twelve')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_twelve' ? 'text-primary' : ''}`}>
+                                            Buyer Protection
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_thirteen')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_thirteen' ? 'text-primary' : ''}`}>
+                                            Termination
+                                        </h4>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div onClick={() => handleClick('tseller_tab_fourteen')}
+                                         className="flex items-center gap-2 cursor-pointer">
+                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'tseller_tab_fourteen' ? 'text-primary' : ''}`}>
+                                            How to Contact Nosres
+                                        </h4>
+                                    </div>
+                                </li>
+
                             </ul>
                         </div>
 
@@ -214,6 +323,348 @@ function Page() {
                                             </li>
                                         </ul>
                                     </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_three" ref={assignRef('tseller_tab_three')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                3.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Product Descriptions
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Nosres does not warrant that product descriptions or other content of the site
+                                        is accurate, complete, reliable, current, or error-free. If you purchase a
+                                        product on Nosres that is different from the listed description, your sole
+                                        remedy is to return to us and we guarantee to refund your money in full or give
+                                        you a replacement in accordance with our return and refund policies.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_four" ref={assignRef('tseller_tab_four')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                4.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Pricing
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        The selling price is available on the site on an “As Is” basis, and it is
+                                        provided by the seller. Due to technical issues, the selling price of certain
+                                        items displayed in our catalog may contain errors. In the event a buyer has
+                                        already made the purchase with the erroneous selling price such transaction
+                                        shall not be valid.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_five" ref={assignRef('tseller_tab_five')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                5.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Payments
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        A buyer must pay via the Nosres platform for an item purchased via the site. An
+                                        item may be purchased using one of the following payment methods: Visa and
+                                        MasterCard credit or debit cards, PayPal or Nosres Pay. When ordering from the
+                                        site or applications, you agree that your payments are made to Nosres Inc. We
+                                        use secure encryption technology to protect your card information and keep it
+                                        confidential all the time.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_six" ref={assignRef('tseller_tab_six')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                6.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Fees and Charges
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Currently, joining Nosres and creating an account is absolutely free. But we
+                                        reserve the right at any time to charge the buyer any fees or charges for using
+                                        our services.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_seven" ref={assignRef('tseller_tab_seven')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                7.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Order Cancellations, Returns and Refunds
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        As a buyer, you acknowledge and agree that Nosres and sellers have the right to
+                                        cancel orders. You also agree and accept that we will process order
+                                        cancellations, returns and refunds under the applicable Nosres’ Order
+                                        Cancellations Policy, Returns Policy, and Refunds Policy published on the site
+                                        at the time of the applicable order. (For more, please read our order
+                                        Cancellations Policy, Returns Policy, and Refunds Policy.)
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_eight" ref={assignRef('tseller_tab_eight')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                8.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Risk of Loss
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        All physical items purchased from Nosres platform are made in accordance with a
+                                        shipment contract. Consequently, the risk of loss and title for such items pass
+                                        to you when such items are delivered to the carrier.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_nine" ref={assignRef('tseller_tab_nine')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                9.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Disclaimer of warranties and Limitation of liability
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        YOUR ACCESS TO AND USE OF THE SITE, ITS CONTENT AND ANY SERVICES OR ITEMS
+                                        OBTAINED THROUGH THE SITE IS AT YOUR OWN RISK. THE SITE AND ALL INFORMATION,
+                                        CONTENT, MATERIALS, PRODUCTS (INCLUDING SOFTWARE) AND OTHER SERVICES INCLUDED ON
+                                        OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE SITE ARE PROVIDED BY NOSRES ON AN
+                                        {`"`}AS IS{`"`} AND {`"`}AS AVAILABLE{`"`} BASIS, WITHOUT ANY WARRANTIES OF ANY
+                                        KIND, EITHER
+                                        EXPRESS OR IMPLIED. NEITHER NOSRES NOR ITS AFFILIATES AND OFFICERS, DIRECTORS,
+                                        EMPLOYEES, AGENTS, REPRESENTATIVES, LICENSORS, OR PARTNERS MAKE ANY WARRANTY OR
+                                        REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY,
+                                        ACCURACY OR AVAILABILITY OF THE SITE.
+                                        <br/>
+                                        <br/>
+
+
+                                        TO THE MAXIMUM EXTENT PERMISSBLE BY APPLICABLE LAW, NOSRES, AND ITS AFFILIATES
+                                        AND OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, REPRESENTATIVES, LICENSORS, OR
+                                        PARTNERS DISCLAIM ANY AND ALL SUCH WARRANTIES.
+                                        <br/>
+                                        <br/>
+
+                                        TO THE MAXIMUM EXTENT PERMISSBLE BY APPLICABLE LAW, IN NO EVENT SHALL NOSRES,
+                                        AND ITS AFFILIATES AND OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, REPRESENTATIVES,
+                                        LICENSORS, OR PARTNERS BE RESPONSIBLE OR LIABLE FOR ANY DAMAGES OF ANY KIND,
+                                        INCLUDING WITHOUT LIMITATION DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND
+                                        CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN CONNECTION WITH THIS BUYER
+                                        AGREEMENT, OR THE INABILITY TO USE THE SERVICES, OR THOSE RESULTING FROM ANY
+                                        PRODUCTS OR SERVICES PURCHASED OR OBTAINED OR TRANSACTIONS ENTERED INTO THROUGH
+                                        THE SERVICES.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_ten" ref={assignRef('tseller_tab_ten')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                10.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Dispute with Sellers or Other Users
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Nosres provides a platform for sellers and buyers to negotiate and complete
+                                        transactions. Nosres is not the agent of the seller with the exception of the
+                                        limited purpose of processing payments, and Nosres is not the agent of the buyer
+                                        for any purpose. Therefore, Nosres has no obligation to resolve any disputes
+                                        between buyers and sellers or other users of Nosres services. Nosres encourage
+                                        sellers and buyers to cooperate with each other to amicably resolve such
+                                        disputes.
+                                        <br/>
+                                        <br/>
+
+                                        If a dispute arises between a seller and a buyer or other users of Nosres
+                                        services; we, in our sole discretion, may make an attempt to help resolve such
+                                        disputes in accordance with our policies.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_eleven" ref={assignRef('tseller_tab_eleven')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                11.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            General Release
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        If a dispute arises between you and a seller or other users, you release Nosres,
+                                        and its affiliates and officers, directors, employees, agents, representatives,
+                                        licensors, or partners from any claims, demands and damages arising out of such
+                                        disputes.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_twelve" ref={assignRef('tseller_tab_twelve')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                12.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Buyer Protection
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Nosres Buyer Protection is set up to protect buyers against fraud. There is no
+                                        application process for Nosres Buyer Protection but to be eligible for it,
+                                        buyers need to make certain that they do not violate any of our policies and
+                                        rules. If you receive an item that is different from what was listed or
+                                        described on Nosres and you end up in a dispute with the seller, just bear in
+                                        mind that you are not alone. You will need to provide us the adequate
+                                        information in order to help resolve the dispute. But we cannot give you every
+                                        assurance that we will close the dispute in your favor.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_thirteen" ref={assignRef('tseller_tab_thirteen')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                13.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            Termination
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Nosres reserves the right, in its sole discretion, to suspend or terminate this
+                                        Buyer Agreement, your account or your access to the services at any time, for
+                                        any reason, and without prior notice.
+                                        <br/>
+                                        <br/>
+
+                                        You may also terminate your account with Nosres via your account settings at any
+                                        time.
+                                        <br/>
+                                        <br/>
+
+                                        Nosres may change, suspend or discontinue any of the services at any time, for
+                                        any reason. You agree that we will not be liable to you for compensation,
+                                        reimbursement, or damages in connection with your use of the services, or in
+                                        connection with any changes and suspension or termination of the services.
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div id="tseller_tab_fourteen" ref={assignRef('tseller_tab_fourteen')}
+                                 className="section mt-12 border rounded p-8">
+                                <div className="scroll_content_wrap">
+                                    <div className="flex items-center gap-2">
+                                        <div
+                                            className="flex items-center justify-center">
+                                            <h1 className="text-black font-semibold text-[16px]">
+                                                14.
+                                            </h1>
+                                        </div>
+                                        <h4 className="text-prgcolor font-semibold text-[16px]">
+                                            How to Contact Nosres
+                                        </h4>
+                                    </div>
+
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Please visit our <Link href='#' className="text-primary">contact page</Link> for
+                                        information about how to contact Nosres.
+                                        Nosres Team will typically get back to you in less than 24 hours.
+                                    </h4>
+                                    <div className="footer_text box pt-8">
+                                        <h4 className="text-[12px] text-[#828D9E]">Effective September 9, 2019</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
