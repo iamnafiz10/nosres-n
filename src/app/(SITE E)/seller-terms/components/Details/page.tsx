@@ -53,7 +53,7 @@ function Page() {
                                 Seller Terms
                             </h4>
                             <hr/>
-                            <ul className="space-y-3 sm:space-y-4 pt-4 text-primary">
+                            <ul className="space-y-3 pt-4 text-primary">
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_one')}
                                          className="flex items-center gap-2 cursor-pointer">
