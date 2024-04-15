@@ -881,7 +881,7 @@ function Page() {
                                         INCLUDING WITHOUT LIMITATION DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND
                                         CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN CONNECTION WITH THIS SELLER
                                         AGREEMENT, OR THE INABILITY TO USE THE SERVICES, OR THOSE RESULTING FROM ANY
-                                        PRODUCTS OR SERVICES PURC HASED OR OBTAINED OR TRANSACTIONS ENTERED INTO THROUGH
+                                        PRODUCTS OR SERVICES PURCHASED OR OBTAINED OR TRANSACTIONS ENTERED INTO THROUGH
                                         THE SERVICES.
                                     </h4>
                                 </div>
