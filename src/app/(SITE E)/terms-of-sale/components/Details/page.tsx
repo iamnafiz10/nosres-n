@@ -53,11 +53,11 @@ function Page() {
                                 Terms of Sale
                             </h4>
                             <hr/>
-                            <ul className="space-y-4 pt-4 text-primary">
+                            <ul className="space-y-3 pt-4 text-primary">
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_one')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_one' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_one' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Eligibility
                                         </h4>
                                     </div>
@@ -66,7 +66,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_two')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_two' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_two' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Your Obligations as a Buyer
                                         </h4>
                                     </div>
@@ -75,7 +75,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_three')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_three' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_three' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Product Descriptions
                                         </h4>
                                     </div>
@@ -84,7 +84,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_four')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_four' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_four' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Pricing
                                         </h4>
                                     </div>
@@ -93,7 +93,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_five')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_five' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_five' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Payments
                                         </h4>
                                     </div>
@@ -102,7 +102,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_six')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_six' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_six' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Fees and Charges
                                         </h4>
                                     </div>
@@ -111,7 +111,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_seven')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_seven' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_seven' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Order Cancellations, Returns and Refunds
                                         </h4>
                                     </div>
@@ -120,7 +120,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_eight')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_eight' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_eight' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Risk of Loss
                                         </h4>
                                     </div>
@@ -129,7 +129,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_nine')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_nine' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_nine' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Disclaimer of warranties and Limitation of liability
                                         </h4>
                                     </div>
@@ -138,7 +138,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_ten')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_ten' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_ten' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Dispute with Sellers or Other Users
                                         </h4>
                                     </div>
@@ -147,7 +147,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_eleven')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_eleven' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_eleven' ? 'text-prgcolor font-semibold' : ''}`}>
                                             General Release
                                         </h4>
                                     </div>
@@ -156,7 +156,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_twelve')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_twelve' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_twelve' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Buyer Protection
                                         </h4>
                                     </div>
@@ -165,7 +165,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_thirteen')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_thirteen' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_thirteen' ? 'text-prgcolor font-semibold' : ''}`}>
                                             Termination
                                         </h4>
                                     </div>
@@ -174,7 +174,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('tseller_tab_fourteen')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'tseller_tab_fourteen' ? 'text-prgcolor' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor hover:font-semibold text-[14px] ${activeTab === 'tseller_tab_fourteen' ? 'text-prgcolor font-semibold' : ''}`}>
                                             How to Contact Nosres
                                         </h4>
                                     </div>
