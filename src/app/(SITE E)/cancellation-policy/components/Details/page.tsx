@@ -51,7 +51,7 @@ function Page() {
                         </div>
 
                         {/* Right Side Content */}
-                        <div className="col lg:col-span-8 pt-0 right_side_content">
+                        <div className="col lg:col-span-9 pt-0 right_side_content">
                             <h4 className="text-[16px] font-semibold pb-2">
                                 Cancellation Policy
                             </h4>

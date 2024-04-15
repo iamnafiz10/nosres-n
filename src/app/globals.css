@@ -658,6 +658,24 @@ textarea {
     border-bottom: 1px solid black;
 }
 
+#return-policy-section .bbox_wrap {
+    position: relative;
+}
+
+#return-policy-section .bbox_wrap::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    width: 25%;
+    height: 2px;
+    border-top: 3px dotted #ccc;
+}
+
+#return-policy-section .last_bbox_wrap::before {
+    border: none;
+}
+
 /*-------------- Some Design Make Own End-------------------- */
 
 
@@ -674,6 +692,10 @@ textarea {
     }
 
     #hiring-section .last-bimage-wrap::before {
+        border: none;
+    }
+
+    #return-policy-section .bbox_wrap::before {
         border: none;
     }
 }
