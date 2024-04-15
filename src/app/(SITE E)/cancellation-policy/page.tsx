@@ -28,8 +28,8 @@ const Page = () => {
             )}
             {!showLoader && (
                 <>
-                    <Hero/>
-                    <Details/>
+                    {/*<Hero/>*/}
+                    {/*<Details/>*/}
                 </>
             )}
         </>

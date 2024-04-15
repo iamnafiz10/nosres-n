@@ -10,7 +10,7 @@ function Page() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
                         {/* Left Side Sticky */}
                         <div
-                            className="col lg:col-span-4 flex-initial lg:sticky top-[80px] h-full lg:h-[80vh] w-full overflow-hidden lg:overflow-auto">
+                            className="col lg:col-span-3 flex-initial lg:sticky top-[80px] h-full lg:h-[30vh] w-full overflow-hidden lg:overflow-auto">
                             <h4 className="text-[16px] font-semibold pb-2">
                                 Other Policies
                             </h4>
@@ -18,7 +18,7 @@ function Page() {
                             <ul className="space-y-3 pt-4 text-primary">
                                 <li>
                                     <Link href='shipping-policy'>
-                                        <h4 className="text-prgcolor hover:text-primary text-[14px]">
+                                        <h4 className="text-primary hover:text-prgcolor hover:font-semibold text-[14px]">
                                             Shipping Policy
                                         </h4>
                                     </Link>
@@ -26,7 +26,7 @@ function Page() {
 
                                 <li>
                                     <Link href='cancellation-policy'>
-                                        <h4 className="text-primary text-[14px]">
+                                        <h4 className="text-prgcolor font-semibold text-[14px]">
                                             Cancellation Policy
                                         </h4>
                                     </Link>
@@ -34,7 +34,7 @@ function Page() {
 
                                 <li>
                                     <Link href='return-policy'>
-                                        <h4 className="text-prgcolor hover:text-primary text-[14px]">
+                                        <h4 className="text-primary hover:text-prgcolor hover:font-semibold text-[14px]">
                                             Return Policy
                                         </h4>
                                     </Link>
@@ -42,7 +42,7 @@ function Page() {
 
                                 <li>
                                     <Link href='refund-policy'>
-                                        <h4 className="text-prgcolor hover:text-primary text-[14px]">
+                                        <h4 className="text-primary hover:text-prgcolor hover:font-semibold text-[14px]">
                                             Refund Policy
                                         </h4>
                                     </Link>
@@ -55,57 +55,73 @@ function Page() {
                             <h4 className="text-[16px] font-semibold pb-2">
                                 Cancellation Policy
                             </h4>
-                            <div className="section border rounded p-8">
+                            <div className="section border rounded p-8 pt-4">
                                 <div className="scroll_content_wrap">
-                                    <div className="flex items-center gap-2">
-                                        <div
-                                            className="w-[35px] h-[35px] bg-[#A4CEEC] rounded-full flex items-center justify-center">
-                                            <h1 className="text-white text-[16px]">
-                                                1
-                                            </h1>
-                                        </div>
-                                        <h4 className="text-prgcolor font-semibold text-[16px]">
-                                            Overview
-                                        </h4>
-                                    </div>
-
                                     <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
-                                        Welcome to Nosres.com (the “Site”). Nosres provides Services to you subject to
-                                        the Terms and Conditions of Use (the “Terms of Use”) set forth in this agreement
-                                        (the {`"`}Agreement{`"`}). This is a biding legal agreement between Nosres’s
-                                        direct and
-                                        indirect subsidiaries (hereinafter referred to as “Nosres” or the “Sites” or
-                                        “Site” or “we” or “us”) and you, the users of the Website (hereinafter referred
-                                        to collectively as “you” or “user”) on which Nosres grants you a personal,
-                                        limited, non-exclusive and non-transferable privilege to access and use the
-                                        Site. This privilege has the sole purpose of allowing you to use and enjoy the
-                                        benefit of the Services as provided by Nosres, in the manner permitted by these
-                                        Terms.
-                                        <br/>
-                                        <br/>
-
-                                        BY ACCESSING THIS WEBSITE AND USING THE SERVICES, YOU ACCEPT AND AGREE TO BE
-                                        BOUND BY THESE TERMS AND PROVISION OF THIS AGREEMENT. PLEASE READ THEM CAREFULLY
-                                        BEFORE YOU PROCEED.
-                                        <br/>
-                                        <br/>
-
-                                        Nosres reserves the right, at its sole discretion, to change or modify these
-                                        Terms of Use, or discontinue or terminate the Site, at any time and without
-                                        prior notice. It is your responsibility to look at these terms regularly.
-                                        Changes and modifications will be effective upon the posting of the changes and
-                                        modifications. Your continued access to and use of the Site and Services
-                                        following the posting of changes will mean that you accept and agree to such
-                                        changes and modifications.
-                                        <br/>
-                                        <br/>
-
-                                        ANY PARTICIPATION IN THIS WEBSITE AND THE USE OF THE SERVICES WILL CONSTITUTE
-                                        YOUR ACCEPTANCE OF AND AGREEMENT TO ALL OF THE TERMS AND CONDITIONS IN THESE
-                                        TERMS OF USE AND YOU ARE INDICATING THAT YOU ARE AT LEAST 18 YEARS OLD. IF YOU
-                                        OBJECT TO ANYTHING IN THESE TERMS OF USE, PLEASE DO NOT USE THIS SITE OR ANY
-                                        SERVICES PROVIDED BY NOSRES.
+                                        This policy is also part of our Terms of Use. By opening a Nosres store or
+                                        making a purchase on Nosres, you accepting and agreeing to be bound by this
+                                        policy and our Terms of Use.
                                     </h4>
+                                    <h4 className="text-[16px] font-semibold pb-2 mt-6">
+                                        A. Order Cancellation by Buyers
+                                    </h4>
+                                    <hr/>
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        We advise you to buy products that you like, need and want in order to avoid
+                                        cancellations. But if you want to cancel an order you still can do so. You can
+                                        cancel an order until any time before the shipping of your item. Any amount paid
+                                        will be refunded in full. You can cancel your order online by logging into your
+                                        Nosres account and following the steps. You may still cancel the order in case
+                                        the item has been shipped but has not yet delivered to you. You cannot refuse to
+                                        accept the package at the time of delivery and a cancellation request shall be
+                                        permissible after your order is delivered to you.
+                                        <br/>
+                                        <br/>
+
+                                        Once you submit the cancellation request of your order, it will take us 2
+                                        business days to cancel the order and initiate a refund
+                                    </h4>
+                                    <h4 className="text-[14px] font-semibold pb-2 mt-6">
+                                        A. Order Cancellation by Buyers
+                                    </h4>
+                                    <ul className="mt-2 ml-4 space-y-2 list-decimal text-[14px] text-prgcolor">
+                                        <li>Login to your account</li>
+                                        <li>Go to My Account</li>
+                                        <li>Go to Order History</li>
+                                        <li>Click on Cancellation Request</li>
+                                    </ul>
+
+                                    <h4 className="text-[16px] font-semibold pb-2 mt-8">
+                                        B. Order Cancellation by Nosres or Sellers
+                                    </h4>
+                                    <hr/>
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-4">
+                                        Nosres or a seller may also raise an order cancellation request under the
+                                        following situations:
+                                    </h4>
+                                    <h4 className="text-[14px] font-semibold mt-6">
+                                        Order Cancellation Steps
+                                    </h4>
+                                    <h4 className="text-[14px] text-prgcolor leading-[24px] mt-1">
+                                        Nosres or a seller may also raise an order cancellation request under the
+                                        following situations:
+                                    </h4>
+                                    <ul className="mt-4 ml-4 space-y-2 list-decimal text-[14px] text-prgcolor">
+                                        <li>The item the Buyer ordered is out of stock.</li>
+                                        <li>The pricing or description of the item contains errors.</li>
+                                        <li>The Buyer{`'`}s address is incorrect or incomplete.</li>
+                                        <li>Our courier partners do not provide services to the Buyer’s preferred
+                                            location.
+                                        </li>
+                                    </ul>
+                                    <h4 className="mt-4 text-[14px] text-prgcolor leading-[24px]">
+                                        In the event that one of the situations above happens and Nosres or a Seller
+                                        cancels your order, we will notify you via your registered email address and we
+                                        will refund your order amount in full, pursuant to our Refund Policy.
+                                    </h4>
+                                    <div className="footer_text box pt-8">
+                                        <h4 className="text-[12px] text-[#828D9E]">Last updated on September 9, 2019</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>

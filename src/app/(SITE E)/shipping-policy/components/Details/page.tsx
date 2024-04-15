@@ -22,7 +22,7 @@ function Page() {
                             <ul className="space-y-3 pt-4 text-primary">
                                 <li>
                                     <Link href='shipping-policy'>
-                                        <h4 className="text-prgcolor text-[14px]">
+                                        <h4 className="text-prgcolor font-semibold text-[14px]">
                                             Shipping Policy
                                         </h4>
                                     </Link>
@@ -30,7 +30,7 @@ function Page() {
 
                                 <li>
                                     <Link href='cancellation-policy'>
-                                        <h4 className="text-primary hover:text-prgcolor text-[14px]">
+                                        <h4 className="text-primary hover:text-prgcolor hover:font-semibold text-[14px]">
                                             Cancellation Policy
                                         </h4>
                                     </Link>
@@ -38,7 +38,7 @@ function Page() {
 
                                 <li>
                                     <Link href='return-policy'>
-                                        <h4 className="text-primary hover:text-prgcolor text-[14px]">
+                                        <h4 className="text-primary hover:text-prgcolor hover:font-semibold text-[14px]">
                                             Return Policy
                                         </h4>
                                     </Link>
@@ -46,7 +46,7 @@ function Page() {
 
                                 <li>
                                     <Link href='refund-policy'>
-                                        <h4 className="text-primary hover:text-prgcolor text-[14px]">
+                                        <h4 className="text-primary hover:text-prgcolor hover:font-semibold text-[14px]">
                                             Refund Policy
                                         </h4>
                                     </Link>
@@ -59,7 +59,7 @@ function Page() {
                             <h4 className="text-[16px] font-semibold pb-2">
                                 Shipping Policy
                             </h4>
-                            <div className="section border rounded p-8">
+                            <div className="section border rounded p-8 pt-4">
                                 <div className="scroll_content_wrap">
                                     <h4 className="text-[14px] text-prgcolor leading-[24px] my-4">
                                         To provide an accurate cost of shipping product to our customers we make our
