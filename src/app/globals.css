@@ -629,7 +629,36 @@ textarea {
     font-weight: 400;
 }
 
-/*-------------- Some Design For Box Bottom-------------------- */
+/*-------------- Some Design Make Own Start-------------------- */
+.calculate-formula {
+    margin-top: 3rem;
+    border: 1px dashed;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.dim-divisor {
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculate-formula .lwh-cal {
+    border-bottom: 1px solid black;
+}
+
+.after-calculate-value .calculate-formula {
+    margin-top: 0;
+}
+
+.dim-divisor {
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculate-formula .lwh-cal {
+    border-bottom: 1px solid black;
+}
+
+/*-------------- Some Design Make Own End-------------------- */
 
 
 /* ------------------- Media Query ----------------*/
