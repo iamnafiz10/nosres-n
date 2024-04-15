@@ -57,7 +57,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_one')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_one' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_one' ? 'text-prgcolor' : ''}`}>
                                             Key Terms
                                         </h4>
                                     </div>
@@ -66,7 +66,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_two')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_two' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_two' ? 'text-prgcolor' : ''}`}>
                                             Membership Eligibility
                                         </h4>
                                     </div>
@@ -75,7 +75,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_three')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_three' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_three' ? 'text-prgcolor' : ''}`}>
                                             Your Obligations as a Seller
                                         </h4>
                                     </div>
@@ -84,7 +84,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_four')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_four' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_four' ? 'text-prgcolor' : ''}`}>
                                             Listing
                                         </h4>
                                     </div>
@@ -93,7 +93,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_five')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_five' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_five' ? 'text-prgcolor' : ''}`}>
                                             Prohibited or Restricted Items
                                         </h4>
                                     </div>
@@ -102,7 +102,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_six')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_six' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_six' ? 'text-prgcolor' : ''}`}>
                                             Pricing Policy
                                         </h4>
                                     </div>
@@ -111,7 +111,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_seven')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_seven' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_seven' ? 'text-prgcolor' : ''}`}>
                                             Fees and Charges
                                         </h4>
                                     </div>
@@ -120,7 +120,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_eight')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_eight' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_eight' ? 'text-prgcolor' : ''}`}>
                                             Order Cancellations, Returns and Refunds
                                         </h4>
                                     </div>
@@ -129,7 +129,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_nine')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_nine' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_nine' ? 'text-prgcolor' : ''}`}>
                                             Shipping and Delivery
                                         </h4>
                                     </div>
@@ -138,7 +138,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_ten')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_ten' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_ten' ? 'text-prgcolor' : ''}`}>
                                             Payments and Deposits
                                         </h4>
                                     </div>
@@ -147,7 +147,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_eleven')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_eleven' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_eleven' ? 'text-prgcolor' : ''}`}>
                                             Governing Law
                                         </h4>
                                     </div>
@@ -156,7 +156,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_twelve')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_twelve' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_twelve' ? 'text-prgcolor' : ''}`}>
                                             Indemnification
                                         </h4>
                                     </div>
@@ -165,7 +165,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_thirteen')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_thirteen' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_thirteen' ? 'text-prgcolor' : ''}`}>
                                             Disclaimer of warranties and Limitation of liability
                                         </h4>
                                     </div>
@@ -174,7 +174,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_fourteen')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_fourteen' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_fourteen' ? 'text-prgcolor' : ''}`}>
                                             Dispute with Buyers or Other Users
                                         </h4>
                                     </div>
@@ -183,7 +183,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_fifteen')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_fifteen' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_fifteen' ? 'text-prgcolor' : ''}`}>
                                             General Release
                                         </h4>
                                     </div>
@@ -192,7 +192,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_sixteen')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_sixteen' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_sixteen' ? 'text-prgcolor' : ''}`}>
                                             Seller Protection
                                         </h4>
                                     </div>
@@ -201,7 +201,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_seventeen')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_seventeen' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_seventeen' ? 'text-prgcolor' : ''}`}>
                                             Termination
                                         </h4>
                                     </div>
@@ -210,7 +210,7 @@ function Page() {
                                 <li>
                                     <div onClick={() => handleClick('seller_tab_eighteen')}
                                          className="flex items-center gap-2 cursor-pointer">
-                                        <h4 className={`text-prgcolor hover:text-primary text-[14px] ${activeTab === 'seller_tab_eighteen' ? 'text-primary' : ''}`}>
+                                        <h4 className={`hover:text-prgcolor text-[14px] ${activeTab === 'seller_tab_eighteen' ? 'text-prgcolor' : ''}`}>
                                             How to Contact Nosres
                                         </h4>
                                     </div>
@@ -567,14 +567,14 @@ function Page() {
                                     </h4>
                                     <br/>
                                     <div className="ml-6">
-                                        <h4 className="font-semibold text-[16px]">
+                                        <h4 className="font-semibold text-[14px]">
                                             1. Tobacco
                                         </h4>
                                         <h4 className="text-[14px] text-prgcolor leading-[24px] mt-2 ml-4">
                                             It is prohibited to list tobacco products on Nosres platform.
                                         </h4>
                                         <br/>
-                                        <h4 className="font-semibold text-[16px]">
+                                        <h4 className="font-semibold text-[14px]">
                                             2. Alcohol
                                         </h4>
                                         <h4 className="text-[14px] text-prgcolor leading-[24px] mt-2 ml-4">
@@ -587,14 +587,14 @@ function Page() {
                                             alcohol products you agree that you are at least 20 years old.
                                         </h4>
                                         <br/>
-                                        <h4 className="font-semibold text-[16px]">
+                                        <h4 className="font-semibold text-[14px]">
                                             3. Animals
                                         </h4>
                                         <h4 className="text-[14px] text-prgcolor leading-[24px] mt-2 ml-4">
                                             It is prohibited to list live animals and their parts.
                                         </h4>
                                         <br/>
-                                        <h4 className="font-semibold text-[16px]">
+                                        <h4 className="font-semibold text-[14px]">
                                             4. Drugs
                                         </h4>
                                         <h4 className="text-[14px] text-prgcolor leading-[24px] mt-2 ml-4">
@@ -603,7 +603,7 @@ function Page() {
                                             multivitamin supplements, musclebuilding supplements, and painkillers.
                                         </h4>
                                         <br/>
-                                        <h4 className="font-semibold text-[16px]">
+                                        <h4 className="font-semibold text-[14px]">
                                             5. Police or Military Items
                                         </h4>
                                         <h4 className="text-[14px] text-prgcolor leading-[24px] mt-2 ml-4">
@@ -614,7 +614,7 @@ function Page() {
                                             allowed.
                                         </h4>
                                         <br/>
-                                        <h4 className="font-semibold text-[16px]">
+                                        <h4 className="font-semibold text-[14px]">
                                             6. Stolen property
                                         </h4>
                                         <h4 className="text-[14px] text-prgcolor leading-[24px] mt-2 ml-4">
@@ -881,7 +881,8 @@ function Page() {
                                         INCLUDING WITHOUT LIMITATION DIRECT, INDIRECT, INCIDENTAL, PUNITIVE, AND
                                         CONSEQUENTIAL DAMAGES, ARISING OUT OF OR IN CONNECTION WITH THIS SELLER
                                         AGREEMENT, OR THE INABILITY TO USE THE SERVICES, OR THOSE RESULTING FROM ANY
-                                        PRODUCTS OR SERVICES PURC
+                                        PRODUCTS OR SERVICES PURC HASED OR OBTAINED OR TRANSACTIONS ENTERED INTO THROUGH
+                                        THE SERVICES.
                                     </h4>
                                 </div>
                             </div>
@@ -914,7 +915,7 @@ function Page() {
 
                                         If a dispute arises between a seller and a buyer or other users of Nosres
                                         services; we, in our sole discretion, may make an attempt to help resolve such
-                                        disputes in accordance with our polici
+                                        disputes in accordance with our policies.
                                     </h4>
                                 </div>
                             </div>
