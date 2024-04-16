@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import shippingBottomImg from '@/../public/assets/images/sitee/shipping.png';
 import packageImg from '@/../public/assets/images/sitee/package.png';
+import boxImg from '@/../public/assets/images/sitee/box.png';
 import nextArwImg from '@/../public/assets/images/sitee/next-arw.png';
 
 function Page() {
@@ -146,7 +147,7 @@ function Page() {
                                             </ul>
                                         </div>
                                         <div className="col md:col-span-5">
-                                            <Image src={packageImg} className="w-24" alt="packageImg"/>
+                                            <Image src={boxImg} className="w-24" alt="boxImg"/>
                                             <div
                                                 className="calculate-formula flex items-center justify-between text-[12px] text-prgcolor">
                                                 <div>
