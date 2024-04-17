@@ -63,8 +63,26 @@ const Page = () => {
         <>
             <section id="support-process-section">
                 <div className="container py-10">
+                    <div className="pb-4 flex items-center gap-2 text-[14px]">
+                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                            Support</Link> <HiChevronRight
+                        className="text-black"/>
+                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                        <HiChevronRight className="text-black"/>
+                        <Link href='#' className="text-primary hover:underline">Account
+                            Registration</Link>
+                        <HiChevronRight className="text-black"/>
+                        <Link href='#' className="text-primary hover:underline">
+                            Create a Nosres Account
+                        </Link>
+                        <HiChevronRight className="text-black"/>
+                        <span className="text-[#828D9E]">
+                                            Why create a Nosres Account
+                                        </span>
+                    </div>
+
                     <div className="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-6">
-                        <div className="col lg:col-span-4 border-r">
+                        <div className="col lg:col-span-4 border-r mt-2">
                             <div className="box bg-white rounded pl-0 pr-8">
                                 <div className="search-bar relative">
                                     <input
@@ -261,25 +279,8 @@ const Page = () => {
                             {/* createAccount account content */}
                             {activeTab === 'createAccount' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[12px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">Account
-                                            Registration</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Create a Nosres Account
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Why create a Nosres Account
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
-                                        <h4 className="mt-3 pb-1 text-[20px]">
+                                    <div className="details-box mt-0">
+                                        <h4 className="pb-1 text-[20px]">
                                             Why create a Nosres Account
                                         </h4>
 
@@ -309,14 +310,14 @@ const Page = () => {
                                             <div className="flex items-center gap-6">
                                                 <button type='button'
                                                         className="mt-4 flex gap-1 cursor-pointer items-center">
-                                                    <FaRegCheckCircle size={20} className="text-green-500"/>
+                                                    <FaRegCheckCircle size={19} className="text-green-500"/>
                                                     <h4 className="text-[14px]">Yes</h4>
                                                 </button>
 
                                                 <button type='button'
                                                         className="mt-4 flex gap-1 cursor-pointer items-center">
                                                     <RxCrossCircled size={20} className="text-red-600"/>
-                                                    <h4 className="text-[14px]">Yes</h4>
+                                                    <h4 className="text-[14px]">No</h4>
                                                 </button>
                                             </div>
                                         </div>
@@ -1150,9 +1151,9 @@ const Page = () => {
                         <div className="col lg:col-span-4"></div>
                         <div className="col lg:col-span-8 ml-2">
                             <h1 className="text-[16px] font-semibold">Can’t find what you’re looking for?</h1>
-                            <p className="mt-2">
+                            <h4 className="mt-1 text-[14px]">
                                 Try the following options:
-                            </p>
+                            </h4>
                             <div className="block sm:flex items-center gap-4 mt-6 pb-10">
                                 <div className="box flex items-start gap-3 bg-white border px-6 py-4 rounded">
                                     <HiOutlineChatBubbleLeftRight size={35} className="text-gray-300"/>
@@ -1258,7 +1259,6 @@ const Page = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </section>
         </>
