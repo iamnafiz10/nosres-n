@@ -1,5 +1,5 @@
 'use client';
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {RxPlus} from "react-icons/rx";
 import supportImgOne from '@/../public/assets/images/support/sp1.svg';
 import supportImgTwo from '@/../public/assets/images/support/sp2.svg';
@@ -9,6 +9,7 @@ import {HiChevronRight} from "react-icons/hi2";
 import {HiOutlineChatBubbleLeftRight, HiOutlineEnvelope} from "react-icons/hi2";
 import Link from "next/link";
 import Image from "next/image";
+import {Modal} from "flowbite-react";
 
 const Page = () => {
     const [activeTab, setActiveTab] = useState('createAccount');
@@ -22,6 +23,40 @@ const Page = () => {
     const handleClearText = () => {
         setSearchText('');
     };
+
+    // Country change popup
+    const [openCountryModal, setOpenCountryModal] = useState<boolean>(false);
+
+    // ------------------ Country Select ------------------//
+    const [selectedOptionCountry, setSelectedOptionCountry] = useState<string>('');
+    const [isOptionsVisibleCountry, setIsOptionsVisibleCountry] = useState<boolean>(false);
+
+    const selectBoxRefCountry = useRef<HTMLDivElement>(null);
+
+    const handleOptionClickCountry = (option: string) => {
+        setSelectedOptionCountry(option);
+        toggleOptionsVisibilityCountry();
+    };
+
+    const toggleOptionsVisibilityCountry = () => {
+        setIsOptionsVisibleCountry(!isOptionsVisibleCountry);
+    };
+    useEffect(() => {
+        const handleOutsideClick = (event: MouseEvent) => {
+            // @ts-ignore
+            if (selectBoxRefCountry.current && !selectBoxRefCountry.current.contains(event.target as Node)) {
+                setIsOptionsVisibleCountry(false);
+            }
+        };
+
+        // @ts-ignore
+        document.addEventListener('click', handleOutsideClick);
+
+        return () => {
+            // @ts-ignore
+            document.removeEventListener('click', handleOutsideClick);
+        };
+    }, []);
     return (
         <>
             <section id="support-process-section">
@@ -1112,8 +1147,8 @@ const Page = () => {
                                 Try the following options:
                             </p>
                             <div className="block sm:flex items-center gap-4 mt-6 pb-10">
-                                <div className="box flex items-center gap-3 bg-white border px-6 py-4 rounded">
-                                    <HiOutlineChatBubbleLeftRight size={60} className="text-gray-300"/>
+                                <div className="box flex items-start gap-3 bg-white border px-6 py-4 rounded">
+                                    <HiOutlineChatBubbleLeftRight size={35} className="text-gray-300"/>
                                     <div className="content">
                                         <div className="block sm:flex items-center gap-6">
                                             <h1 className="text-[16px] font-semibold">Forum</h1>
@@ -1126,8 +1161,8 @@ const Page = () => {
                                 </div>
 
                                 <div
-                                    className="mt-4 sm:mt-0 box flex items-center gap-4 bg-white border px-6 py-4 rounded">
-                                    <HiOutlineEnvelope size={60} className="text-gray-300"/>
+                                    className="mt-4 sm:mt-0 box flex items-start gap-3 bg-white border px-6 py-4 rounded">
+                                    <HiOutlineEnvelope size={35} className="text-gray-300"/>
                                     <div className="content">
                                         <h1 className="text-[16px] font-semibold">Contact Us</h1>
                                         <p className="mt-2">
@@ -1137,9 +1172,81 @@ const Page = () => {
                                 </div>
                             </div>
                             <hr/>
-                            <div className="pt-8">
-                                <Link href='#' className="text-primary text-[14px] hover:underline">Give us
-                                    feedback</Link>
+                            <div className="pt-6">
+                                <button onClick={() => setOpenCountryModal(true)} type='button'
+                                        className="text-primary text-[14px] hover:underline">
+                                    Give us feedback
+                                </button>
+                                {/* feedback Pop-Up Start */}
+                                <Modal size="lg" dismissible show={openCountryModal}
+                                       onClose={() => setOpenCountryModal(false)}>
+                                    <Modal.Header>
+                                        <h4 className="text-[16px]">Your Feedback Matters</h4>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                        <div className="modal_body box">
+                                            <p>
+                                                We would love to hear your feedback so that we can improve our
+                                                services and provide the best experience for you.
+                                            </p>
+                                            <h4 className="mt-4 text-[14px]">
+                                                My feedback is about:
+                                            </h4>
+                                            <div className="select-box mt-2" ref={selectBoxRefCountry}>
+                                                <div className="select-option flex"
+                                                     onClick={toggleOptionsVisibilityCountry}>
+                                                    <input type="text" placeholder="Select"
+                                                           readOnly
+                                                           value={selectedOptionCountry}
+                                                           className="focus:ring focus:ring-transparent focus:outline-none focus:border-gray-300 "/>
+                                                </div>
+                                                {isOptionsVisibleCountry && (
+                                                    <div className="info-content gender_content">
+                                                        <ul className="options">
+                                                            <li onClick={() => handleOptionClickCountry("Nosres Account")}>
+                                                                Nosres Account
+                                                            </li>
+                                                            <li onClick={() => handleOptionClickCountry("Marketplace")}>
+                                                                Marketplace
+                                                            </li>
+                                                            <li onClick={() => handleOptionClickCountry("Pay")}>
+                                                                Pay
+                                                            </li>
+                                                            <li onClick={() => handleOptionClickCountry("Logistics")}>
+                                                                Logistics
+                                                            </li>
+                                                            <li onClick={() => handleOptionClickCountry("Telecom")}>
+                                                                Telecom
+                                                            </li>
+                                                            <li onClick={() => handleOptionClickCountry("Business")}>
+                                                                Business
+                                                            </li>
+                                                            <li onClick={() => handleOptionClickCountry("Careers")}>
+                                                                Careers
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                )}
+                                            </div>
+
+                                            <h4 className="mt-4 text-[14px]">
+                                                Please share your experience with us:
+                                            </h4>
+                                            <textarea cols={30} rows={3} className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"></textarea>
+                                        </div>
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                        <div className="flex w-full items-center justify-between">
+                                            <button onClick={() => setOpenCountryModal(false)}
+                                                    className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
+                                            </button>
+                                            <button onClick={() => setOpenCountryModal(false)}
+                                                    className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
+                                            </button>
+                                        </div>
+                                    </Modal.Footer>
+                                </Modal>
+                                {/* feedback Pop-Up End */}
                             </div>
                         </div>
                     </div>

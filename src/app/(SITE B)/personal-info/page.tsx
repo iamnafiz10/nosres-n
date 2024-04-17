@@ -1,6 +1,6 @@
 "use client";
 import React, {useEffect, useRef, useState} from 'react';
-import Skeleton, {SkeletonTheme} from 'react-loading-skeleton'
+import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import {Modal} from 'flowbite-react';
 import {toast} from 'react-toastify';
