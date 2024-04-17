@@ -1,8 +1,8 @@
 "use client";
 import React, {useEffect, useState} from 'react';
 import PulseLoader from "@/app/PulseLoader";
-import Hero from '@/app/(SITE E)/return-policy/components/Hero/page';
-import Details from '@/app/(SITE E)/return-policy/components/Details/page';
+import Hero from '@/app/(SITE F)/supportn/components/Hero/page';
+import Details from '@/app/(SITE F)/supportn/components/Details/page';
 import useTitle from "@/app/useTitle";
 
 const Page = () => {
@@ -15,7 +15,7 @@ const Page = () => {
 
         return () => clearTimeout(timer);
     }, []);
-    useTitle("Return Policy")
+    useTitle("Support")
     return (
         <>
             {showLoader && (

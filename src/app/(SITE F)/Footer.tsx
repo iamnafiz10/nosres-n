@@ -22,7 +22,7 @@ const Page = () => {
                                 <ul className="block space-y-2 sm:space-y-0 sm:flex items-center gap-4 text-gray-500 text-[12px]">
                                     <li className="hidden md:flex hover:text-primary">
                                         <Link href='/' className='flex items-center gap-1'>
-                                            <img src={LogoImg} className="w-4" alt="LogoImg"/>
+                                            <Image src={LogoImg} className="w-4" alt="LogoImg"/>
                                             <h4 className="text-black">nosres</h4>
                                         </Link>
                                     </li>
