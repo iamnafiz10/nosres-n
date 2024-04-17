@@ -1,17 +1,16 @@
 'use client';
 import React, {useEffect, useRef, useState} from "react";
-import {RxCrossCircled, RxPlus} from "react-icons/rx";
+import {RxPlus} from "react-icons/rx";
 import supportImgOne from '@/../public/assets/images/support/sp1.svg';
 import supportImgTwo from '@/../public/assets/images/support/sp2.svg';
 import supportImgThree from '@/../public/assets/images/support/sp3.svg';
 import supportImgFive from '@/../public/assets/images/support/sp5.svg';
-import {HiChevronRight} from "react-icons/hi2";
+import {HiChevronRight, HiMiniCheckCircle, HiMiniXCircle} from "react-icons/hi2";
 import {HiOutlineChatBubbleLeftRight, HiOutlineEnvelope} from "react-icons/hi2";
 import Link from "next/link";
 import Image from "next/image";
 import {Modal} from "flowbite-react";
 import {LuDot} from "react-icons/lu";
-import {FaRegCheckCircle} from "react-icons/fa";
 
 const Page = () => {
     const [activeTab, setActiveTab] = useState('createAccount');
@@ -595,13 +594,13 @@ const Page = () => {
                                             <div className="flex items-center gap-6">
                                                 <button type='button'
                                                         className="mt-4 flex gap-1 cursor-pointer items-center">
-                                                    <FaRegCheckCircle size={19} className="text-green-500"/>
+                                                    <HiMiniCheckCircle  size={20} className="text-green-500"/>
                                                     <h4 className="text-[14px]">Yes</h4>
                                                 </button>
 
                                                 <button type='button'
                                                         className="mt-4 flex gap-1 cursor-pointer items-center">
-                                                    <RxCrossCircled size={20} className="text-red-600"/>
+                                                    <HiMiniXCircle  size={20} className="text-red-600"/>
                                                     <h4 className="text-[14px]">No</h4>
                                                 </button>
                                             </div>
