@@ -112,23 +112,23 @@ const Page = () => {
                                     <ul className="mt-4 pl-8 space-y-2 text-gray-500 text-[14px]">
                                         <li onClick={() => handleListItemClick('signInSignOut')}
                                             className={`hover:text-primary ${activeTab === 'signInSignOut' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Sign In and Sign Out</Link>
+                                            <div className="cursor-pointer">Sign In and Sign Out</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('AdjustAccount')}
                                             className={`hover:text-primary ${activeTab === 'AdjustAccount' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Adjust Account Settings</Link>
+                                            <div className="cursor-pointer">Adjust Account Settings</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('AdjustNotification')}
                                             className={`hover:text-primary ${activeTab === 'AdjustNotification' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Adjust Notifications</Link>
+                                            <div className="cursor-pointer">Adjust Notifications</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('UnderstandLockedAccount')}
                                             className={`hover:text-primary ${activeTab === 'UnderstandLockedAccount' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Understand Locked Accounts</Link>
+                                            <div className="cursor-pointer">Understand Locked Accounts</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('UnderstandBannedAccount')}
                                             className={`hover:text-primary ${activeTab === 'UnderstandBannedAccount' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Understand Banned Accounts</Link>
+                                            <div className="cursor-pointer">Understand Banned Accounts</div>
                                         </li>
                                     </ul>
                                 </details>
@@ -147,11 +147,11 @@ const Page = () => {
                                     <ul className="mt-4 pl-8 space-y-2 text-gray-500 text-[14px]">
                                         <li onClick={() => handleListItemClick('keepAccountSecure')}
                                             className={`hover:text-primary ${activeTab === 'keepAccountSecure' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Keep Your Account Secure</Link>
+                                            <div className="cursor-pointer">Keep Your Account Secure</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('twoFectorAuth')}
                                             className={`hover:text-primary ${activeTab === 'twoFectorAuth' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Manage Two-Factor Authentication</Link>
+                                            <div className="cursor-pointer">Manage Two-Factor Authentication</div>
                                         </li>
                                     </ul>
                                 </details>
@@ -170,27 +170,27 @@ const Page = () => {
                                     <ul className="mt-4 pl-8 space-y-2 text-gray-500 text-[14px]">
                                         <li onClick={() => handleListItemClick('ControlSearchEngine')}
                                             className={`hover:text-primary ${activeTab === 'ControlSearchEngine' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Control Search Engine Indexing</Link>
+                                            <div className="cursor-pointer">Control Search Engine Indexing</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('LearnAboutData')}
                                             className={`hover:text-primary ${activeTab === 'LearnAboutData' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Learn About Data Collection</Link>
+                                            <div className="cursor-pointer">Learn About Data Collection</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('FindAndDownload')}
                                             className={`hover:text-primary ${activeTab === 'FindAndDownload' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Find and Download Data</Link>
+                                            <div className="cursor-pointer">Find and Download Data</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('ReportUnderage')}
                                             className={`hover:text-primary ${activeTab === 'ReportUnderage' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Report Underage Users</Link>
+                                            <div className="cursor-pointer">Report Underage Users</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('DeactivateNosresAccount')}
                                             className={`hover:text-primary ${activeTab === 'DeactivateNosresAccount' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Deactivate Your Nosres Account</Link>
+                                            <div className="cursor-pointer">Deactivate Your Nosres Account</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('DeleteNosresAccount')}
                                             className={`hover:text-primary ${activeTab === 'DeleteNosresAccount' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Delete Your Nosres Account</Link>
+                                            <div className="cursor-pointer">Delete Your Nosres Account</div>
                                         </li>
                                     </ul>
                                 </details>
@@ -209,11 +209,11 @@ const Page = () => {
                                     <ul className="mt-4 pl-8 space-y-2 text-gray-500 text-[14px]">
                                         <li onClick={() => handleListItemClick('ChangeResetPassword')}
                                             className={`hover:text-primary ${activeTab === 'ChangeResetPassword' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Change or Reset Password</Link>
+                                            <div className="cursor-pointer">Change or Reset Password</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('ReactivateAccount')}
                                             className={`hover:text-primary ${activeTab === 'ReactivateAccount' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Reactivate Account</Link>
+                                            <div className="cursor-pointer">Reactivate Account</div>
                                         </li>
                                     </ul>
                                 </details>

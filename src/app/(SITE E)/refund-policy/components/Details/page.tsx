@@ -109,100 +109,99 @@ function Page() {
                                         <div className="overflow-x-auto">
                                             <div className="inline-block min-w-full py-2">
                                                 <div className="overflow-hidden">
-                                                    <table
-                                                        className="min-w-full border border-dashed border-primary text-center text-[14px]">
+                                                    <table className="min-w-full border border-primary text-start text-[14px]">
                                                         <thead
-                                                            className="border-b border-dashed border-primary bg-primary text-white">
+                                                            className="border-b border-primary bg-primary text-white">
                                                         <tr>
                                                             <th
                                                                 scope="col"
-                                                                className="font-semibold text-[14px] border-e border-dashed border-primary px-6 py-4">
+                                                                className="font-semibold text-start text-[14px] border-e border-primary px-6 py-4">
                                                                 Payment Mode
                                                             </th>
                                                             <th
                                                                 scope="col"
-                                                                className="font-semibold text-[14px] border-e border-dashed border-primary px-6 py-4">
+                                                                className="font-semibold text-start text-[14px] border-e border-primary px-6 py-4">
                                                                 Refund Mode
                                                             </th>
                                                             <th
                                                                 scope="col"
-                                                                className="font-semibold text-[14px] border-e border-dashed border-primary px-6 py-4">
+                                                                className="font-semibold text-start text-[14px] border-e border-primary px-6 py-4">
                                                                 Processing Time
                                                             </th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                        <tr className="border-b border-dashed border-primary">
+                                                        <tr className="border-b border-primary">
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Credit Card
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Credit Card
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 8 – 15 Business Days
                                                             </td>
                                                         </tr>
 
-                                                        <tr className="border-b border-dashed border-primary">
+                                                        <tr className="border-b border-primary">
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Debit Card
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Debit Card
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 5 – 7 Business Days
                                                             </td>
                                                         </tr>
 
-                                                        <tr className="border-b border-dashed border-primary">
+                                                        <tr className="border-b border-primary">
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Wallet
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Wallet
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 5 – 7 Business Days
                                                             </td>
                                                         </tr>
 
-                                                        <tr className="border-b border-dashed border-primary">
+                                                        <tr className="border-b border-primary">
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Gift Card
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Gift Card
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 1 - 2 Business Days
                                                             </td>
                                                         </tr>
 
-                                                        <tr className="border-b border-dashed border-primary">
+                                                        <tr className="border-b border-primary">
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Nosres Money
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 Nosres Money
                                                             </td>
                                                             <td
-                                                                className="whitespace-nowrap border-e border-dashed border-primary px-6 py-4">
+                                                                className="whitespace-nowrap border-e border-primary px-6 py-4">
                                                                 1 - 2 Business Days
                                                             </td>
                                                         </tr>
@@ -214,7 +213,8 @@ function Page() {
                                     </div>
 
                                     <div className="footer_text box pt-8">
-                                        <h4 className="text-[12px] text-[#828D9E]">Last updated on September 9, 2019</h4>
+                                        <h4 className="text-[12px] text-[#828D9E]">Last updated on September 9,
+                                            2019</h4>
                                     </div>
                                 </div>
                             </div>

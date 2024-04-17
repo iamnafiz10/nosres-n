@@ -148,7 +148,7 @@ function Page() {
                                                 <h4 className="text-[16px] font-semibold pl-4 text-white">Case</h4>
                                             </div>
                                             <div className="border h-full">
-                                                <ul className="ml-7 pb-36 mt-5 space-y-2 list-disc text-[14px] text-prgcolor">
+                                                <ul className="ml-7 h-[300px] mt-5 space-y-2 list-disc text-[14px] text-prgcolor">
                                                     <li>
                                                         Item has manufacturing defect.
                                                     </li>
@@ -176,7 +176,7 @@ function Page() {
                                                 <h4 className="text-[16px] font-semibold pl-4 text-white">Condition</h4>
                                             </div>
                                             <div className="border h-full">
-                                                <h4 className="text-prgcolor ml-4 pb-[42px] mt-5 text-[14px] pr-4">
+                                                <h4 className="text-prgcolor ml-4 h-[300px] mt-5 text-[14px] pr-4">
                                                     All items can be returned, except for Two wheelers – Four-wheelers –
                                                     Commercial Vehicles
                                                     <br/>
@@ -193,7 +193,7 @@ function Page() {
                                                     eligible for replacement or exchange.
                                                 </h4>
 
-                                                <div className="border-t py-8">
+                                                <div className="border-t py-7">
                                                     <h4 className="text-prgcolor ml-4 text-[14px]">
                                                         All items can be returned, except for
                                                     </h4>
@@ -222,7 +222,6 @@ function Page() {
                                                     </ul>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
 
