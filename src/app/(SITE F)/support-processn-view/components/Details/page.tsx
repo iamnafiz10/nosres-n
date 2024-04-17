@@ -1,6 +1,6 @@
 'use client';
 import React, {useEffect, useRef, useState} from "react";
-import {RxPlus} from "react-icons/rx";
+import {RxCrossCircled, RxPlus} from "react-icons/rx";
 import supportImgOne from '@/../public/assets/images/support/sp1.svg';
 import supportImgTwo from '@/../public/assets/images/support/sp2.svg';
 import supportImgThree from '@/../public/assets/images/support/sp3.svg';
@@ -10,6 +10,8 @@ import {HiOutlineChatBubbleLeftRight, HiOutlineEnvelope} from "react-icons/hi2";
 import Link from "next/link";
 import Image from "next/image";
 import {Modal} from "flowbite-react";
+import {LuDot} from "react-icons/lu";
+import {FaRegCheckCircle} from "react-icons/fa";
 
 const Page = () => {
     const [activeTab, setActiveTab] = useState('createAccount');
@@ -268,51 +270,56 @@ const Page = () => {
                                         <Link href='#' className="text-primary hover:underline">Account
                                             Registration</Link>
                                         <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">Create a Nosres Account</span>
+                                        <Link href='#' className="text-primary hover:underline">
+                                            Create a Nosres Account
+                                        </Link>
+                                        <HiChevronRight className="text-black"/>
+                                        <span className="text-[#828D9E]">
+                                            Why create a Nosres Account
+                                        </span>
                                     </div>
                                     <div className="details-box mt-12">
-                                        <h4 className="text-[#828D9E] pb-4">
-                                            Make yourself familiar with Account Registration
+                                        <h4 className="mt-3 pb-1 text-[20px]">
+                                            Why create a Nosres Account
                                         </h4>
-                                        <hr/>
-                                        <h4 className="mt-3 text-[20px]">Create a Nosres Account</h4>
-                                        <ul className="mt-4 space-y-2 text-[14px]">
-                                            <li>
-                                                <Link href='#' className="hover:text-primary hover:underline">
-                                                    Why create a Nosres Account
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href='#' className="hover:text-primary hover:underline">
-                                                    What the age requirement to create a Nosres Account is
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href='#' className="hover:text-primary hover:underline">
-                                                    How to create a Nosres Account
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href='#' className="hover:text-primary hover:underline">
-                                                    How to choose a username
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href='#' className="hover:text-primary hover:underline">
-                                                    How to choose a strong password
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href='#' className="hover:text-primary hover:underline">
-                                                    How to create a long and memorable password
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href='#' className="hover:text-primary hover:underline">
-                                                    How to keep your password secure
-                                                </Link>
-                                            </li>
-                                        </ul>
+
+                                        <span className="text-[12px] text-[#828D9E] flex items-center">
+                                            Published Date: Jun 03, 2022
+                                           <LuDot size={20}/>
+                                            Updated
+                                        </span>
+
+                                        <h4 className="mt-4 text-[14px] text-prgcolor leading-[24px]">
+                                            A <Link href='#' className="text-primary">Nosres Account</Link> is a gateway
+                                            to all Nosres products and services. For
+                                            example, you can make purchases on Nosres Marketplace with a Nosres Account.
+                                            <br/>
+                                            <br/>
+
+                                            In addition, it’s a single sign-on solution. It means that you don’t need to
+                                            keep track of different sets of credentials; you only need to remember a
+                                            single password.
+                                        </h4>
+
+                                        <div className="mt-10 feedback-box py-8 px-8 bg-[#F7F9F9]">
+                                            <h4 className="text-[16px]">
+                                                Was this article helpful?
+                                            </h4>
+
+                                            <div className="flex items-center gap-6">
+                                                <button type='button'
+                                                        className="mt-4 flex gap-1 cursor-pointer items-center">
+                                                    <FaRegCheckCircle size={20} className="text-green-500"/>
+                                                    <h4 className="text-[14px]">Yes</h4>
+                                                </button>
+
+                                                <button type='button'
+                                                        className="mt-4 flex gap-1 cursor-pointer items-center">
+                                                    <RxCrossCircled size={20} className="text-red-600"/>
+                                                    <h4 className="text-[14px]">Yes</h4>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             )}
@@ -1232,7 +1239,8 @@ const Page = () => {
                                             <h4 className="mt-4 text-[14px]">
                                                 Please share your experience with us:
                                             </h4>
-                                            <textarea cols={30} rows={3} className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"></textarea>
+                                            <textarea cols={30} rows={3}
+                                                      className="mt-1 rounded w-full py-1 px-3 focus:ring focus:ring-transparent text-[#ABABAB] text-[12px] focus:outline-none"></textarea>
                                         </div>
                                     </Modal.Body>
                                     <Modal.Footer>
