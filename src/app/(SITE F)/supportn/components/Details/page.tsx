@@ -53,7 +53,7 @@ function Page() {
                             <div
                                 className="box cursor-pointer flex flex-col items-center justify-center rounded border border-primary py-6 px-4">
                                 <Image src={dtOneImg} className="w-20" alt="dtOneImg"/>
-                                <h4 className="mt-3 text-[16px] font-semibold">
+                                <h4 className="mt-3 text-[16px] font-medium">
                                     Nosres Account
                                 </h4>
                             </div>
@@ -63,7 +63,7 @@ function Page() {
                             <div
                                 className="box cursor-pointer flex flex-col items-center justify-center rounded border border-primary py-6 px-4">
                                 <Image src={dtTwoImg} className="w-20" alt="dtTwoImg"/>
-                                <h4 className="mt-3 text-[16px] font-semibold">
+                                <h4 className="mt-3 text-[16px] font-medium">
                                     Marketplace
                                 </h4>
                             </div>
@@ -73,7 +73,7 @@ function Page() {
                             <div
                                 className="box cursor-pointer flex flex-col items-center justify-center rounded border border-primary py-6 px-4">
                                 <Image src={dtThreeImg} className="w-20" alt="dtThreeImg"/>
-                                <h4 className="mt-3 text-[16px] font-semibold">
+                                <h4 className="mt-3 text-[16px] font-medium">
                                     Pay
                                 </h4>
                             </div>
@@ -83,7 +83,7 @@ function Page() {
                             <div
                                 className="box cursor-pointer flex flex-col items-center justify-center rounded border border-primary py-6 px-4">
                                 <Image src={dtFourImg} className="w-20" alt="dtFourImg"/>
-                                <h4 className="mt-3 text-[16px] font-semibold">
+                                <h4 className="mt-3 text-[16px] font-medium">
                                     Logistics
                                 </h4>
                             </div>
@@ -93,7 +93,7 @@ function Page() {
                             <div
                                 className="box cursor-pointer flex flex-col items-center justify-center rounded border border-primary py-6 px-4">
                                 <Image src={dtFiveImg} className="w-20" alt="dtFiveImg"/>
-                                <h4 className="mt-3 text-[16px] font-semibold">
+                                <h4 className="mt-3 text-[16px] font-medium">
                                     Telecom
                                 </h4>
                             </div>
@@ -103,7 +103,7 @@ function Page() {
                             <div
                                 className="box cursor-pointer flex flex-col items-center justify-center rounded border border-primary py-6 px-4">
                                 <Image src={dtSixImg} className="w-20" alt="dtSixImg"/>
-                                <h4 className="mt-3 text-[16px] font-semibold">
+                                <h4 className="mt-3 text-[16px] font-medium">
                                     Business
                                 </h4>
                             </div>
@@ -113,7 +113,7 @@ function Page() {
                             <div
                                 className="box cursor-pointer flex flex-col items-center justify-center rounded border border-primary py-6 px-4">
                                 <Image src={dtSevenImg} className="w-20" alt="dtSevenImg"/>
-                                <h4 className="mt-3 text-[16px] font-semibold">
+                                <h4 className="mt-3 text-[16px] font-medium">
                                     Careers
                                 </h4>
                             </div>

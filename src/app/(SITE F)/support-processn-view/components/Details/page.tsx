@@ -63,26 +63,296 @@ const Page = () => {
         <>
             <section id="support-process-section">
                 <div className="container py-10">
-                    <div className="pb-4 flex items-center gap-2 text-[14px]">
-                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                            Support</Link> <HiChevronRight
-                        className="text-black"/>
-                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                        <HiChevronRight className="text-black"/>
-                        <Link href='#' className="text-primary hover:underline">Account
-                            Registration</Link>
-                        <HiChevronRight className="text-black"/>
-                        <Link href='#' className="text-primary hover:underline">
-                            Create a Nosres Account
-                        </Link>
-                        <HiChevronRight className="text-black"/>
-                        <span className="text-[#828D9E]">
-                                            Why create a Nosres Account
-                                        </span>
-                    </div>
+                    {activeTab === 'createAccount' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">Account
+                                Registration</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Create a Nosres Account
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">Why create a Nosres Account</span>
+                        </div>
+                    )}
 
+                    {activeTab === 'confirmAccount' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">Account
+                                Registration</Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">Confirm Your Account</span>
+                        </div>
+                    )}
+
+                    {activeTab === 'signInSignOut' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Management
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Sign In and Sign Out
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'AdjustAccount' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Management
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Adjust Account Settings
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'AdjustNotification' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Management
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Adjust Notifications
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'UnderstandLockedAccount' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Management
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Understand Locked Accounts
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'UnderstandBannedAccount' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Management
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Understand Banned Accounts
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'keepAccountSecure' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Security
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Keep Your Account Secure
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'twoFectorAuth' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Security
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Manage Two-Factor Authentication
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'ControlSearchEngine' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Privacy
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Control Search Engine Indexing
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'LearnAboutData' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Privacy
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Learn About Data Collection
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'FindAndDownload' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Privacy
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Find and Download Data
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'ReportUnderage' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Privacy
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Report Underage Users
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'DeactivateNosresAccount' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Privacy
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Deactivate Your Nosres Account
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'DeleteNosresAccount' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Privacy
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Delete Your Nosres Account
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'ChangeResetPassword' && (
+                        <div className="flex items-center gap-2 pb-4 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Recovery
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Change or Reset Password
+                                        </span>
+                        </div>
+                    )}
+
+                    {activeTab === 'ReactivateAccount' && (
+                        <div className="flex items-center gap-2 text-[14px]">
+                            <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
+                                Support</Link> <HiChevronRight
+                            className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
+                            <HiChevronRight className="text-black"/>
+                            <Link href='#' className="text-primary hover:underline">
+                                Account Recovery
+                            </Link>
+                            <HiChevronRight className="text-black"/>
+                            <span className="text-[#828D9E]">
+                                            Reactivate Account
+                                        </span>
+                        </div>
+                    )}
+
+                    {/* Content start from here */}
                     <div className="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-6">
-                        <div className="col lg:col-span-4 border-r mt-2">
+                        <div className="col lg:col-span-4 border-r mt-1">
                             <div className="box bg-white rounded pl-0 pr-8">
                                 <div className="search-bar relative">
                                     <input
@@ -134,7 +404,7 @@ const Page = () => {
                                 <details className="group mt-8 pb-5" open>
                                     <summary
                                         className="relative flex cursor-pointer list-none text-gray-600 gap-4 pr-8 text-[14px] font-normal focus-visible:outline-none group-hover:text-slate-800 [&::-webkit-details-marker]:hidden">
-                                        <div className="flex items-center gap-2">
+                                        <div className={`${activeTab === 'createAccount' ? 'font-semibold' : ''} ${activeTab === 'confirmAccount' ? 'font-semibold' : ''} flex items-center text-prgcolor gap-2`}>
                                             <Image src={supportImgOne} className="w-6 h-6" alt="supportimg"/>
                                             Account Registration
                                         </div>
@@ -157,7 +427,12 @@ const Page = () => {
                                 <details className="group mt-4 pb-5">
                                     <summary
                                         className="relative flex cursor-pointer list-none text-gray-600 gap-4 pr-8 text-[14px] font-normal focus-visible:outline-none group-hover:text-slate-800 [&::-webkit-details-marker]:hidden">
-                                        <div className="flex items-center gap-2">
+                                        <div className={`
+                                        ${activeTab === 'signInSignOut' ? 'font-semibold' : ''} 
+                                        ${activeTab === 'AdjustAccount' ? 'font-semibold' : ''} 
+                                        ${activeTab === 'AdjustNotification' ? 'font-semibold' : ''}
+                                        ${activeTab === 'UnderstandLockedAccount' ? 'font-semibold' : ''}
+                                        ${activeTab === 'UnderstandBannedAccount' ? 'font-semibold' : ''} flex text-prgcolor items-center gap-2`}>
                                             <Image src={supportImgTwo} className="w-6 h-6" alt="supportimg"/>
                                             Account Management
                                         </div>
@@ -192,7 +467,9 @@ const Page = () => {
                                 <details className="group mt-4 pb-5">
                                     <summary
                                         className="relative flex cursor-pointer list-none text-gray-600 gap-4 pr-8 text-[14px] font-normal focus-visible:outline-none group-hover:text-slate-800 [&::-webkit-details-marker]:hidden">
-                                        <div className="flex items-center gap-2">
+                                        <div className={`
+                                        ${activeTab === 'keepAccountSecure' ? 'font-semibold' : ''}  
+                                        ${activeTab === 'twoFectorAuth' ? 'font-semibold' : ''} flex text-prgcolor items-center gap-2`}>
                                             <Image src={supportImgThree} className="w-6 h-6" alt="supportimg"/>
                                             Account Security
                                         </div>
@@ -215,7 +492,13 @@ const Page = () => {
                                 <details className="group mt-4 pb-5">
                                     <summary
                                         className="relative flex cursor-pointer list-none text-gray-600 gap-4 pr-8 text-[14px] font-normal focus-visible:outline-none group-hover:text-slate-800 [&::-webkit-details-marker]:hidden">
-                                        <div className="flex items-center gap-2">
+                                        <div className={`
+                                        ${activeTab === 'ControlSearchEngine' ? 'font-semibold' : ''}
+                                        ${activeTab === 'LearnAboutData' ? 'font-semibold' : ''}
+                                        ${activeTab === 'FindAndDownload' ? 'font-semibold' : ''}
+                                        ${activeTab === 'ReportUnderage' ? 'font-semibold' : ''}
+                                        ${activeTab === 'DeactivateNosresAccount' ? 'font-semibold' : ''}
+                                        ${activeTab === 'DeleteNosresAccount' ? 'font-semibold' : ''} flex text-prgcolor items-center gap-2`}>
                                             <Image src={supportImgFive} className="w-6 h-6" alt="supportimg"/>
                                             Account Privacy
                                         </div>
@@ -254,7 +537,9 @@ const Page = () => {
                                 <details className="group mt-4 pb-5">
                                     <summary
                                         className="relative flex cursor-pointer list-none text-gray-600 gap-4 pr-8 text-[14px] font-normal focus-visible:outline-none group-hover:text-slate-800 [&::-webkit-details-marker]:hidden">
-                                        <div className="flex items-center gap-2">
+                                        <div className={`
+                                        ${activeTab === 'ChangeResetPassword' ? 'font-semibold' : ''} 
+                                        ${activeTab === 'ReactivateAccount' ? 'font-semibold' : ''} flex text-prgcolor items-center gap-2`}>
                                             <Image src={supportImgFive} className="w-6 h-6" alt="supportimg"/>
                                             Account Recovery
                                         </div>
@@ -328,18 +613,7 @@ const Page = () => {
                             {/* confirmAccount content */}
                             {activeTab === 'confirmAccount' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">Account
-                                            Registration</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">Confirm Your Account</span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Registration
                                         </h4>
@@ -379,22 +653,8 @@ const Page = () => {
                             {/* signInSignOut content */}
                             {activeTab === 'signInSignOut' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Management
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Sign In and Sign Out
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
-                                        <h4 className="text-[#828D9E] pb-4">
+                                    <div className="details-box mt-0">
+                                    <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Management
                                         </h4>
                                         <hr/>
@@ -433,21 +693,7 @@ const Page = () => {
                             {/* AdjustAccount content */}
                             {activeTab === 'AdjustAccount' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Management
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Adjust Account Settings
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Management
                                         </h4>
@@ -554,21 +800,7 @@ const Page = () => {
                             {/* AdjustNotification content */}
                             {activeTab === 'AdjustNotification' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Management
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Adjust Notifications
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Management
                                         </h4>
@@ -594,21 +826,7 @@ const Page = () => {
                             {/* UnderstandLockedAccount content */}
                             {activeTab === 'UnderstandLockedAccount' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Management
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Understand Locked Accounts
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Management
                                         </h4>
@@ -638,21 +856,7 @@ const Page = () => {
                             {/* UnderstandBannedAccount content */}
                             {activeTab === 'UnderstandBannedAccount' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Management
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Understand Banned Accounts
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Management
                                         </h4>
@@ -682,21 +886,7 @@ const Page = () => {
                             {/* keepAccountSecure content */}
                             {activeTab === 'keepAccountSecure' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Security
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Keep Your Account Secure
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Security
                                         </h4>
@@ -731,21 +921,7 @@ const Page = () => {
                             {/* twoFectorAuth content */}
                             {activeTab === 'twoFectorAuth' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Security
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Manage Two-Factor Authentication
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Security
                                         </h4>
@@ -792,21 +968,7 @@ const Page = () => {
                             {/* ControlSearchEngine content */}
                             {activeTab === 'ControlSearchEngine' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Privacy
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Control Search Engine Indexing
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Privacy
                                         </h4>
@@ -827,21 +989,7 @@ const Page = () => {
                             {/* LearnAboutData content */}
                             {activeTab === 'LearnAboutData' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Privacy
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Learn About Data Collection
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Privacy
                                         </h4>
@@ -879,21 +1027,7 @@ const Page = () => {
                             {/* FindAndDownload content */}
                             {activeTab === 'FindAndDownload' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Privacy
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Find and Download Data
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Privacy
                                         </h4>
@@ -920,21 +1054,7 @@ const Page = () => {
                             {/* ReportUnderage content */}
                             {activeTab === 'ReportUnderage' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Privacy
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Report Underage Users
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Privacy
                                         </h4>
@@ -956,21 +1076,7 @@ const Page = () => {
                             {/* DeactivateNosresAccount content */}
                             {activeTab === 'DeactivateNosresAccount' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Privacy
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Deactivate Your Nosres Account
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Privacy
                                         </h4>
@@ -997,21 +1103,7 @@ const Page = () => {
                             {/* DeleteNosresAccount content */}
                             {activeTab === 'DeleteNosresAccount' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Privacy
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Delete Your Nosres Account
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Privacy
                                         </h4>
@@ -1038,21 +1130,7 @@ const Page = () => {
                             {/* ChangeResetPassword content */}
                             {activeTab === 'ChangeResetPassword' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Recovery
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Change or Reset Password
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Recovery
                                         </h4>
@@ -1105,21 +1183,7 @@ const Page = () => {
                             {/* ReactivateAccount content */}
                             {activeTab === 'ReactivateAccount' && (
                                 <div className="wrap-content">
-                                    <div className="flex items-center gap-2 text-[14px]">
-                                        <Link href='#' className="cursor-pointer text-primary hover:underline">Nosres
-                                            Support</Link> <HiChevronRight
-                                        className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline"> Nosres Account</Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <Link href='#' className="text-primary hover:underline">
-                                            Account Recovery
-                                        </Link>
-                                        <HiChevronRight className="text-black"/>
-                                        <span className="text-[#828D9E]">
-                                            Reactivate Account
-                                        </span>
-                                    </div>
-                                    <div className="details-box mt-12">
+                                    <div className="details-box mt-0">
                                         <h4 className="text-[#828D9E] pb-4">
                                             Make yourself familiar with Account Recovery
                                         </h4>
@@ -1151,9 +1215,9 @@ const Page = () => {
                         <div className="col lg:col-span-4"></div>
                         <div className="col lg:col-span-8 ml-2">
                             <h1 className="text-[16px] font-semibold">Can’t find what you’re looking for?</h1>
-                            <h4 className="mt-1 text-[14px]">
+                            <p className="mt-2">
                                 Try the following options:
-                            </h4>
+                            </p>
                             <div className="block sm:flex items-center gap-4 mt-6 pb-10">
                                 <div className="box flex items-start gap-3 bg-white border px-6 py-4 rounded">
                                     <HiOutlineChatBubbleLeftRight size={35} className="text-gray-300"/>
@@ -1259,6 +1323,7 @@ const Page = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </>
