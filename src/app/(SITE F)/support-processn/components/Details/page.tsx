@@ -89,11 +89,11 @@ const Page = () => {
                                     <ul className="mt-4 pl-8 space-y-2 text-gray-500 text-[14px]">
                                         <li onClick={() => handleListItemClick('createAccount')}
                                             className={`hover:text-primary ${activeTab === 'createAccount' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Create a Nosres Account</Link>
+                                            <div className="cursor-pointer">Create a Nosres Account</div>
                                         </li>
                                         <li onClick={() => handleListItemClick('confirmAccount')}
                                             className={`hover:text-primary ${activeTab === 'confirmAccount' ? 'text-primary' : ''}`}>
-                                            <Link href='#'>Confirm Your Account</Link>
+                                            <div className="cursor-pointer">Confirm Your Account</div>
                                         </li>
                                     </ul>
                                 </details>

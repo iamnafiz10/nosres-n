@@ -147,7 +147,7 @@ function Page() {
                                             <div className="head py-2 bg-primary">
                                                 <h4 className="text-[16px] font-semibold pl-4 text-white">Case</h4>
                                             </div>
-                                            <div className="border h-[99%]">
+                                            <div className="border h-full">
                                                 <ul className="ml-7 pb-36 mt-5 space-y-2 list-disc text-[14px] text-prgcolor">
                                                     <li>
                                                         Item has manufacturing defect.
@@ -175,8 +175,8 @@ function Page() {
                                             <div className="head py-2 bg-primary">
                                                 <h4 className="text-[16px] font-semibold pl-4 text-white">Condition</h4>
                                             </div>
-                                            <div className="border h-[99%]">
-                                                <h4 className="text-prgcolor ml-7 pb-[42px] mt-5 text-[14px] pr-4">
+                                            <div className="border h-full">
+                                                <h4 className="text-prgcolor ml-4 pb-[42px] mt-5 text-[14px] pr-4">
                                                     All items can be returned, except for Two wheelers – Four-wheelers –
                                                     Commercial Vehicles
                                                     <br/>
@@ -194,10 +194,10 @@ function Page() {
                                                 </h4>
 
                                                 <div className="border-t py-8">
-                                                    <h4 className="text-prgcolor ml-7 text-[14px]">
+                                                    <h4 className="text-prgcolor ml-4 text-[14px]">
                                                         All items can be returned, except for
                                                     </h4>
-                                                    <ul className="mt-4 list-disc space-y-2 text-prgcolor text-[14px] ml-11">
+                                                    <ul className="mt-4 list-disc space-y-2 text-prgcolor text-[14px] ml-[29px]">
                                                         <li>Baby Care</li>
                                                         <li>Perfumes & fragrances</li>
                                                         <li>Precious jewellery</li>
