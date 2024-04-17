@@ -178,7 +178,7 @@ function Page() {
                                             <div className="border h-full">
                                                 <h4 className="text-prgcolor ml-4 h-[300px] mt-5 text-[14px] pr-4">
                                                     All items can be returned, except for Two wheelers – Four-wheelers –
-                                                    Commercial Vehicles
+                                                    Commercial Vehicles.
                                                     <br/>
                                                     <br/>
 

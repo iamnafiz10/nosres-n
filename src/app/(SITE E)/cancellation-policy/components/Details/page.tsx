@@ -82,7 +82,7 @@ function Page() {
                                         business days to cancel the order and initiate a refund
                                     </h4>
                                     <h4 className="text-[14px] font-semibold pb-2 mt-6">
-                                        A. Order Cancellation by Buyers
+                                        Order Cancellation by Buyers
                                     </h4>
                                     <ul className="mt-2 ml-4 space-y-2 list-decimal text-[14px] text-prgcolor">
                                         <li>Login to your account</li>

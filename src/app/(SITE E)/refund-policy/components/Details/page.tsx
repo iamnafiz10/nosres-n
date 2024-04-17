@@ -61,7 +61,7 @@ function Page() {
                                         Refunds are typically initiated in the following cases:
                                     </h4>
 
-                                    <ul className="mt-4 ml-3 space-y-3 list-decimal text-[14px] text-prgcolor">
+                                    <ul className="mt-4 ml-4 space-y-3 list-decimal text-[14px] text-prgcolor">
                                         <li>
                                             If an order is cancelled by a buyer or seller or Nosres before delivery
                                             (Please read our Cancellation Policy).
