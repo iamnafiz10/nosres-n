@@ -31,11 +31,11 @@ const Page = () => {
             )}
             {!showLoader && (
                 <>
-                    {/*<Hero/>*/}
-                    {/*<WhyFulfillment/>*/}
-                    {/*<HowWork/>*/}
-                    {/*<Structure/>*/}
-                    {/*<Started/>*/}
+                    <Hero/>
+                    <WhyFulfillment/>
+                    <HowWork/>
+                    <Structure/>
+                    <Started/>
                 </>
             )}
         </>
