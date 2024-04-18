@@ -2,6 +2,12 @@
 import React, {useEffect, useState} from 'react';
 import PulseLoader from "@/app/PulseLoader";
 import Hero from '@/app/(SITE G)/sell/components/Hero/page';
+import Marketplace from '@/app/(SITE G)/sell/components/Marketplace/page';
+import HowWork from '@/app/(SITE G)/sell/components/HowWork/page';
+import Service from '@/app/(SITE G)/sell/components/Service/page';
+import HowReg from '@/app/(SITE G)/sell/components/HowReg/page';
+import App from '@/app/(SITE G)/sell/components/App/page';
+import Started from '@/app/(SITE G)/sell/components/Started/page';
 import useTitle from "@/app/useTitle";
 
 const Page = () => {
@@ -28,6 +34,12 @@ const Page = () => {
             {!showLoader && (
                 <>
                     <Hero/>
+                    <Marketplace/>
+                    <HowWork/>
+                    <Service/>
+                    <HowReg/>
+                    <App/>
+                    <Started/>
                 </>
             )}
         </>
