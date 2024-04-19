@@ -1,11 +1,6 @@
 import React from 'react';
 import Image from "next/image";
 import BenefitImg from '@/../public/assets/images/sitec/benefits1.jpg';
-// @ts-ignore
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-// Initialize AOS
-AOS.init();
 
 const Page = () => {
     return (

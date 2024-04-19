@@ -1,11 +1,5 @@
 import React from 'react';
 import {HiOutlineCheck} from "react-icons/hi";
-// @ts-ignore
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-// Initialize AOS
-AOS.init();
-
 const Page = () => {
     return (
         <>
