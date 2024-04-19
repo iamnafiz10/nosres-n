@@ -20,8 +20,10 @@ AOS.init();
 
 function Header() {
     useEffect(() => {
-        // Initialize AOS only on the client-side
-        AOS.init();
+        // @ts-ignore
+        import('aos').then((AOS) => {
+            AOS.init();
+        });
     }, []); // Run once on component mount
 
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
