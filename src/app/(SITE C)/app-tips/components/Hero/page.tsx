@@ -1,18 +1,10 @@
 'use client';
-import React, {useEffect} from 'react';
+import React from 'react';
 import Image from "next/image";
 import AppTipsImg from '@/../public/assets/images/sitec/app-tips.jpg';
-import 'aos/dist/aos.css'; // Import AOS CSS
-// @ts-ignore
-import AOS from 'aos'; // Import AOS
 
 const Page = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-            once: false,
-        })
-    }, [])
+
     return (
         <>
             <section id="benefits-hero-section" className="bg-[#F1F2F2]">

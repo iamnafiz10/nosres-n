@@ -2,6 +2,7 @@ import '@/./app/globals.css';
 import {ToastContainer} from "react-toastify";
 import Header from "@/app/(SITE C)/Header";
 import Footer from "@/app/(SITE C)/Footer";
+import AOSProvider from '@/app/AOSProvider';
 
 export const metadata = {
     title: 'Nosres',
@@ -16,9 +17,11 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body>
-        <Header/>
-        {children}
-        <Footer/>
+        <AOSProvider>
+            <Header/>
+            {children}
+            <Footer/>
+        </AOSProvider>
         <ToastContainer
             bodyClassName="toastBody"
         />
