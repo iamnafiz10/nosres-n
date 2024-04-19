@@ -195,12 +195,18 @@ const Page = () => {
     useEffect(() => {
     }, [loading]);
 
+    // Degree Remove popup
+    const [openDegreeRemoveModal, setopenDegreeRemoveModal] = useState(false);
+    // Experience Remove popup
+    const [openExperienceRemoveModal, setopenExperienceRemoveModal] = useState(false);
+
     return (
         <>
             <section id="user-details-section" className="bg-[#F9FAFB] h-[100%]">
                 <div className="container py-16">
                     <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8">
-                        <div className="col lg:col-span-5 flex-initial lg:sticky top-[80px] h-full lg:h-[45vh] w-full overflow-hidden lg:overflow-auto">
+                        <div
+                            className="col lg:col-span-5 flex-initial lg:sticky top-[80px] h-full lg:h-[45vh] w-full overflow-hidden lg:overflow-auto">
                             {/* Sidebar */}
                             <aside id="logo-sidebar"
                                    aria-label="Sidebar">
@@ -572,7 +578,10 @@ const Page = () => {
                                                 </div>
 
                                                 <div className="flex items-center justify-end gap-6 px-4 py-4">
-                                                    <button className="text-[14px] text-primary">Remove</button>
+                                                    <button
+                                                        onClick={() => setopenDegreeRemoveModal(true)}
+                                                        className="text-[14px] text-primary">Remove
+                                                    </button>
                                                     <button className="text-[14px] text-primary">Edit</button>
                                                 </div>
                                             </div>
@@ -826,7 +835,9 @@ const Page = () => {
                                                 </div>
 
                                                 <div className="flex items-center justify-end gap-6 px-4 py-4">
-                                                    <button className="text-[14px] text-primary">Remove</button>
+                                                    <button onClick={() => setopenExperienceRemoveModal(true)}
+                                                            className="text-[14px] text-primary">Remove
+                                                    </button>
                                                     <button className="text-[14px] text-primary">Edit</button>
                                                 </div>
                                             </div>
@@ -1221,6 +1232,60 @@ const Page = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Degree Remove Pop-Up Start */}
+                <Modal size="lg" dismissible show={openDegreeRemoveModal}
+                       onClose={() => setopenDegreeRemoveModal(false)}>
+                    <Modal.Header>
+                        <h4 className="text-[16px]">Remove Degree</h4>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className="modal_body box">
+                            <p>
+                                Are you sure you want to remove this degree? This action cannot
+                                be undone.
+                            </p>
+                        </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <div className="flex w-full items-center justify-between">
+                            <button onClick={() => setopenDegreeRemoveModal(false)}
+                                    className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
+                            </button>
+                            <button onClick={() => setopenDegreeRemoveModal(false)}
+                                    className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
+                            </button>
+                        </div>
+                    </Modal.Footer>
+                </Modal>
+                {/* Degree Remove Pop-Up End */}
+
+                {/* Experience Remove Pop-Up Start */}
+                <Modal size="lg" dismissible show={openExperienceRemoveModal}
+                       onClose={() => setopenExperienceRemoveModal(false)}>
+                    <Modal.Header>
+                        <h4 className="text-[16px]">Remove Experience</h4>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className="modal_body box">
+                            <p>
+                                Are you sure you want to remove this experience? This action
+                                cannot be undone.
+                            </p>
+                        </div>
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <div className="flex w-full items-center justify-between">
+                            <button onClick={() => setopenExperienceRemoveModal(false)}
+                                    className="px-10 text-[14px] py-2 border border-primary bg-primary hover:text-black hover:bg-transparent hover:border-primary text-white rounded">Cancel
+                            </button>
+                            <button onClick={() => setopenExperienceRemoveModal(false)}
+                                    className="px-10 text-[14px] py-2 bg-blue-100 hover:bg-primary hover:text-white text-black rounded">Save
+                            </button>
+                        </div>
+                    </Modal.Footer>
+                </Modal>
+                {/* Experience Remove Pop-Up End */}
             </section>
         </>
     );
