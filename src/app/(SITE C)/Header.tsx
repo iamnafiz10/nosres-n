@@ -22,9 +22,9 @@ function Header() {
     useEffect(() => {
         if (typeof window !== 'undefined') {
             // @ts-ignore
-            import('aos').then((AOS) => {
-                AOS.init();
-            });
+            import('aos/dist/aos.css');
+            const AOS = require('aos');
+            AOS.init();
         }
     }, []); // Run once on component mount
 

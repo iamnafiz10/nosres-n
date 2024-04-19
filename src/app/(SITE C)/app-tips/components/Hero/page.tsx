@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, {useEffect} from 'react';
 import Image from "next/image";
 import AppTipsImg from '@/../public/assets/images/sitec/app-tips.jpg';
 
