@@ -1,5 +1,5 @@
 'use client';
-import React, {seState} from 'react';
+import React, {useState} from 'react';
 import LogoImg from '@/../public/assets/images/logo.svg';
 import {AiOutlineClose} from "react-icons/ai";
 import {HiOutlineBars3} from "react-icons/hi2";
