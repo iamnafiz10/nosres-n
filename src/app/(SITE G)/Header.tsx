@@ -18,10 +18,12 @@ import 'aos/dist/aos.css';
 AOS.init();
 const Page = () => {
     useEffect(() => {
-        // @ts-ignore
-        import('aos').then((AOS) => {
-            AOS.init();
-        });
+        if (typeof window !== 'undefined') {
+            // @ts-ignore
+            import('aos').then((AOS) => {
+                AOS.init();
+            });
+        }
     }, []); // Run once on component mount
 
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
