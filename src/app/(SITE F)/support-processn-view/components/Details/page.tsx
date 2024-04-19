@@ -1214,9 +1214,9 @@ const Page = () => {
                         <div className="col lg:col-span-4"></div>
                         <div className="col lg:col-span-8 ml-2">
                             <h1 className="text-[16px] font-semibold">Can’t find what you’re looking for?</h1>
-                            <p className="mt-2">
+                            <h4 className="mt-2 text-[14px]">
                                 Try the following options:
-                            </p>
+                            </h4>
                             <div className="block sm:flex items-center gap-4 mt-6 pb-10">
                                 <div className="box flex items-start gap-3 bg-white border px-6 py-4 rounded">
                                     <HiOutlineChatBubbleLeftRight size={35} className="text-gray-300"/>

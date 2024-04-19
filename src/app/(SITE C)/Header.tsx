@@ -12,6 +12,11 @@ import UbImg2 from '@/../public/assets/images/job/recent-graduate.svg';
 import LogoImg from '@/../public/assets/images/logo.svg';
 import Link from "next/link";
 import Image from "next/image";
+// @ts-ignore
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// Initialize AOS
+AOS.init();
 
 function Header() {
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)

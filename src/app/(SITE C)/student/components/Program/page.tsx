@@ -30,7 +30,7 @@ const Page = () => {
                                     See available internships
                             </button>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <Image src={ProgramImg} alt="BenefitImg"/>
                         </div>
                     </div>

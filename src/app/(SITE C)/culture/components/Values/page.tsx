@@ -6,7 +6,7 @@ const Page = () => {
             <section id="culture-values-section">
                 <div className="container pt-16">
                     <div className="block md:flex items-center gap-20">
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <svg width="225" height="225" viewBox="0 0 100 100" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_808_72)">
@@ -105,7 +105,7 @@ const Page = () => {
                         </div>
 
                         <div className="mt-4 space-y-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div className="col mt-4">
+                            <div data-aos="zoom-in" className="col mt-4">
                                 <svg width="120" height="120" className="mb-2" viewBox="0 0 100 100" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_808_91)">
@@ -248,7 +248,7 @@ const Page = () => {
                                     We are risk-takers and we are not afraid of failure.
                                 </p>
                             </div>
-                            <div className="col">
+                            <div data-aos="zoom-in" className="col">
                                 <svg width="120" height="120" className="mb-2" viewBox="0 0 100 100" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_809_148)">
@@ -317,8 +317,7 @@ const Page = () => {
                                     We follow our hearts and intuition, and we love what we do.
                                 </p>
                             </div>
-
-                            <div className="col">
+                            <div data-aos="zoom-in" className="col">
                                 <svg width="120" height="120" className="mb-2" viewBox="0 0 100 100" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_811_173)">
@@ -404,7 +403,7 @@ const Page = () => {
                                     We are eager to learn and know about the world around us.
                                 </p>
                             </div>
-                            <div className="col">
+                            <div data-aos="zoom-in" className="col">
                                 <svg width="120" height="120" className="mb-2" viewBox="0 0 100 100" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_812_207)">
@@ -558,8 +557,7 @@ const Page = () => {
                                     We use our imagination to develop new products and services.
                                 </p>
                             </div>
-
-                            <div className="col">
+                            <div data-aos="zoom-in" className="col">
                                 <svg width="120" height="120" className="mb-2" viewBox="0 0 100 100" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_813_275)">
@@ -688,7 +686,7 @@ const Page = () => {
                                     We challenge the status quo and we change things.
                                 </p>
                             </div>
-                            <div className="col">
+                            <div data-aos="zoom-in" className="col">
                                 <svg width="120" height="120" className="mb-2" viewBox="0 0 100 100" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_813_321)">

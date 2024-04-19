@@ -9,7 +9,7 @@ const Page = () => {
             <section id="benefits-hero-section">
                 <div className="container py-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="col mt-3">
+                        <div data-aos="zoom-in" className="col mt-3">
                             <Image src={concerImg} alt="concerImg"/>
                         </div>
 

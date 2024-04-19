@@ -5,11 +5,9 @@ import {GoQuestion} from "react-icons/go";
 import {
     HiOutlineIdentification,
     HiOutlineFolder,
-    HiBookmark,
     HiOutlineUserGroup,
     HiOutlineMapPin,
     HiOutlineClock,
-    HiOutlineArrowPath,
     HiOutlineBookmark,
 } from "react-icons/hi2";
 import Link from "next/link";
@@ -17,24 +15,6 @@ import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
 const Page = () => {
-    const [isBookmarkedOne, setIsBookmarkedOne] = useState(false);
-
-    const toggleBookmarkOne = () => {
-        setIsBookmarkedOne(prevState => !prevState);
-    };
-
-    const [isBookmarkedTwo, setIsBookmarkedTwo] = useState(false);
-
-    const toggleBookmarkTwo = () => {
-        setIsBookmarkedTwo(prevState => !prevState);
-    };
-
-    const [isBookmarkedThree, setIsBookmarkedThree] = useState(false);
-
-    const toggleBookmarkThree = () => {
-        setIsBookmarkedThree(prevState => !prevState);
-    };
-
     // For Page Loading
     const [loading, setLoading] = useState(true); // Set loading state
     useEffect(() => {
@@ -55,7 +35,7 @@ const Page = () => {
             <section id="user-details-section" className="bg-[#F9FAFB] h-[100%]">
                 <div className="container py-16">
                     <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8">
-                        <div className="col lg:col-span-5 flex-initial lg:sticky top-[80px] h-full lg:h-[45vh] w-full overflow-hidden lg:overflow-auto">
+                        <div className="col lg:col-span-5">
                             {/* Sidebar */}
                             <aside id="logo-sidebar"
                                    aria-label="Sidebar">
@@ -84,8 +64,8 @@ const Page = () => {
                                             <Link href="/save-job"
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                                 <HiOutlineBookmark size={22}
-                                                            className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
-                                                <span className="ms-3 font-semibold">Saved Jobs</span>
+                                                                   className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
+                                                <span className="ms-3">Saved Jobs</span>
                                             </Link>
                                         </li>
 
@@ -93,8 +73,8 @@ const Page = () => {
                                             <Link href="/application"
                                                   className="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
                                                 <HiOutlineFolder size={20}
-                                                                 className="text-gray-500 w-7 transition duration-75 group-hover:text-primary"/>
-                                                <span className="ms-3">Applications</span>
+                                                                 className="text-primary w-7 transition duration-75 group-hover:text-primary"/>
+                                                <span className="ms-3 font-semibold">Applications</span>
                                             </Link>
                                         </li>
 
@@ -143,20 +123,9 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <hr/>
-                                        <div className="flex items-center gap-4 mt-2">
-                                            <HiOutlineArrowPath size={15}
-                                                                className="cursor-pointer hover:text-primary"/>
-                                            {isBookmarkedOne ? (
-                                                <Link href="#" className="right hover:text-primary"
-                                                      onClick={toggleBookmarkOne}>
-                                                    <HiOutlineBookmark/>
-                                                </Link>
-                                            ) : (
-                                                <Link href="#" className="right text-primary"
-                                                      onClick={toggleBookmarkOne}>
-                                                    <HiBookmark/>
-                                                </Link>
-                                            )}
+                                        <div className="flex items-center justify-end gap-6 mt-2">
+                                            <button type='button' className='text-[14px] text-primary'>Draft</button>
+                                            <button type='button' className='text-[14px] text-primary'>Remove</button>
                                         </div>
                                     </>
                                 )}
@@ -190,20 +159,10 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <hr/>
-                                        <div className="flex items-center gap-4 mt-2">
-                                            <HiOutlineArrowPath size={15}
-                                                                className="cursor-pointer hover:text-primary"/>
-                                            {isBookmarkedTwo ? (
-                                                <Link href="#" className="right hover:text-primary"
-                                                      onClick={toggleBookmarkTwo}>
-                                                    <HiOutlineBookmark/>
-                                                </Link>
-                                            ) : (
-                                                <Link href="#" className="right text-primary"
-                                                      onClick={toggleBookmarkTwo}>
-                                                    <HiBookmark/>
-                                                </Link>
-                                            )}
+                                        <div className="flex items-center gap-6 mt-2">
+                                            <h4 className="text-[12px]">
+                                                Submitted <span className="text-gray-500">February 9, 2024</span>
+                                            </h4>
                                         </div>
                                     </>
                                 )}
@@ -237,20 +196,10 @@ const Page = () => {
                                             </div>
                                         </div>
                                         <hr/>
-                                        <div className="flex items-center gap-4 mt-2">
-                                            <HiOutlineArrowPath size={15}
-                                                                className="cursor-pointer hover:text-primary"/>
-                                            {isBookmarkedThree ? (
-                                                <Link href="#" className="right hover:text-primary"
-                                                      onClick={toggleBookmarkThree}>
-                                                    <HiOutlineBookmark/>
-                                                </Link>
-                                            ) : (
-                                                <Link href="#" className="right text-primary"
-                                                      onClick={toggleBookmarkThree}>
-                                                    <HiBookmark/>
-                                                </Link>
-                                            )}
+                                        <div className="flex items-center gap-6 mt-2">
+                                            <h4 className="text-[12px]">
+                                                Submitted <span className="text-gray-500">February 9, 2024</span>
+                                            </h4>
                                         </div>
                                     </>
                                 )}

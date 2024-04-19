@@ -9,8 +9,7 @@ function Page() {
                 <div className="container py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
                         {/* Left Side Sticky */}
-                        <div
-                            className="col lg:col-span-3 flex-initial lg:sticky top-[80px] h-full lg:h-[30vh] w-full overflow-hidden lg:overflow-auto">
+                        <div className="col lg:col-span-3 flex-initial lg:sticky top-[80px] h-full lg:h-[30vh] w-full overflow-hidden lg:overflow-auto">
                             <h4 className="text-[16px] font-semibold pb-2">
                                 Other Policies
                             </h4>

@@ -8,7 +8,7 @@ const Page = () => {
             <section id="legal-details-section" className="bg-[#F4F4F4]">
                 <div className="container py-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="box h-full lg:h-[145px] bg-white px-6 py-4 rounded">
                                 <h1 className="text-[16px] font-semibold">Terms of Use</h1>
                                 <p className="mt-2">Rules and regulations which you mush agree to follow in order to use
@@ -25,7 +25,7 @@ const Page = () => {
                             </div>
                         </div>
 
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="box h-full lg:h-[145px] bg-white px-6 py-4 rounded">
                                 <h1 className="text-[16px] font-semibold">Privacy Policy</h1>
                                 <p className="mt-2">
@@ -42,7 +42,7 @@ const Page = () => {
                             </div>
                         </div>
 
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="box h-full lg:h-[145px] bg-white px-6 py-4 rounded">
                                 <h1 className="text-[16px] font-semibold">Seller Terms</h1>
                                 <p className="mt-2">
@@ -59,7 +59,7 @@ const Page = () => {
                             </div>
                         </div>
 
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="box h-full lg:h-[145px] bg-white px-6 py-4 rounded">
                                 <h1 className="text-[16px] font-semibold">Terms of Sale</h1>
                                 <p className="mt-2">
@@ -76,7 +76,7 @@ const Page = () => {
                             </div>
                         </div>
 
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="box h-full lg:h-[145px] bg-white px-6 py-4 rounded">
                                 <h1 className="text-[16px] font-semibold">Applicant and Candidate Privacy Policy</h1>
                                 <p className="mt-2">
@@ -93,7 +93,7 @@ const Page = () => {
                             </div>
                         </div>
 
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="box h-full lg:h-[145px] bg-white px-6 py-4 rounded">
                                 <h1 className="text-[16px] font-semibold">Other Policies</h1>
                                 <p className="mt-2">

@@ -35,7 +35,7 @@ const Page = () => {
             <section id="user-details-section" className="bg-[#F9FAFB] h-[100%]">
                 <div className="container py-16">
                     <div className="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8">
-                        <div className="col lg:col-span-5">
+                        <div className="col lg:col-span-5 flex-initial lg:sticky top-[80px] h-full lg:h-[45vh] w-full overflow-hidden lg:overflow-auto">
                             {/* Sidebar */}
                             <aside id="logo-sidebar"
                                    aria-label="Sidebar">

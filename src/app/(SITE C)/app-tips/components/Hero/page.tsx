@@ -1,6 +1,11 @@
 import React from 'react';
 import Image from "next/image";
 import AppTipsImg from '@/../public/assets/images/sitec/app-tips.jpg';
+// @ts-ignore
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// Initialize AOS
+AOS.init();
 
 const Page = () => {
     return (
@@ -8,7 +13,7 @@ const Page = () => {
             <section id="benefits-hero-section" className="bg-[#F1F2F2]">
                 <div className="container pt-28 pb-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <h4 className="text-[24px]">General Application Tips</h4>
                             <p className="mt-4">
                                 Writing a successful job application can be mentally and physically tiring. Therefore,
@@ -17,7 +22,7 @@ const Page = () => {
                                 likelihood of interviewing. They are applicable to all roles.
                             </p>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <Image src={AppTipsImg} alt="AppTipsImg"/>
                         </div>
                     </div>

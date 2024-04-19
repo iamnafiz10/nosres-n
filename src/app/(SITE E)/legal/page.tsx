@@ -1,9 +1,9 @@
 "use client";
 import React, {useEffect, useState} from 'react';
 import PulseLoader from "@/app/PulseLoader";
-import Hero from '@/app/(SITE D)/legal/components/Hero/page';
-import FooterUp from '@/app/(SITE D)/legal/components/FooterUp/page';
-import Details from '@/app/(SITE D)/legal/components/Details/page';
+import Hero from '@/app/(SITE E)/legal/components/Hero/page';
+import FooterUp from '@/app/(SITE E)/legal/components/FooterUp/page';
+import Details from '@/app/(SITE E)/legal/components/Details/page';
 import useTitle from "@/app/useTitle";
 
 const Page = () => {

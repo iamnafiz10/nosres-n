@@ -19,7 +19,7 @@ function Page() {
                         </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="image-box border py-10 px-8 flex flex-col items-center text-center">
                                 <Image src={HiwImgOne} alt="HiwImgOne"/>
                                 <h4 className="mt-3 font-semibold text-[16px]">
@@ -31,7 +31,7 @@ function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="image-box border py-10 px-8 flex flex-col items-center text-center">
                                 <Image src={HiwImgTwo} alt="HiwImgTwo"/>
                                 <h4 className="mt-3 font-semibold text-[16px]">
@@ -43,7 +43,7 @@ function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="image-box border py-10 px-8 flex flex-col items-center text-center">
                                 <Image src={HiwImgThree} alt="HiwImgThree"/>
                                 <h4 className="mt-3 font-semibold text-[16px]">

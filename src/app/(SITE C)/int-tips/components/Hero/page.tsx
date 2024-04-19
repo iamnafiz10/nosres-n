@@ -21,7 +21,7 @@ const Page = () => {
                                 hiring.
                             </p>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <Image src={IntTipsImg} alt="IntTipsImg"/>
                         </div>
                     </div>

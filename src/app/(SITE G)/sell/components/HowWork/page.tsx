@@ -23,7 +23,7 @@ function Page() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="image-box flex flex-col items-center text-center">
                                 <Image src={howImgTwo} alt="marketImg"/>
                                 <h4 className="mt-3 font-semibold text-[16px]">
@@ -36,7 +36,7 @@ function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="image-box flex flex-col items-center text-center">
                                 <Image src={howImgThree} alt="marketImg"/>
                                 <h4 className="mt-3 font-semibold text-[16px]">
@@ -48,7 +48,7 @@ function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="image-box flex flex-col items-center text-center">
                                 <Image src={howImgFour} alt="marketImg"/>
                                 <h4 className="mt-3 font-semibold text-[16px]">

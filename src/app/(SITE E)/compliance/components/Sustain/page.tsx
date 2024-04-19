@@ -19,7 +19,7 @@ const Page = () => {
                     </div>
 
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="col flex flex-col items-center text-center">
+                        <div data-aos="zoom-in" className="col flex flex-col items-center text-center">
                             <svg className="py-2" width="200" height="200" viewBox="0 0 100 100" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1107_33)">
@@ -83,7 +83,7 @@ const Page = () => {
                             </h4>
                         </div>
 
-                        <div className="col flex flex-col items-center text-center">
+                        <div data-aos="zoom-in" className="col flex flex-col items-center text-center">
                             <svg className="py-2" width="200" height="200" viewBox="0 0 100 100" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1107_61)">
@@ -124,7 +124,7 @@ const Page = () => {
                             </h4>
                         </div>
 
-                        <div className="col flex flex-col items-center text-center">
+                        <div data-aos="zoom-in" className="col flex flex-col items-center text-center">
                             <svg className="py-2" width="200" height="200" viewBox="0 0 100 100" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1107_73)">
@@ -171,7 +171,7 @@ const Page = () => {
                             </h4>
                         </div>
 
-                        <div className="col flex flex-col items-center text-center">
+                        <div data-aos="zoom-in" className="col flex flex-col items-center text-center">
                             <svg className="py-2" width="200" height="200" viewBox="0 0 100 100" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1107_91)">

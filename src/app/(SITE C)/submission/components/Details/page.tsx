@@ -1,6 +1,5 @@
 'use client';
 import React, {useEffect, useRef, useState, ChangeEvent} from 'react';
-import {IoAlertCircle} from "react-icons/io5";
 import {ImAttachment} from "react-icons/im";
 import {toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,7 +8,7 @@ import {
     HiOutlineMinusCircle,
     HiOutlineCloudArrowUp,
     HiOutlineUserGroup,
-    HiOutlineMapPin, HiOutlineClock,
+    HiOutlineMapPin, HiOutlineClock, HiMiniInformationCircle,
 } from "react-icons/hi2";
 import {Checkbox, Label, Modal, Radio} from "flowbite-react";
 
@@ -295,8 +294,8 @@ const Page = () => {
                                 </h4>
 
                                 <div className="mt-1 flex items-center gap-1 text-primary">
-                                    <IoAlertCircle/>
-                                    <h4 className="text-[12px]">
+                                    <HiMiniInformationCircle/>
+                                        <h4 className="text-[12px]">
                                         This information is part of your profile, and any updates made here will be
                                         reflected in your profile.
                                     </h4>

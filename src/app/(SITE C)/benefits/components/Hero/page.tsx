@@ -1,6 +1,11 @@
 import React from 'react';
 import Image from "next/image";
 import BenefitImg from '@/../public/assets/images/sitec/benefits1.jpg';
+// @ts-ignore
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// Initialize AOS
+AOS.init();
 
 const Page = () => {
     return (
@@ -8,7 +13,7 @@ const Page = () => {
             <section id="benefits-hero-section" className="bg-[#F1F2F2]">
                 <div className="container pt-28 pb-16">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <h4 className="text-[24px]">Benefits at Nosres</h4>
                             <p className="mt-4">
                                 At Nosres, we care for and support our employees and their families. We cannot
@@ -18,7 +23,7 @@ const Page = () => {
                                 provide.
                             </p>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <Image src={BenefitImg} alt="BenefitImg"/>
                         </div>
                     </div>

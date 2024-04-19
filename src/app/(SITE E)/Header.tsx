@@ -5,6 +5,11 @@ import {AiOutlineClose} from "react-icons/ai";
 import {HiOutlineBars3} from "react-icons/hi2";
 import Link from "next/link";
 import Image from "next/image";
+// @ts-ignore
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+// Initialize AOS
+AOS.init();
 
 const Page = () => {
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)

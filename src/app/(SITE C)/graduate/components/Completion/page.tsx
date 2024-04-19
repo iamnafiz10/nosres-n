@@ -45,7 +45,7 @@ const Page = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <Image src={CompletionImg} alt="CompletionImg"/>
                         </div>
                     </div>

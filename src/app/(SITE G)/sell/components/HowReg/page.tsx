@@ -81,7 +81,7 @@ function Page() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <div className="flex items-end justify-center">
                                 <Image src={howImgOne} className='w-80' alt="howImg"/>
                             </div>

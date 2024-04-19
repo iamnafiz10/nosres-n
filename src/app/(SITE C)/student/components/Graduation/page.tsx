@@ -1,6 +1,5 @@
 import React from 'react';
 import {HiOutlineArrowRightCircle} from "react-icons/hi2";
-import Link from "next/link";
 import Image from "next/image";
 import GraduationImg from "../../../../../../public/assets/images/sitec/graduation.jpg";
 
@@ -24,7 +23,7 @@ const Page = () => {
                                 See available internships
                             </button>
                         </div>
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <Image src={GraduationImg} alt="BenefitImg"/>
                         </div>
                     </div>

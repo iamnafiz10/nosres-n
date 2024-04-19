@@ -6,7 +6,7 @@ const Page = () => {
             <section id="culture-misson-section" className="mt-12 bg-[#F1F2F2]">
                 <div className="container py-16">
                     <div className="block md:flex items-center gap-20">
-                        <div className="col">
+                        <div data-aos="zoom-in" className="col">
                             <svg width="225" height="225" viewBox="0 0 100 100" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_808_62)">
