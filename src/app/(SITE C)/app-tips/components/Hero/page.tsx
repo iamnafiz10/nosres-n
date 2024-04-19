@@ -2,8 +2,16 @@
 import React, {useEffect} from 'react';
 import Image from "next/image";
 import AppTipsImg from '@/../public/assets/images/sitec/app-tips.jpg';
+import 'aos/dist/aos.css'; // Import AOS CSS
+// @ts-ignore
+import AOS from 'aos'; // Import AOS
 
 const Page = () => {
+    useEffect(() => {
+        AOS.init({
+            // Global settings here (optional)
+        });
+    }, []);
     return (
         <>
             <section id="benefits-hero-section" className="bg-[#F1F2F2]">

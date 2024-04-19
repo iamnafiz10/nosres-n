@@ -1,4 +1,3 @@
-import React from "react";
 import '@/./app/globals.css';
 import {ToastContainer} from "react-toastify";
 import Header from "@/app/(SITE C)/Header";
