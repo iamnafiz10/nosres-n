@@ -3,6 +3,10 @@ import React, {useEffect, useState} from 'react';
 import PulseLoader from "@/app/PulseLoader";
 import Hero from '@/app/(SITE G)/advr/components/Hero/page';
 import WhyAdd from '@/app/(SITE G)/advr/components/WhyAdd/page';
+import HowWork from '@/app/(SITE G)/advr/components/HowWork/page';
+import Advertising from '@/app/(SITE G)/advr/components/Advertising/page';
+import Pricing from '@/app/(SITE G)/advr/components/Pricing/page';
+import Started from '@/app/(SITE G)/advr/components/Started/page';
 import useTitle from "@/app/useTitle";
 
 const Page = () => {
@@ -30,6 +34,10 @@ const Page = () => {
                 <>
                     <Hero/>
                     <WhyAdd/>
+                    <HowWork/>
+                    <Advertising/>
+                    <Pricing/>
+                    <Started/>
                 </>
             )}
         </>
