@@ -9,18 +9,51 @@ import {Modal} from 'flowbite-react';
 // @ts-ignore
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useRouter } from 'next/navigation';
 // Initialize AOS
 AOS.init();
 
 const Page = () => {
+    const router = useRouter();
+
     useEffect(() => {
-        if (typeof window !== 'undefined') {
+        const initAOS = async () => {
+            if (typeof window !== 'undefined') {
+                // @ts-ignore
+                const aosModule = await import('aos');
+                const AOS = aosModule.default;
+                // @ts-ignore
+                await import('aos/dist/aos.css');
+                AOS.init();
+            }
+        };
+
+        // Function to initialize AOS
+        const initializeAOS = () => {
+            initAOS();
+            // Clean up event listener to prevent memory leaks
             // @ts-ignore
-            import('aos/dist/aos.css');
-            const AOS = require('aos');
-            AOS.init();
+            router.events.off('routeChangeComplete', initializeAOS);
+        };
+
+        // Check if useRouter is available (i.e., component is rendered client-side)
+        if (router) {
+            // Initialize AOS when the component mounts
+            initializeAOS();
+            // Reinitialize AOS when the route changes
+            // @ts-ignore
+            router.events.on('routeChangeComplete', initializeAOS);
         }
-    }, []); // Run once on component mount
+
+        // Clean up event listener when the component unmounts
+        return () => {
+            if (router) {
+                // @ts-ignore
+                router.events.off('routeChangeComplete', initializeAOS);
+            }
+        };
+
+    }, [router]);
 
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
     const [isMenuVisible, setMenuVisible] = useState(false);
