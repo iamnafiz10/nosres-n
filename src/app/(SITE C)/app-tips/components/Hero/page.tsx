@@ -9,9 +9,10 @@ import AOS from 'aos'; // Import AOS
 const Page = () => {
     useEffect(() => {
         AOS.init({
-            // Global settings here (optional)
-        });
-    }, []);
+            duration: 800,
+            once: false,
+        })
+    }, [])
     return (
         <>
             <section id="benefits-hero-section" className="bg-[#F1F2F2]">
