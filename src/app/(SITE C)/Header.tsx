@@ -1,5 +1,5 @@
 'use client';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {AiOutlineClose} from "react-icons/ai";
 import {IoIosArrowDown} from "react-icons/io";
 import {HiOutlineBars3} from "react-icons/hi2";
@@ -19,6 +19,11 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 function Header() {
+    useEffect(() => {
+        // Initialize AOS only on the client-side
+        AOS.init();
+    }, []); // Run once on component mount
+
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
     const [isMenuVisible, setMenuVisible] = useState(false);
     const handleClick = () => {

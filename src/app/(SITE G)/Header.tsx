@@ -1,5 +1,5 @@
 'use client';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import LogoImg from "@/../public/assets/images/logo.svg";
 import {IoIosArrowDown} from "react-icons/io";
 import bsImg1 from "@/../public/assets/images/bs1.svg";
@@ -17,6 +17,11 @@ import 'aos/dist/aos.css';
 // Initialize AOS
 AOS.init();
 const Page = () => {
+    useEffect(() => {
+        // Initialize AOS only on the client-side
+        AOS.init();
+    }, []); // Run once on component mount
+
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
     const [isMenuVisible, setMenuVisible] = useState(false);
     const handleClick = () => {
