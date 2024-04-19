@@ -1,5 +1,5 @@
 'use client';
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {AiOutlineClose} from "react-icons/ai";
 import {IoIosArrowDown} from "react-icons/io";
 import {HiOutlineBars3} from "react-icons/hi2";
@@ -12,56 +12,7 @@ import UbImg2 from '@/../public/assets/images/job/recent-graduate.svg';
 import LogoImg from '@/../public/assets/images/logo.svg';
 import Link from "next/link";
 import Image from "next/image";
-// @ts-ignore
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useRouter } from 'next/navigation';
-// Initialize AOS
-AOS.init();
-
 function Header() {
-    const router = useRouter();
-
-    useEffect(() => {
-        const initAOS = async () => {
-            if (typeof window !== 'undefined') {
-                // @ts-ignore
-                const aosModule = await import('aos');
-                const AOS = aosModule.default;
-                // @ts-ignore
-                await import('aos/dist/aos.css');
-                AOS.init();
-            }
-        };
-
-        // Function to initialize AOS
-        const initializeAOS = () => {
-            initAOS();
-            // Clean up event listener to prevent memory leaks
-            // @ts-ignore
-            router.events.off('routeChangeComplete', initializeAOS);
-        };
-
-        // Check if useRouter is available (i.e., component is rendered client-side)
-        if (router) {
-            // Initialize AOS when the component mounts
-            initializeAOS();
-            // Reinitialize AOS when the route changes
-            // @ts-ignore
-            router.events.on('routeChangeComplete', initializeAOS);
-        }
-
-        // Clean up event listener when the component unmounts
-        return () => {
-            if (router) {
-                // @ts-ignore
-                router.events.off('routeChangeComplete', initializeAOS);
-            }
-        };
-
-    }, [router]);
-
-
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
     const [isMenuVisible, setMenuVisible] = useState(false);
     const handleClick = () => {
