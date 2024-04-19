@@ -47,7 +47,7 @@ const Page = () => {
                             <div className="two group">
                                 <button
                                     className="text-primary hover:bg-primary hover:text-white rounded px-4 py-1 border text-[14px]">
-                                    Sign Up
+                                    Sign In
                                 </button>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ const Page = () => {
                         <div className="flex p-4 pt-0 profile">
                             <button
                                 className="text-primary rounded hover:bg-primary hover:text-white px-4 py-1 border text-[14px]">
-                                Sign Up
+                                Sign In
                             </button>
                         </div>
                     </div>

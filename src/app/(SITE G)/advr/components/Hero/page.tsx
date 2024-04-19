@@ -9,7 +9,7 @@ const Page = () => {
                      style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${heroImage.src})`}}>
                 <div className="container">
                     <h1 className="text-2xl text-center md:text-[38px] leading-0 md:leading-10 text-white font-bold md:font-medium mb-4">
-                        Reach and engage customers when they are searching for products, brands and stores on Nosres
+                        Reach and engage customers<br/> on Nosres
                         Marketplace.
                     </h1>
                     <div className="mt-8 flex items-center justify-center">
